@@ -31,6 +31,7 @@ type RawTicket = {
   newHireName?: string | null; // NEW_HIRE only — parsed from the RITM's "New Hire: <Name>" field
   requesterName?: string | null; // MOBILE_DEVICE_REQUEST only
   requesterEmail?: string | null; // MOBILE_DEVICE_REQUEST only
+  requesterPhone?: string | null; // MOBILE_DEVICE_REQUEST only, when available
   deviceType?: string | null; // MOBILE_DEVICE_REQUEST only
   requestType?: string | null; // MOBILE_DEVICE_REQUEST only — "New Request" | "Refresh Request"
   snowCreatedAt: string;
@@ -61,6 +62,7 @@ async function main() {
       newHireName: t.newHireName ?? null,
       requesterName: t.requesterName ?? null,
       requesterEmail: t.requesterEmail ?? null,
+      requesterPhone: t.requesterPhone ?? null,
       deviceType: t.deviceType ?? null,
       requestType: t.requestType ?? null,
       snowCreatedAt: new Date(t.snowCreatedAt),

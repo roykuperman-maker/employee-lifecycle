@@ -75,9 +75,15 @@ export async function POST(req: NextRequest) {
   });
 
   if (code === LINE_OPTION_CODES.PARTNER) {
-    await replyViaResponseUrl(responseUrl, partnerOwnershipTransferReply());
+    await replyViaResponseUrl(
+      responseUrl,
+      partnerOwnershipTransferReply(ticket.requesterName, ticket.requesterPhone)
+    );
   } else if (code === LINE_OPTION_CODES.NON_PARTNER) {
-    await replyViaResponseUrl(responseUrl, partnerPortInReply());
+    await replyViaResponseUrl(
+      responseUrl,
+      partnerPortInReply(ticket.requesterName, ticket.requesterPhone)
+    );
   } else if (code === LINE_OPTION_CODES.NEW_LINE) {
     const name = ticket.requesterName || "the employee";
     await sendEmail({

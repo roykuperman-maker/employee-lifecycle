@@ -21,7 +21,13 @@ const CAN_SEND_REAL_EMAIL = !!process.env.RESEND_API_KEY && process.env.VERCEL_E
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
-async function sendViaResend(opts: { to: string; cc?: string; subject: string; body: string }): Promise<boolean> {
+async function sendViaResend(opts: {
+  to: string;
+  cc?: string;
+  subject: string;
+  body: string;
+  attachments?: { filename: string; content: string }[];
+}): Promise<boolean> {
   if (!resend || !process.env.RESEND_FROM_EMAIL) return false;
   const { error } = await resend.emails.send({
     from: process.env.RESEND_FROM_EMAIL,
@@ -30,6 +36,7 @@ async function sendViaResend(opts: { to: string; cc?: string; subject: string; b
     replyTo: ADMIN_EMAIL,
     subject: opts.subject,
     text: opts.body,
+    attachments: opts.attachments,
   });
   return !error;
 }
@@ -62,6 +69,7 @@ export async function sendEmail(opts: {
   body: string;
   employeeId?: string;
   triggerType: string;
+  attachments?: { filename: string; content: string }[];
 }) {
   let status: "SIMULATED" | "SENT" = "SIMULATED";
 

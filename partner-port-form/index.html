@@ -354,6 +354,8 @@ input[type="radio"], input[type="checkbox"] { accent-color: var(--green); cursor
   <button class="btn btn-print" onclick="window.print()">הדפס</button>
   <button class="btn btn-pdf" id="btn-dl" onclick="downloadPDF()">הורד PDF</button>
   <button class="btn btn-clear" onclick="resetForm()">נקה טופס</button>
+  <input type="text" id="sim_number_for_email" placeholder="מספר סים (למייל לפרטנר)" style="padding:6px 8px;border-radius:5px;border:1px solid #aaa;font-family:inherit;font-size:12px;direction:ltr;">
+  <button class="btn" id="btnSendPartner" style="background:#0d9488;color:#fff;" onclick="sendToPartner()">שלח לפרטנר</button>
 </div>
 
 
@@ -657,10 +659,76 @@ async function downloadPDF() {
   }
 }
 
+/* Autofill from ?name=&phone= (sent as part of the Slack line-setup link) */
+function normalizeLocalPhone(phone) {
+  let digits = (phone || '').replace(/\D/g, '');
+  if (digits.startsWith('972')) digits = '0' + digits.slice(3);
+  if (digits.startsWith('05')) digits = digits.slice(2);
+  return digits;
+}
+function autofillFromQuery() {
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name');
+  const phone = params.get('phone');
+  if (name) {
+    const nameEl = document.querySelector('[name="cust_name"]');
+    if (nameEl) nameEl.value = name;
+  }
+  if (phone) {
+    const phoneEl = document.querySelector('[name="ph1"]');
+    if (phoneEl) phoneEl.value = normalizeLocalPhone(phone);
+  }
+}
+
+/* Send filled form to Partner by email (real send via the app's backend) */
+const PARTNER_FORMS_ENDPOINT = 'https://emplyee-lifecycle.vercel.app/api/partner-forms/submit';
+
+async function buildPdfBase64() {
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+  const pages = document.querySelectorAll('.page');
+  for (let i = 0; i < pages.length; i++) {
+    const canvas = await html2canvas(pages[i], { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollX: 0, scrollY: 0 });
+    const img = canvas.toDataURL('image/jpeg', 0.92);
+    const pdfH = (canvas.height * 210) / canvas.width;
+    if (i > 0) pdf.addPage();
+    pdf.addImage(img, 'JPEG', 0, 0, 210, pdfH);
+  }
+  return pdf.output('datauristring').split(',')[1];
+}
+
+async function sendToPartner() {
+  const btn = document.getElementById('btnSendPartner');
+  const name = (document.querySelector('[name="cust_name"]')?.value || '').trim() || '(שם לא צוין)';
+  const phoneDigits = (document.querySelector('[name="ph1"]')?.value || '').trim();
+  const phone = phoneDigits ? '05' + phoneDigits : '(מספר לא צוין)';
+  const sim = (document.getElementById('sim_number_for_email')?.value || '').trim() || '(מספר סים לא צוין)';
+
+  btn.disabled = true; btn.textContent = 'שולח…';
+  try {
+    const pdfBase64 = await buildPdfBase64();
+    const subject = `ניוד קו ${phone} ${name}`;
+    const body = `שלום\n\nנא לנייד קו זה תחת חשבון אינטואיט\nסים ${sim}\nמצ״ב טופס ניוד\nנא לוודא הפעלת חבילת חו״ל אוטומטית כמוסכם עם אינטואיט.\n\nתודה,\nרועי`;
+
+    const res = await fetch(PARTNER_FORMS_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ subject, body, pdfBase64, filename: 'טופס-ניוד-פרטנר.pdf' }),
+    });
+    if (!res.ok) throw new Error('Request failed');
+    alert('הטופס נשלח לפרטנר בהצלחה.');
+  } catch (err) {
+    alert('שליחה נכשלה, נסה שוב או צור קשר עם צוות T4i.');
+  } finally {
+    btn.disabled = false; btn.textContent = 'שלח לפרטנר';
+  }
+}
+
 /* Init */
 document.addEventListener('DOMContentLoaded', () => {
   initPad('sig_rep');
   setDates();
+  autofillFromQuery();
 });
 </script>
 </body>

@@ -136,6 +136,7 @@ model Ticket {
   // "Select Request Type" fields.
   requesterName  String?
   requesterEmail String?
+  requesterPhone String? // when available (e.g. the port-in flow's "current number"); used to autofill the partner-*-form links
   deviceType     String?
   requestType    String? // "New Request" | "Refresh Request"
 

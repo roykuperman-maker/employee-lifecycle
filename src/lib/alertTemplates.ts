@@ -251,12 +251,25 @@ export function mobileLineSetupBlocks(ticketId: string, name: string, deviceType
   ];
 }
 
-export function partnerOwnershipTransferReply(): string {
-  return `Please submit in the following form to transfer the ownership of your device to Intuit's Partner Account\n${LINE_FORM_URLS.INCOMING_TRANSFER}`;
+// Appends ?name=&phone= so the static partner-*-form pages can autofill —
+// phone is omitted entirely when we don't have one (see requesterPhone on
+// Ticket), rather than passing an empty param the form would blank out with.
+function withAutofillParams(url: string, name: string | null, phone: string | null): string {
+  const params = new URLSearchParams();
+  if (name) params.set("name", name);
+  if (phone) params.set("phone", phone);
+  const qs = params.toString();
+  return qs ? `${url}?${qs}` : url;
 }
 
-export function partnerPortInReply(): string {
-  return `Please submit the following form to port in your line to Intuit's Partner account\n${LINE_FORM_URLS.PORT_IN}`;
+export function partnerOwnershipTransferReply(name: string | null, phone: string | null): string {
+  const url = withAutofillParams(LINE_FORM_URLS.INCOMING_TRANSFER, name, phone);
+  return `Please submit in the following form to transfer the ownership of your device to Intuit's Partner Account\n${url}`;
+}
+
+export function partnerPortInReply(name: string | null, phone: string | null): string {
+  const url = withAutofillParams(LINE_FORM_URLS.PORT_IN, name, phone);
+  return `Please submit the following form to port in your line to Intuit's Partner account\n${url}`;
 }
 
 export function newLineReply(): string {

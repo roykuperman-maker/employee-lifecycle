@@ -101,6 +101,7 @@ For each task, build an object matching this shape (see
   "newHireName": "<NEW_HIRE only — the new hire's name, parsed from the RITM description's \"New Hire: : <Name>\" field; omit/null for the other 2 categories>",
   "requesterName": "<MOBILE_DEVICE_REQUEST only — RITM's \"Who is this request for?\" field>",
   "requesterEmail": "<MOBILE_DEVICE_REQUEST only — RITM's \"Employee Email\" field>",
+  "requesterPhone": "<MOBILE_DEVICE_REQUEST only, when available — e.g. the port-in flow's \"current mobile number to Port In\" field; omit/null if not captured on the request>",
   "deviceType": "<MOBILE_DEVICE_REQUEST only — RITM's \"Choose your preferred model\" field>",
   "requestType": "<MOBILE_DEVICE_REQUEST only — RITM's \"Select Request Type\" field, exactly \"New Request\" or \"Refresh Request\">",
   "snowCreatedAt": "<sys_created_on as ISO 8601>"
