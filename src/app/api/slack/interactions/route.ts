@@ -5,11 +5,14 @@ import { sendEmail } from "@/lib/notifications";
 import { PARTNER_EMAIL, ADMIN_EMAIL } from "@/lib/constants";
 import {
   LINE_OPTION_CODES,
+  PORT_IN_CALL_DONE_ACTION_ID,
   partnerOwnershipTransferReply,
   partnerPortInReply,
   newLineReply,
   newLinePartnerEmailSubject,
   newLinePartnerEmailBody,
+  portInCallDonePartnerEmailSubject,
+  portInCallDonePartnerEmailBody,
 } from "@/lib/alertTemplates";
 
 // Slack requires this endpoint to verify every request's signature — without
@@ -40,33 +43,14 @@ async function replyViaResponseUrl(responseUrl: string, text: string) {
   });
 }
 
-export async function POST(req: NextRequest) {
-  const rawBody = await req.text();
-  const signature = req.headers.get("x-slack-signature");
-  const timestamp = req.headers.get("x-slack-request-timestamp");
-
-  if (!verifySlackSignature(rawBody, timestamp, signature)) {
-    return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
-  }
-
-  const params = new URLSearchParams(rawBody);
-  const payloadRaw = params.get("payload");
-  if (!payloadRaw) return NextResponse.json({ error: "Missing payload" }, { status: 400 });
-
-  const payload = JSON.parse(payloadRaw);
-  const action = payload.actions?.[0];
-  if (action?.action_id !== "mobile_line_option") {
-    return NextResponse.json({ ok: true });
-  }
-
+async function handleMobileLineOption(action: any, responseUrl: string) {
   const [code, ticketId] = String(action.selected_option?.value ?? "").split("::");
-  const responseUrl = payload.response_url as string | undefined;
-  if (!ticketId || !responseUrl) return NextResponse.json({ ok: true });
+  if (!ticketId) return;
 
   const ticket = await prisma.ticket.findUnique({ where: { id: ticketId } });
   if (!ticket) {
     await replyViaResponseUrl(responseUrl, "Sorry, we couldn't find this request anymore — please contact T4i.");
-    return NextResponse.json({ ok: true });
+    return;
   }
 
   await prisma.ticket.update({
@@ -82,7 +66,7 @@ export async function POST(req: NextRequest) {
   } else if (code === LINE_OPTION_CODES.NON_PARTNER) {
     await replyViaResponseUrl(
       responseUrl,
-      partnerPortInReply(ticket.requesterName, ticket.requesterPhone)
+      partnerPortInReply(ticket.requesterName, ticket.requesterPhone, ticket.id, ticket.requesterEmail)
     );
   } else if (code === LINE_OPTION_CODES.NEW_LINE) {
     const name = ticket.requesterName || "the employee";
@@ -94,6 +78,63 @@ export async function POST(req: NextRequest) {
       triggerType: "NEW_LINE_PARTNER_REQUEST",
     });
     await replyViaResponseUrl(responseUrl, newLineReply());
+  }
+}
+
+async function handlePortInCallDone(action: any, responseUrl: string) {
+  const ticketId = String(action.value ?? "");
+  if (!ticketId) return;
+
+  const ticket = await prisma.ticket.findUnique({ where: { id: ticketId } });
+  if (!ticket) {
+    await replyViaResponseUrl(responseUrl, "Sorry, we couldn't find this request anymore — please contact T4i.");
+    return;
+  }
+
+  if (ticket.portInCallConfirmedAt) {
+    await replyViaResponseUrl(responseUrl, "Already confirmed — Partner was already notified.");
+    return;
+  }
+
+  const phone = ticket.requesterPhone || "(number not on file)";
+  await sendEmail({
+    to: PARTNER_EMAIL,
+    cc: ADMIN_EMAIL,
+    subject: portInCallDonePartnerEmailSubject(phone),
+    body: portInCallDonePartnerEmailBody(phone, ticket.simNumber),
+    triggerType: "PORT_IN_CALL_DONE",
+  });
+
+  await prisma.ticket.update({
+    where: { id: ticketId },
+    data: { portInCallConfirmedAt: new Date() },
+  });
+
+  await replyViaResponseUrl(responseUrl, "Thanks — Partner has been notified.");
+}
+
+export async function POST(req: NextRequest) {
+  const rawBody = await req.text();
+  const signature = req.headers.get("x-slack-signature");
+  const timestamp = req.headers.get("x-slack-request-timestamp");
+
+  if (!verifySlackSignature(rawBody, timestamp, signature)) {
+    return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
+  }
+
+  const params = new URLSearchParams(rawBody);
+  const payloadRaw = params.get("payload");
+  if (!payloadRaw) return NextResponse.json({ error: "Missing payload" }, { status: 400 });
+
+  const payload = JSON.parse(payloadRaw);
+  const action = payload.actions?.[0];
+  const responseUrl = payload.response_url as string | undefined;
+  if (!action || !responseUrl) return NextResponse.json({ ok: true });
+
+  if (action.action_id === "mobile_line_option") {
+    await handleMobileLineOption(action, responseUrl);
+  } else if (action.action_id === PORT_IN_CALL_DONE_ACTION_ID) {
+    await handlePortInCallDone(action, responseUrl);
   }
 
   return NextResponse.json({ ok: true });

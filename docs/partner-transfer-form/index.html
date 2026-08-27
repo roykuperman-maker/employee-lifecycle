@@ -1120,7 +1120,7 @@ async function sendToPartner() {
     const res = await fetch(PARTNER_FORMS_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subject, body, pdfBase64, filename: 'טופס-העברת-בעלות-פרטית.pdf' }),
+      body: JSON.stringify({ subject, body, pdfBase64, filename: 'טופס-העברת-בעלות-פרטית.pdf', formType: 'TAKE_PRIVATE_OWNERSHIP' }),
     });
     if (!res.ok) throw new Error('Request failed');
     alert('הטופס נשלח לפרטנר בהצלחה.');

@@ -8,10 +8,14 @@ export const MOBILE_BUYBACK_URL =
 export const MOBILE_REFRESH_REQUEST_URL =
   "https://intuit.service-now.com/sp?id=sc_cat_item&table=sc_cat_item&sys_id=e2396693976285106900b9a3f153af67";
 
+// These now live under docs/ in this app's own repo (roykuperman-maker/
+// employee-lifecycle), served via GitHub Pages — moved off the old
+// muaddibbb.github.io host so we could add the "שלח לפרטנר" button and
+// autofill support. See docs/partner-*-form/index.html.
 export const LINE_FORM_URLS: Record<string, string> = {
-  INCOMING_TRANSFER: "https://muaddibbb.github.io/partner-incoming-form/",
-  PORT_IN: "https://muaddibbb.github.io/partner-port-form/",
-  TAKE_PRIVATE_OWNERSHIP: "https://muaddibbb.github.io/partner-transfer-form/",
+  INCOMING_TRANSFER: "https://roykuperman-maker.github.io/employee-lifecycle/partner-incoming-form/",
+  PORT_IN: "https://roykuperman-maker.github.io/employee-lifecycle/partner-port-form/",
+  TAKE_PRIVATE_OWNERSHIP: "https://roykuperman-maker.github.io/employee-lifecycle/partner-transfer-form/",
 };
 
 export const LINE_FORM_LABELS: Record<string, string> = {

@@ -21,6 +21,15 @@ const CAN_SEND_REAL_EMAIL = !!process.env.RESEND_API_KEY && process.env.VERCEL_E
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
+// Testing knob: when set, every real Partner-bound send is redirected here
+// instead of the real Partner address — lets Roy exercise the mobile-line
+// and partner-form flows for real (real Slack, real Resend send) without
+// actually emailing Partner. The Notification row still logs the intended
+// PARTNER_EMAIL as `to`, so history stays accurate; only the literal Resend
+// recipient changes. Unset this env var to resume real Partner delivery —
+// no code change needed either way.
+const PARTNER_EMAIL_OVERRIDE = process.env.PARTNER_EMAIL_OVERRIDE || null;
+
 async function sendViaResend(opts: {
   to: string;
   cc?: string;
@@ -29,9 +38,10 @@ async function sendViaResend(opts: {
   attachments?: { filename: string; content: string }[];
 }): Promise<boolean> {
   if (!resend || !process.env.RESEND_FROM_EMAIL) return false;
+  const isPartnerBound = opts.to === PARTNER_EMAIL;
   const { error } = await resend.emails.send({
     from: process.env.RESEND_FROM_EMAIL,
-    to: opts.to,
+    to: isPartnerBound && PARTNER_EMAIL_OVERRIDE ? PARTNER_EMAIL_OVERRIDE : opts.to,
     cc: opts.cc,
     replyTo: ADMIN_EMAIL,
     subject: opts.subject,

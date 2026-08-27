@@ -710,10 +710,17 @@ async function sendToPartner() {
     const subject = `ניוד קו ${phone} ${name}`;
     const body = `שלום\n\nנא לנייד קו זה תחת חשבון אינטואיט\nסים ${sim}\nמצ״ב טופס ניוד\nנא לוודא הפעלת חבילת חו״ל אוטומטית כמוסכם עם אינטואיט.\n\nתודה,\nרועי`;
 
+    const params = new URLSearchParams(window.location.search);
     const res = await fetch(PARTNER_FORMS_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subject, body, pdfBase64, filename: 'טופס-ניוד-פרטנר.pdf' }),
+      body: JSON.stringify({
+        subject, body, pdfBase64,
+        filename: 'טופס-ניוד-פרטנר.pdf',
+        formType: 'PORT_IN',
+        ticketId: params.get('ticketId'),
+        email: params.get('email'),
+      }),
     });
     if (!res.ok) throw new Error('Request failed');
     alert('הטופס נשלח לפרטנר בהצלחה.');

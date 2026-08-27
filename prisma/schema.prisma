@@ -155,5 +155,12 @@ model Ticket {
   lineOptionChosen   String? // PARTNER | NON_PARTNER | NEW_LINE
   lineOptionChosenAt DateTime?
 
+  // PORT_IN flow only. Set when the employee submits the port-in form
+  // (triggers a Slack "call 1-800-054-005" reminder with a Done button);
+  // portInCallConfirmedAt guards against emailing Partner twice if Done is
+  // pressed more than once.
+  portInFormSubmittedAt DateTime?
+  portInCallConfirmedAt DateTime?
+
   importedAt DateTime @default(now())
 }

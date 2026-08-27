@@ -251,13 +251,22 @@ export function mobileLineSetupBlocks(ticketId: string, name: string, deviceType
   ];
 }
 
-// Appends ?name=&phone= so the static partner-*-form pages can autofill —
-// phone is omitted entirely when we don't have one (see requesterPhone on
-// Ticket), rather than passing an empty param the form would blank out with.
-function withAutofillParams(url: string, name: string | null, phone: string | null): string {
+// Appends ?name=&phone=&ticketId=&email= so the static partner-*-form pages
+// can autofill and (for PORT_IN only) tell our backend which ticket/employee
+// to follow up with on submission. Any missing value is simply omitted
+// rather than passed as an empty param the form would blank out with.
+function withAutofillParams(
+  url: string,
+  name: string | null,
+  phone: string | null,
+  ticketId?: string | null,
+  email?: string | null
+): string {
   const params = new URLSearchParams();
   if (name) params.set("name", name);
   if (phone) params.set("phone", phone);
+  if (ticketId) params.set("ticketId", ticketId);
+  if (email) params.set("email", email);
   const qs = params.toString();
   return qs ? `${url}?${qs}` : url;
 }
@@ -267,8 +276,16 @@ export function partnerOwnershipTransferReply(name: string | null, phone: string
   return `Please submit in the following form to transfer the ownership of your device to Intuit's Partner Account\n${url}`;
 }
 
-export function partnerPortInReply(name: string | null, phone: string | null): string {
-  const url = withAutofillParams(LINE_FORM_URLS.PORT_IN, name, phone);
+// PORT_IN's form link also carries ticketId + email so the static form's
+// submit call can identify which ticket/employee to follow up with (the
+// other 2 forms don't need this — see docs/partner-port-form/index.html).
+export function partnerPortInReply(
+  name: string | null,
+  phone: string | null,
+  ticketId: string,
+  email: string | null
+): string {
+  const url = withAutofillParams(LINE_FORM_URLS.PORT_IN, name, phone, ticketId, email);
   return `Please submit the following form to port in your line to Intuit's Partner account\n${url}`;
 }
 
@@ -289,6 +306,53 @@ export function newLinePartnerEmailBody(name: string, simNumber: string | null):
 שם ${name}
 סים ${simNumber || "(SIM number not on file — contact T4i)"}
 נא לוודא הפעלת חבילת חו״ל אוטומטית על המנוי כמוסכם עם אינטואיט.
+
+תודה,
+רועי`;
+}
+
+// ACTIVE — fires the moment the employee submits the port-in form (the
+// docs/partner-port-form/index.html page's "שלח לפרטנר" button), via
+// src/app/api/partner-forms/submit/route.ts.
+export function portInSubmittedMessage(): string {
+  return `Thank you for submitting the port in form to Partner. Please contact 1-800-054-005 to approve the port in.`;
+}
+
+export const PORT_IN_CALL_DONE_ACTION_ID = "port_in_call_done";
+
+export function portInSubmittedBlocks(ticketId: string): unknown[] {
+  return [
+    {
+      type: "section",
+      text: { type: "mrkdwn", text: portInSubmittedMessage() },
+    },
+    {
+      type: "actions",
+      block_id: "port_in_call_done_block",
+      elements: [
+        {
+          type: "button",
+          action_id: PORT_IN_CALL_DONE_ACTION_ID,
+          text: { type: "plain_text", text: "Done" },
+          style: "primary",
+          value: ticketId,
+        },
+      ],
+    },
+  ];
+}
+
+// Sent to PARTNER_EMAIL (real send) when the employee presses "Done" on the
+// port-in call-confirmation Slack message.
+export function portInCallDonePartnerEmailSubject(phone: string): string {
+  return `בוצע אישור ניוד טלפוני לקו ${phone}`;
+}
+
+export function portInCallDonePartnerEmailBody(phone: string, simNumber: string | null): string {
+  return `שלום,
+
+בוצעה שיחת ניוד למספר 1-800-054-005 עבור קו ${phone}
+נא להשלים ניוד קו זה לסים ${simNumber || "(SIM number not on file — contact T4i)"}
 
 תודה,
 רועי`;

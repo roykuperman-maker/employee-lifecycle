@@ -622,7 +622,7 @@ async function sendToPartner() {
     const res = await fetch(PARTNER_FORMS_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subject, body, pdfBase64, filename: 'partner-incoming-ownership.pdf' }),
+      body: JSON.stringify({ subject, body, pdfBase64, filename: 'partner-incoming-ownership.pdf', formType: 'INCOMING_TRANSFER' }),
     });
     if (!res.ok) throw new Error('Request failed');
     alert('הטופס נשלח לפרטנר בהצלחה.');

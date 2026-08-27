@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendEmail } from "@/lib/notifications";
+import { prisma } from "@/lib/db";
+import { sendEmail, sendSlackBlocksDM } from "@/lib/notifications";
 import { PARTNER_EMAIL, ADMIN_EMAIL } from "@/lib/constants";
+import { portInSubmittedMessage, portInSubmittedBlocks } from "@/lib/alertTemplates";
 
 // Called cross-origin from the static partner-*-form pages hosted on
 // GitHub Pages (roykuperman-maker.github.io) — those are plain HTML/JS with
@@ -23,7 +25,7 @@ export async function OPTIONS() {
 }
 
 export async function POST(req: NextRequest) {
-  const { subject, body, pdfBase64, filename } = await req.json();
+  const { subject, body, pdfBase64, filename, formType, ticketId, email } = await req.json();
 
   if (!subject || !body || !pdfBase64 || !filename) {
     return NextResponse.json(
@@ -40,6 +42,24 @@ export async function POST(req: NextRequest) {
     triggerType: "PARTNER_FORM_SUBMISSION",
     attachments: [{ filename, content: pdfBase64 }],
   });
+
+  // Only the port-in form carries ticketId/email — it's the only one with a
+  // "call 1-800-054-005 then confirm" follow-up step.
+  if (formType === "PORT_IN" && ticketId && email) {
+    const ticket = await prisma.ticket.findUnique({ where: { id: ticketId } });
+    if (ticket && !ticket.portInFormSubmittedAt) {
+      await sendSlackBlocksDM({
+        to: email,
+        fallbackText: portInSubmittedMessage(),
+        blocks: portInSubmittedBlocks(ticketId),
+        triggerType: "PORT_IN_FORM_SUBMITTED",
+      });
+      await prisma.ticket.update({
+        where: { id: ticketId },
+        data: { portInFormSubmittedAt: new Date() },
+      });
+    }
+  }
 
   return NextResponse.json({ ok: true, status: notification.status }, { headers: corsHeaders() });
 }
