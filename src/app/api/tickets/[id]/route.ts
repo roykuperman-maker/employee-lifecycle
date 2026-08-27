@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
-import { sendSlackBlocksDM } from "@/lib/notifications";
-import { mobileLineSetupMessage, mobileLineSetupBlocks } from "@/lib/alertTemplates";
+import { sendSlackBlocksDM, sendSlackDMToMany } from "@/lib/notifications";
+import { mobileLineSetupMessage, mobileLineSetupBlocks, shipHomeMessage, shipToOfficeMessage } from "@/lib/alertTemplates";
+import { SHIPPING_COORDINATOR_EMAILS } from "@/lib/constants";
 
 export async function PATCH(req: NextRequest, { params }: { params: { id: string } }) {
-  const { action, simNumber } = await req.json();
+  const { action, simNumber, homeAddress } = await req.json();
 
   const ticket = await prisma.ticket.findUnique({ where: { id: params.id } });
   if (!ticket) return NextResponse.json({ error: "Not found" }, { status: 404 });
@@ -13,6 +14,37 @@ export async function PATCH(req: NextRequest, { params }: { params: { id: string
     const updated = await prisma.ticket.update({
       where: { id: ticket.id },
       data: { simNumber: simNumber || null },
+    });
+    return NextResponse.json(updated);
+  }
+
+  if (action === "set-home-address") {
+    const updated = await prisma.ticket.update({
+      where: { id: ticket.id },
+      data: { homeAddress: homeAddress || null },
+    });
+    return NextResponse.json(updated);
+  }
+
+  if (action === "ship-home" || action === "ship-to-office") {
+    const guardField = action === "ship-home" ? "shipHomeRequestedAt" : "shipToOfficeRequestedAt";
+    if (ticket[guardField]) return NextResponse.json(ticket); // one-way, already sent
+
+    const name = ticket.requesterName || ticket.callerName || "the employee";
+    const homeAddr = ticket.homeAddress || "(home address not on file)";
+    const phone = ticket.requesterPhone || "(phone number not on file)";
+    const body =
+      action === "ship-home" ? shipHomeMessage(name, homeAddr, phone) : shipToOfficeMessage(name, homeAddr, phone);
+
+    await sendSlackDMToMany({
+      to: SHIPPING_COORDINATOR_EMAILS,
+      body,
+      triggerType: action === "ship-home" ? "SHIP_HOME_REQUEST" : "SHIP_TO_OFFICE_REQUEST",
+    });
+
+    const updated = await prisma.ticket.update({
+      where: { id: ticket.id },
+      data: { [guardField]: new Date() },
     });
     return NextResponse.json(updated);
   }

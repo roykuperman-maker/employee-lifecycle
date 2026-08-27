@@ -2,7 +2,12 @@ import Link from "next/link";
 import { prisma } from "@/lib/db";
 import { Badge } from "@/components/Badge";
 import { snowTaskUrl, TICKET_CATEGORY_LABELS, TICKET_STATE_LABELS, TICKET_OPEN_STATES } from "@/lib/constants";
-import { TicketDeliveredCheckbox, TicketSimNumberEditor } from "@/components/TicketMobileActions";
+import {
+  TicketDeliveredCheckbox,
+  TicketSimNumberEditor,
+  TicketHomeAddressEditor,
+  TicketShipCheckbox,
+} from "@/components/TicketMobileActions";
 
 export const dynamic = "force-dynamic";
 
@@ -105,6 +110,9 @@ export default async function TicketsPage({
               <th className="px-4 py-3">Request Type</th>
               <th className="px-4 py-3">SIM Number</th>
               <th className="px-4 py-3">Delivered</th>
+              <th className="px-4 py-3">Home Address</th>
+              <th className="px-4 py-3">Ship Home</th>
+              <th className="px-4 py-3">Ship to Office</th>
             </tr>
           </thead>
           <tbody>
@@ -150,11 +158,20 @@ export default async function TicketsPage({
                     "—"
                   )}
                 </td>
+                <td className="px-4 py-3">
+                  <TicketHomeAddressEditor ticketId={t.id} homeAddress={t.homeAddress} />
+                </td>
+                <td className="px-4 py-3">
+                  <TicketShipCheckbox ticketId={t.id} action="ship-home" requested={!!t.shipHomeRequestedAt} />
+                </td>
+                <td className="px-4 py-3">
+                  <TicketShipCheckbox ticketId={t.id} action="ship-to-office" requested={!!t.shipToOfficeRequestedAt} />
+                </td>
               </tr>
             ))}
             {tickets.length === 0 && (
               <tr>
-                <td colSpan={11} className="px-4 py-8 text-center text-slate-400">
+                <td colSpan={14} className="px-4 py-8 text-center text-slate-400">
                   No tickets match this filter.
                 </td>
               </tr>

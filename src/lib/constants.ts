@@ -2,6 +2,13 @@ export const PARTNER_EMAIL = "maayan.nahari1@service.partner.co.il";
 export const ADMIN_EMAIL = "roy_kuperman@intuit.com";
 export const MOBILE_SUPPORT_EMAIL = "TLV_Mobilesupport@intuit.com";
 
+// DMed by the "Ship Home" / "Ship to Office" ticket checkboxes.
+export const SHIPPING_COORDINATOR_EMAILS = [
+  "daniela_puker@intuit.com",
+  "yanit_levy@intuit.com",
+  "jacky_yatzik@intuit.com",
+];
+
 export const MOBILE_BUYBACK_URL =
   "https://intuit.service-now.com/sp?id=sc_cat_item&sys_id=430ec844875cae10539887750cbb3555&table=sc_cat_item&searchTerm=TLV%20Mobile";
 

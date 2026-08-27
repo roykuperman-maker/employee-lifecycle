@@ -107,6 +107,18 @@ export async function sendEmail(opts: {
   });
 }
 
+// Sends the same DM to each recipient independently (own Notification row,
+// own real/simulated resolution) — used for the shipping-coordinator alerts,
+// which fan out to 3 people rather than one.
+export async function sendSlackDMToMany(opts: {
+  to: string[];
+  body: string;
+  employeeId?: string;
+  triggerType: string;
+}) {
+  return Promise.all(opts.to.map((to) => sendSlackDM({ to, body: opts.body, employeeId: opts.employeeId, triggerType: opts.triggerType })));
+}
+
 export async function sendSlackDM(opts: {
   to: string;
   body: string;

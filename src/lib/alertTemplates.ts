@@ -357,3 +357,13 @@ export function portInCallDonePartnerEmailBody(phone: string, simNumber: string 
 תודה,
 רועי`;
 }
+
+// Sent to the shipping coordinators (Daniela Puker, Yanit Levy, Jacky
+// Yatzik) when Roy checks "Ship Home" or "Ship to Office" on a ticket.
+export function shipHomeMessage(name: string, homeAddress: string, phone: string): string {
+  return `Please arrange shipping a device to ${name} ${homeAddress} ${phone}. Device will be waiting at the 10th floor reception. Thank you, T4i Israel team`;
+}
+
+export function shipToOfficeMessage(name: string, homeAddress: string, phone: string): string {
+  return `Please arrange shipping a device from ${name} ${homeAddress} ${phone} to the office. Thank you, T4i Israel team`;
+}

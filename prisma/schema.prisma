@@ -162,5 +162,13 @@ model Ticket {
   portInFormSubmittedAt DateTime?
   portInCallConfirmedAt DateTime?
 
+  // All tickets. Free-text home address used by the two shipping-coordination
+  // checkboxes below to DM Daniela Puker, Yanit Levy, and Jacky Yatzik.
+  // The *RequestedAt fields guard against re-sending if a checkbox is
+  // toggled more than once — they're one-way, like `delivered` above.
+  homeAddress            String?
+  shipHomeRequestedAt    DateTime?
+  shipToOfficeRequestedAt DateTime?
+
   importedAt DateTime @default(now())
 }
