@@ -647,7 +647,7 @@ async function downloadPDF() {
     const pdf = new jsPDF({ orientation:'portrait', unit:'mm', format:'a4' });
     const pages = document.querySelectorAll('.page');
     for (let i = 0; i < pages.length; i++) {
-      const canvas = await html2canvas(pages[i], { scale:2, useCORS:true, backgroundColor:'#ffffff', scrollX:0, scrollY:0 });
+      const canvas = await html2canvas(pages[i], { scale:2, useCORS:true, allowTaint:true, backgroundColor:'#ffffff', scrollX:0, scrollY:0 });
       const img = canvas.toDataURL('image/jpeg', 0.92);
       const pdfH = (canvas.height * 210) / canvas.width;
       if (i > 0) pdf.addPage();
@@ -688,7 +688,7 @@ async function buildPdfBase64() {
   const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
   const pages = document.querySelectorAll('.page');
   for (let i = 0; i < pages.length; i++) {
-    const canvas = await html2canvas(pages[i], { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollX: 0, scrollY: 0 });
+    const canvas = await html2canvas(pages[i], { scale: 2, useCORS: true, allowTaint: true, backgroundColor: '#ffffff', scrollX: 0, scrollY: 0 });
     const img = canvas.toDataURL('image/jpeg', 0.92);
     const pdfH = (canvas.height * 210) / canvas.width;
     if (i > 0) pdf.addPage();
@@ -700,7 +700,7 @@ async function buildPdfBase64() {
 async function sendToPartner() {
   const btn = document.getElementById('btnSendPartner');
   const name = (document.querySelector('[name="cust_name"]')?.value || '').trim() || '(שם לא צוין)';
-  const phoneDigits = (document.querySelector('[name="ph1"]')?.value || '').trim();
+  const phoneDigits = normalizeLocalPhone(document.querySelector('[name="ph1"]')?.value || '');
   const phone = phoneDigits ? '05' + phoneDigits : '(מספר לא צוין)';
   const sim = (document.getElementById('sim_number_for_email')?.value || '').trim() || '(מספר סים לא צוין)';
 

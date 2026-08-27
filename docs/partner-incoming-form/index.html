@@ -610,7 +610,7 @@ async function buildPdfBase64() {
 async function sendToPartner() {
   const btn = document.getElementById('btnSendPartner');
   const name = (document.getElementById('s_name')?.value || '').trim() || '(שם לא צוין)';
-  const phoneDigits = (document.getElementById('line1_phone')?.value || '').trim();
+  const phoneDigits = normalizeLocalPhone(document.getElementById('line1_phone')?.value || '');
   const phone = phoneDigits ? '05' + phoneDigits : '(מספר לא צוין)';
 
   btn.disabled = true; btn.textContent = 'שולח…';
