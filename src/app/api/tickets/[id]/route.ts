@@ -18,7 +18,7 @@ export async function PATCH(req: NextRequest, { params }: { params: { id: string
   }
 
   if (action === "set-delivered") {
-    const updated = await prisma.ticket.update({
+    let updated = await prisma.ticket.update({
       where: { id: ticket.id },
       data: { delivered: true },
     });
@@ -38,7 +38,7 @@ export async function PATCH(req: NextRequest, { params }: { params: { id: string
         blocks: mobileLineSetupBlocks(ticket.id, name, deviceType),
         triggerType: "MOBILE_LINE_SETUP",
       });
-      await prisma.ticket.update({
+      updated = await prisma.ticket.update({
         where: { id: ticket.id },
         data: { deliveredNotifiedAt: new Date() },
       });
