@@ -145,6 +145,11 @@ model Ticket {
   // when the delivered-device Slack flow's employee picks that option.
   simNumber String?
 
+  // MOBILE_DEVICE_REQUEST only. Set the first time the daily job sees this
+  // ticket, right after the "order received" Slack ack is sent — guards
+  // against re-sending on every subsequent daily run.
+  orderReceivedNotifiedAt DateTime?
+
   // Set when Roy checks "Delivered" on a MOBILE_DEVICE_REQUEST row.
   // deliveredNotifiedAt guards against re-sending the line-setup Slack
   // message if the checkbox is toggled more than once.

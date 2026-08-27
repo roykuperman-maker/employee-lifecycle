@@ -159,10 +159,8 @@ Thank you,
 T4i Israel team`;
 }
 
-// --- DEACTIVATED: written per Roy's copy but not wired anywhere yet. ---
-// He'll give trigger instructions later (depends on order/ticket state this
-// app doesn't track yet).
-
+// ACTIVE — fires once per MOBILE_DEVICE_REQUEST ticket, the first time the
+// daily job sees it. See checkMobileOrderReceivedAlerts in src/lib/jobs.ts.
 export function mobileOrderReceivedAlert(fullName: string, deviceType: string): string {
   return `Hi ${fullName},
 

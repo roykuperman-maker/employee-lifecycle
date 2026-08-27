@@ -11,6 +11,7 @@ import {
   orientationCalendarInvite,
   endOfEmploymentFte,
   endOfEmploymentCwOsp,
+  mobileOrderReceivedAlert,
 } from "@/lib/alertTemplates";
 
 const SUNDAY = 0;
@@ -225,6 +226,32 @@ async function checkOffboardMilestones(today: Date) {
   }
 }
 
+// Fires once per MOBILE_DEVICE_REQUEST ticket, the first time this job sees
+// it — an "order received" ack. Not requestType-restricted (a refresh is
+// still an order), unlike the delivered-device line-setup flow.
+async function checkMobileOrderReceivedAlerts() {
+  const tickets = await prisma.ticket.findMany({
+    where: {
+      category: "MOBILE_DEVICE_REQUEST",
+      orderReceivedNotifiedAt: null,
+      requesterEmail: { not: null },
+    },
+  });
+
+  for (const ticket of tickets) {
+    await sendSlackDM({
+      to: ticket.requesterEmail!,
+      body: mobileOrderReceivedAlert(ticket.requesterName || "there", ticket.deviceType || "your mobile device"),
+      triggerType: "MOBILE_ORDER_RECEIVED_ALERT",
+    });
+
+    await prisma.ticket.update({
+      where: { id: ticket.id },
+      data: { orderReceivedNotifiedAt: new Date() },
+    });
+  }
+}
+
 export async function runDailyChecks(today: Date = new Date()) {
   await checkHardwarePrepReminders(today);
   await checkLaptopRefreshEligibility(today);
@@ -233,6 +260,7 @@ export async function runDailyChecks(today: Date = new Date()) {
   await checkMobileRefreshAlert(today);
   await checkMobileReturnReminders(today);
   await checkOffboardMilestones(today);
+  await checkMobileOrderReceivedAlerts();
 }
 
 // 11am-Israel job: new-hire welcome links + simulated orientation invite.
