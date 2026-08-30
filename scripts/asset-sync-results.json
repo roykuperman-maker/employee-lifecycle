@@ -1,416 +1,2497 @@
 [
-  {"assetTag":"A331225","installStatus":"1","displayName":"A331225 - Apple Computer Inc MacBook Pro 15\""},
-  {"assetTag":"A331210","installStatus":"1","displayName":"A331210 - Lenovo Group Ltd ThinkPad T480s"},
-  {"assetTag":"IL00272","installStatus":"1","displayName":"IL00272 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"A331233","installStatus":"1","displayName":"A331233 - Lenovo Group Ltd ThinkPad T480s"},
-  {"assetTag":"A372379","installStatus":"1","displayName":"A372379 - Apple Computer Inc MacBook Pro 15\""},
-  {"assetTag":"I00049","installStatus":"1","displayName":"I00049 - Lenovo Group Ltd ThinkPad P52"},
-  {"assetTag":"IL00294","installStatus":"1","displayName":"IL00294 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"},
-  {"assetTag":"A331239","installStatus":"1","displayName":"A331239 - Lenovo Group Ltd ThinkPad T480s"},
-  {"assetTag":"IL01114","installStatus":"1","displayName":"IL01114 - Lenovo Group Ltd ThinkPad P1 Gen 6"},
-  {"assetTag":"IL00242","installStatus":"1","displayName":"IL00242 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"},
-  {"assetTag":"IL00383","installStatus":"1","displayName":"IL00383 - Lenovo Group Ltd ThinkPad P1 Gen 1"},
-  {"assetTag":"M01048","installStatus":"1","displayName":"M01048 - Lenovo Group Ltd ThinkPad T14s"},
-  {"assetTag":"M01064","installStatus":"1","displayName":"M01064 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"M01074","installStatus":"1","displayName":"M01074 - Lenovo Group Ltd ThinkPad T14s"},
-  {"assetTag":"A331243","installStatus":"1","displayName":"A331243 - Lenovo Group Ltd ThinkPad T480s"},
-  {"assetTag":"A331268","installStatus":"1","displayName":"A331268 - Apple Computer Inc MacBook Pro 15\""},
-  {"assetTag":"A330941","installStatus":"1","displayName":"A330941 - Lenovo Group Ltd ThinkCentre M900"},
-  {"assetTag":"A331115","installStatus":"1","displayName":"A331115 - Lenovo Group Ltd ThinkPad P50"},
-  {"assetTag":"A331124","installStatus":"1","displayName":"A331124 - Lenovo Group Ltd ThinkCentre M900"},
-  {"assetTag":"a331044","installStatus":"1","displayName":"a331044 - Lenovo Group Ltd ThinkCentre M93 P"},
-  {"assetTag":"A331146","installStatus":"1","displayName":"A331146 - Lenovo Group Ltd ThinkCentre M900"},
-  {"assetTag":"A331149","installStatus":"1","displayName":"A331149 - Lenovo Group Ltd ThinkCentre M900"},
-  {"assetTag":"I00066","installStatus":"1","displayName":"I00066 - Lenovo Group Ltd ThinkCentre M52"},
-  {"assetTag":"IL01261","installStatus":"1","displayName":"IL01261 - Lenovo Group Ltd ThinkPad P1 Gen 7"},
-  {"assetTag":"IL01305","installStatus":"1","displayName":"IL01305 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"},
-
-  {"assetTag":"IL01355","installStatus":"1","displayName":"IL01355 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01537","installStatus":"1","displayName":"IL01537 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"I00093","installStatus":"1","displayName":"I00093 - Apple Computer Inc MacBook Pro 16\""},
-  {"assetTag":"IL01436","installStatus":"1","displayName":"IL01436 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01013","installStatus":"1","displayName":"IL01013 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01397","installStatus":"1","displayName":"IL01397 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"M01045","installStatus":"1","displayName":"M01045 - Lenovo Group Ltd ThinkPad T14s"},
-  {"assetTag":"IL00360","installStatus":"1","displayName":"IL00360 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL01120","installStatus":"1","displayName":"IL01120 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01259","installStatus":"1","displayName":"IL01259 - Lenovo Group Ltd ThinkPad P1 Gen 7"},
-  {"assetTag":"IL01536","installStatus":"1","displayName":"IL01536 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01225","installStatus":"1","displayName":"IL01225 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01046","installStatus":"1","displayName":"IL01046 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"I00179","installStatus":"1","displayName":"I00179 - Lenovo Group Ltd ThinkPad T14s"},
-  {"assetTag":"IL01215","installStatus":"1","displayName":"IL01215 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL00492","installStatus":"1","displayName":"IL00492 - Apple Computer Inc MacBook M2 Pro (14\" 32GB)"},
-  {"assetTag":"IL01275","installStatus":"1","displayName":"IL01275 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL00162","installStatus":"1","displayName":"IL00162 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL01338","installStatus":"14","displayName":"IL01338 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL00182","installStatus":"1","displayName":"IL00182 - Apple Computer Inc MacBook Pro 14\""},
-  {"assetTag":"IL00202","installStatus":"1","displayName":"IL00202 - Lenovo Group Ltd ThinkPad T14s"},
-  {"assetTag":"A331271","installStatus":"1","displayName":"A331271 - Apple Computer Inc MacBook Pro 15\""},
-  {"assetTag":"A372435","installStatus":"1","displayName":"A372435 - Lenovo Group Ltd ThinkStation P330"},
-  {"assetTag":"I00075","installStatus":"1","displayName":"I00075 - Apple Computer Inc MacBook Pro 16\""},
-  {"assetTag":"IL01205","installStatus":"1","displayName":"IL01205 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-
-  {"assetTag":"IL01113","installStatus":"1","displayName":"IL01113 - Lenovo Group Ltd ThinkPad P1 Gen 6"},
-  {"assetTag":"IL00496","installStatus":"1","displayName":"IL00496 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"I00081","installStatus":"1","displayName":"I00081 - Apple Computer Inc MacBook Pro 16\""},
-  {"assetTag":"I00127","installStatus":"1","displayName":"I00127 - Apple Computer Inc MacBook Pro 13\""},
-  {"assetTag":"IL01485","installStatus":"1","displayName":"IL01485 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"},
-  {"assetTag":"I00191","installStatus":"1","displayName":"I00191 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"I00195","installStatus":"1","displayName":"I00195 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL00088","installStatus":"1","displayName":"IL00088 - Apple Computer Inc MacBook Pro 13\""},
-  {"assetTag":"IL01188","installStatus":"1","displayName":"IL01188 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL00122","installStatus":"1","displayName":"IL00122 - Apple Computer Inc MacBook Pro 16\""},
-  {"assetTag":"IL00164","installStatus":"1","displayName":"IL00164 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"A372437","installStatus":"1","displayName":"A372437 - Lenovo Group Ltd ThinkPad T480s"},
-  {"assetTag":"IL00173","installStatus":"1","displayName":"IL00173 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00888","installStatus":"1","displayName":"IL00888 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"a372408","installStatus":"1","displayName":"a372408 - Apple Computer Inc MacBook Pro 15\""},
-  {"assetTag":"I00053","installStatus":"1","displayName":"I00053 - Lenovo Group Ltd ThinkPad T490s"},
-  {"assetTag":"I00140","installStatus":"1","displayName":"I00140 - Lenovo Group Ltd ThinkPad P1 Gen 1"},
-  {"assetTag":"IL00074","installStatus":"1","displayName":"IL00074 - Apple Computer Inc MacBook Pro 16\""},
-  {"assetTag":"IL00165","installStatus":"12","displayName":"IL00165 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL01289","installStatus":"1","displayName":"IL01289 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01400","installStatus":"1","displayName":"IL01400 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01498","installStatus":"1","displayName":"IL01498 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"},
-  {"assetTag":"IL01386","installStatus":"14","displayName":"IL01386 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"},
-  {"assetTag":"IL01277","installStatus":"1","displayName":"IL01277 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01671","installStatus":"1","displayName":"IL01671 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-
-  {"assetTag":"IL00268","installStatus":"1","displayName":"IL00268 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"},
-  {"assetTag":"IL00315","installStatus":"1","displayName":"IL00315 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00327","installStatus":"1","displayName":"IL00327 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00221","installStatus":"1","displayName":"IL00221 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00248","installStatus":"1","displayName":"IL00248 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00299","installStatus":"1","displayName":"IL00299 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"},
-  {"assetTag":"IL00274","installStatus":"1","displayName":"IL00274 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00255","installStatus":"1","displayName":"IL00255 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00309","installStatus":"1","displayName":"IL00309 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00260","installStatus":"1","displayName":"IL00260 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL01799","installStatus":"1","displayName":"IL01799 - Lenovo Group Ltd ThinkPad T14s Gen 6"},
-  {"assetTag":"IL00293","installStatus":"1","displayName":"IL00293 - Apple Computer Inc MacBook M1 Pro (16\" 32GB)"},
-  {"assetTag":"IL00285","installStatus":"1","displayName":"IL00285 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00269","installStatus":"12","displayName":"IL00269 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"},
-  {"assetTag":"IL00308","installStatus":"1","displayName":"IL00308 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00334","installStatus":"1","displayName":"IL00334 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00313","installStatus":"1","displayName":"IL00313 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00236","installStatus":"1","displayName":"IL00236 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00219","installStatus":"1","displayName":"IL00219 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00214","installStatus":"1","displayName":"IL00214 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00300","installStatus":"1","displayName":"IL00300 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"},
-  {"assetTag":"IL00341","installStatus":"1","displayName":"IL00341 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL00320","installStatus":"1","displayName":"IL00320 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00247","installStatus":"1","displayName":"IL00247 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL01319","installStatus":"1","displayName":"IL01319 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-
-  {"assetTag":"IL00426","installStatus":"1","displayName":"IL00426 - Lenovo Group Ltd ThinkPad T14s Gen 2"},
-  {"assetTag":"IL00373","installStatus":"1","displayName":"IL00373 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL01522","installStatus":"1","displayName":"IL01522 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL00503","installStatus":"1","displayName":"IL00503 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL01318","installStatus":"1","displayName":"IL01318 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL00424","installStatus":"1","displayName":"IL00424 - Lenovo Group Ltd ThinkPad T14s Gen 2"},
-  {"assetTag":"IL00423","installStatus":"1","displayName":"IL00423 - Lenovo Group Ltd ThinkPad T14s Gen 2"},
-  {"assetTag":"IL00510","installStatus":"1","displayName":"IL00510 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00447","installStatus":"1","displayName":"IL00447 - Lenovo Group Ltd ThinkPad T14s Gen 2"},
-  {"assetTag":"IL00420","installStatus":"1","displayName":"IL00420 - Lenovo Group Ltd ThinkPad P1 Gen 4"},
-  {"assetTag":"IL00416","installStatus":"1","displayName":"IL00416 - Lenovo Group Ltd ThinkPad T14s Gen 2"},
-  {"assetTag":"IL00297","installStatus":"1","displayName":"IL00297 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"},
-  {"assetTag":"IL00381","installStatus":"1","displayName":"IL00381 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL00475","installStatus":"1","displayName":"IL00475 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"},
-  {"assetTag":"IL00425","installStatus":"1","displayName":"IL00425 - Lenovo Group Ltd ThinkPad T14s Gen 2"},
-  {"assetTag":"IL00369","installStatus":"1","displayName":"IL00369 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL00258","installStatus":"1","displayName":"IL00258 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00359","installStatus":"1","displayName":"IL00359 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00362","installStatus":"1","displayName":"IL00362 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL00346","installStatus":"1","displayName":"IL00346 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00365","installStatus":"1","displayName":"IL00365 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL01512","installStatus":"1","displayName":"IL01512 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01404","installStatus":"1","displayName":"IL01404 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL00347","installStatus":"1","displayName":"IL00347 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-
-  {"assetTag":"IL00535","installStatus":"1","displayName":"IL00535 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00516","installStatus":"1","displayName":"IL00516 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"},
-  {"assetTag":"IL00533","installStatus":"1","displayName":"IL00533 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00527","installStatus":"1","displayName":"IL00527 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00488","installStatus":"1","displayName":"IL00488 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL01525","installStatus":"1","displayName":"IL01525 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL00502","installStatus":"1","displayName":"IL00502 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00440","installStatus":"1","displayName":"IL00440 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"},
-  {"assetTag":"IL00505","installStatus":"1","displayName":"IL00505 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL01520","installStatus":"1","displayName":"IL01520 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL00536","installStatus":"1","displayName":"IL00536 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00498","installStatus":"1","displayName":"IL00498 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00382","installStatus":"1","displayName":"IL00382 - Lenovo Group Ltd ThinkPad P1 Gen 1"},
-  {"assetTag":"IL00518","installStatus":"1","displayName":"IL00518 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"},
-  {"assetTag":"IL00512","installStatus":"1","displayName":"IL00512 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"},
-  {"assetTag":"IL00509","installStatus":"1","displayName":"IL00509 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00377","installStatus":"1","displayName":"IL00377 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"},
-  {"assetTag":"IL00508","installStatus":"1","displayName":"IL00508 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL01307","installStatus":"1","displayName":"IL01307 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL00534","installStatus":"1","displayName":"IL00534 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00529","installStatus":"1","displayName":"IL00529 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00486","installStatus":"1","displayName":"IL00486 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL01381","installStatus":"1","displayName":"IL01381 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL00473","installStatus":"1","displayName":"IL00473 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00482","installStatus":"1","displayName":"IL00482 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-
-  {"assetTag":"IL00578","installStatus":"1","displayName":"IL00578 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00591","installStatus":"1","displayName":"IL00591 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00575","installStatus":"1","displayName":"IL00575 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00584","installStatus":"1","displayName":"IL00584 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00561","installStatus":"1","displayName":"IL00561 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00542","installStatus":"1","displayName":"IL00542 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00565","installStatus":"1","displayName":"IL00565 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00596","installStatus":"1","displayName":"IL00596 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00592","installStatus":"1","displayName":"IL00592 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00597","installStatus":"1","displayName":"IL00597 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00557","installStatus":"1","displayName":"IL00557 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00563","installStatus":"1","displayName":"IL00563 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00567","installStatus":"1","displayName":"IL00567 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00583","installStatus":"1","displayName":"IL00583 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00588","installStatus":"1","displayName":"IL00588 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00589","installStatus":"1","displayName":"IL00589 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00576","installStatus":"1","displayName":"IL00576 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00569","installStatus":"1","displayName":"IL00569 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00595","installStatus":"1","displayName":"IL00595 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00570","installStatus":"1","displayName":"IL00570 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00539","installStatus":"1","displayName":"IL00539 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00577","installStatus":"1","displayName":"IL00577 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00541","installStatus":"1","displayName":"IL00541 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00568","installStatus":"1","displayName":"IL00568 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00545","installStatus":"1","displayName":"IL00545 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-
-  {"assetTag":"IL00881","installStatus":"1","displayName":"IL00881 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00834","installStatus":"1","displayName":"IL00834 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00818","installStatus":"1","displayName":"IL00818 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00601","installStatus":"1","displayName":"IL00601 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00833","installStatus":"1","displayName":"IL00833 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00610","installStatus":"1","displayName":"IL00610 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00839","installStatus":"1","displayName":"IL00839 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00837","installStatus":"1","displayName":"IL00837 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00810","installStatus":"1","displayName":"IL00810 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00847","installStatus":"1","displayName":"IL00847 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00602","installStatus":"1","displayName":"IL00602 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00849","installStatus":"1","displayName":"IL00849 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00850","installStatus":"1","displayName":"IL00850 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01497","installStatus":"1","displayName":"IL01497 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"},
-  {"assetTag":"IL00819","installStatus":"1","displayName":"IL00819 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00809","installStatus":"1","displayName":"IL00809 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00817","installStatus":"1","displayName":"IL00817 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00525","installStatus":"1","displayName":"IL00525 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00609","installStatus":"1","displayName":"IL00609 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00585","installStatus":"1","displayName":"IL00585 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"},
-  {"assetTag":"IL00608","installStatus":"1","displayName":"IL00608 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00603","installStatus":"1","displayName":"IL00603 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"},
-  {"assetTag":"IL00835","installStatus":"1","displayName":"IL00835 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00848","installStatus":"1","displayName":"IL00848 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00838","installStatus":"1","displayName":"IL00838 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-
-  {"assetTag":"IL00891","installStatus":"1","displayName":"IL00891 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00913","installStatus":"1","displayName":"IL00913 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00914","installStatus":"1","displayName":"IL00914 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00909","installStatus":"14","displayName":"IL00909 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"},
-  {"assetTag":"IL00902","installStatus":"1","displayName":"IL00902 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL00897","installStatus":"1","displayName":"IL00897 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00901","installStatus":"1","displayName":"IL00901 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL00894","installStatus":"1","displayName":"IL00894 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00883","installStatus":"1","displayName":"IL00883 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00893","installStatus":"1","displayName":"IL00893 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00898","installStatus":"1","displayName":"IL00898 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00896","installStatus":"1","displayName":"IL00896 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00892","installStatus":"1","displayName":"IL00892 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00911","installStatus":"1","displayName":"IL00911 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00900","installStatus":"1","displayName":"IL00900 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00912","installStatus":"1","displayName":"IL00912 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00890","installStatus":"1","displayName":"IL00890 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00886","installStatus":"1","displayName":"IL00886 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00916","installStatus":"1","displayName":"IL00916 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00884","installStatus":"1","displayName":"IL00884 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00917","installStatus":"1","displayName":"IL00917 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00885","installStatus":"1","displayName":"IL00885 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00889","installStatus":"1","displayName":"IL00889 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL00904","installStatus":"1","displayName":"IL00904 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL00910","installStatus":"1","displayName":"IL00910 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"},
-
-  {"assetTag":"IL01056","installStatus":"1","displayName":"IL01056 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01042","installStatus":"1","displayName":"IL01042 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01017","installStatus":"1","displayName":"IL01017 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01027","installStatus":"1","displayName":"IL01027 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01026","installStatus":"1","displayName":"IL01026 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01048","installStatus":"1","displayName":"IL01048 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01049","installStatus":"1","displayName":"IL01049 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01032","installStatus":"1","displayName":"IL01032 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL00919","installStatus":"1","displayName":"IL00919 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01039","installStatus":"1","displayName":"IL01039 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01021","installStatus":"1","displayName":"IL01021 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01018","installStatus":"1","displayName":"IL01018 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01051","installStatus":"1","displayName":"IL01051 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01055","installStatus":"1","displayName":"IL01055 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01038","installStatus":"1","displayName":"IL01038 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01015","installStatus":"1","displayName":"IL01015 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01053","installStatus":"1","displayName":"IL01053 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01024","installStatus":"1","displayName":"IL01024 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01030","installStatus":"1","displayName":"IL01030 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01011","installStatus":"1","displayName":"IL01011 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01035","installStatus":"1","displayName":"IL01035 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01020","installStatus":"1","displayName":"IL01020 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01012","installStatus":"1","displayName":"IL01012 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01060","installStatus":"1","displayName":"IL01060 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01022","installStatus":"1","displayName":"IL01022 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-
-  {"assetTag":"IL01092","installStatus":"1","displayName":"IL01092 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01084","installStatus":"1","displayName":"IL01084 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01106","installStatus":"1","displayName":"IL01106 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01109","installStatus":"1","displayName":"IL01109 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01089","installStatus":"1","displayName":"IL01089 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01117","installStatus":"1","displayName":"IL01117 - Lenovo Group Ltd ThinkPad P1 Gen 6"},
-  {"assetTag":"IL01126","installStatus":"1","displayName":"IL01126 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01122","installStatus":"1","displayName":"IL01122 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01079","installStatus":"1","displayName":"IL01079 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01080","installStatus":"1","displayName":"IL01080 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01081","installStatus":"1","displayName":"IL01081 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01112","installStatus":"1","displayName":"IL01112 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01090","installStatus":"1","displayName":"IL01090 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01249","installStatus":"1","displayName":"IL01249 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01125","installStatus":"1","displayName":"IL01125 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01104","installStatus":"1","displayName":"IL01104 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01101","installStatus":"1","displayName":"IL01101 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"},
-  {"assetTag":"IL01094","installStatus":"1","displayName":"IL01094 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01516","installStatus":"12","displayName":"IL01516 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01086","installStatus":"1","displayName":"IL01086 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01110","installStatus":"1","displayName":"IL01110 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-  {"assetTag":"IL01093","installStatus":"1","displayName":"IL01093 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01085","installStatus":"1","displayName":"IL01085 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01096","installStatus":"1","displayName":"IL01096 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01044","installStatus":"1","displayName":"IL01044 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"},
-
-  {"assetTag":"IL01202","installStatus":"1","displayName":"IL01202 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01179","installStatus":"1","displayName":"IL01179 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01173","installStatus":"1","displayName":"IL01173 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01176","installStatus":"1","displayName":"IL01176 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01185","installStatus":"1","displayName":"IL01185 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01198","installStatus":"1","displayName":"IL01198 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01175","installStatus":"1","displayName":"IL01175 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01183","installStatus":"1","displayName":"IL01183 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01197","installStatus":"1","displayName":"IL01197 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01207","installStatus":"1","displayName":"IL01207 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01199","installStatus":"1","displayName":"IL01199 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01171","installStatus":"1","displayName":"IL01171 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"},
-  {"assetTag":"IL01123","installStatus":"1","displayName":"IL01123 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01201","installStatus":"1","displayName":"IL01201 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01129","installStatus":"1","displayName":"IL01129 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"},
-  {"assetTag":"IL01193","installStatus":"1","displayName":"IL01193 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01194","installStatus":"1","displayName":"IL01194 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01180","installStatus":"1","displayName":"IL01180 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01196","installStatus":"1","displayName":"IL01196 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01209","installStatus":"1","displayName":"IL01209 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01208","installStatus":"1","displayName":"IL01208 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01103","installStatus":"1","displayName":"IL01103 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01210","installStatus":"1","displayName":"IL01210 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01127","installStatus":"1","displayName":"IL01127 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"},
-  {"assetTag":"IL01203","installStatus":"1","displayName":"IL01203 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-
-  {"assetTag":"IL01216","installStatus":"1","displayName":"IL01216 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01228","installStatus":"1","displayName":"IL01228 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01217","installStatus":"1","displayName":"IL01217 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01221","installStatus":"1","displayName":"IL01221 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01230","installStatus":"1","displayName":"IL01230 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01220","installStatus":"1","displayName":"IL01220 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01237","installStatus":"1","displayName":"IL01237 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01218","installStatus":"1","displayName":"IL01218 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01252","installStatus":"1","displayName":"IL01252 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01234","installStatus":"1","displayName":"IL01234 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01229","installStatus":"1","displayName":"IL01229 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01233","installStatus":"1","displayName":"IL01233 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01243","installStatus":"1","displayName":"IL01243 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01242","installStatus":"1","displayName":"IL01242 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01238","installStatus":"1","displayName":"IL01238 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01223","installStatus":"1","displayName":"IL01223 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01212","installStatus":"1","displayName":"IL01212 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01248","installStatus":"1","displayName":"IL01248 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01244","installStatus":"1","displayName":"IL01244 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01236","installStatus":"1","displayName":"IL01236 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01235","installStatus":"1","displayName":"IL01235 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01232","installStatus":"1","displayName":"IL01232 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01247","installStatus":"1","displayName":"IL01247 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01222","installStatus":"1","displayName":"IL01222 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01245","installStatus":"1","displayName":"IL01245 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-
-  {"assetTag":"IL01282","installStatus":"1","displayName":"IL01282 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01273","installStatus":"1","displayName":"IL01273 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01296","installStatus":"1","displayName":"IL01296 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01254","installStatus":"1","displayName":"IL01254 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01284","installStatus":"1","displayName":"IL01284 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01283","installStatus":"1","displayName":"IL01283 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01294","installStatus":"1","displayName":"IL01294 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01226","installStatus":"1","displayName":"IL01226 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01286","installStatus":"1","displayName":"IL01286 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01269","installStatus":"1","displayName":"IL01269 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01288","installStatus":"1","displayName":"IL01288 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01287","installStatus":"1","displayName":"IL01287 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01263","installStatus":"1","displayName":"IL01263 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01266","installStatus":"1","displayName":"IL01266 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01285","installStatus":"1","displayName":"IL01285 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01253","installStatus":"1","displayName":"IL01253 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01292","installStatus":"1","displayName":"IL01292 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01290","installStatus":"1","displayName":"IL01290 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01270","installStatus":"1","displayName":"IL01270 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01274","installStatus":"1","displayName":"IL01274 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01276","installStatus":"1","displayName":"IL01276 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01291","installStatus":"1","displayName":"IL01291 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01278","installStatus":"1","displayName":"IL01278 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01250","installStatus":"1","displayName":"IL01250 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01272","installStatus":"1","displayName":"IL01272 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-
-  {"assetTag":"IL01320","installStatus":"1","displayName":"IL01320 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01327","installStatus":"1","displayName":"IL01327 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01308","installStatus":"1","displayName":"IL01308 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01314","installStatus":"1","displayName":"IL01314 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01311","installStatus":"1","displayName":"IL01311 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01299","installStatus":"1","displayName":"IL01299 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01331","installStatus":"1","displayName":"IL01331 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01298","installStatus":"1","displayName":"IL01298 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01323","installStatus":"1","displayName":"IL01323 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01321","installStatus":"1","displayName":"IL01321 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01329","installStatus":"1","displayName":"IL01329 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01328","installStatus":"1","displayName":"IL01328 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01310","installStatus":"1","displayName":"IL01310 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01316","installStatus":"1","displayName":"IL01316 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01325","installStatus":"1","displayName":"IL01325 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01335","installStatus":"1","displayName":"IL01335 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01309","installStatus":"1","displayName":"IL01309 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01322","installStatus":"1","displayName":"IL01322 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01324","installStatus":"1","displayName":"IL01324 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01332","installStatus":"1","displayName":"IL01332 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01336","installStatus":"1","displayName":"IL01336 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01312","installStatus":"1","displayName":"IL01312 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01300","installStatus":"1","displayName":"IL01300 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01315","installStatus":"1","displayName":"IL01315 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"},
-  {"assetTag":"IL01330","installStatus":"1","displayName":"IL01330 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-
-  {"assetTag":"IL01357","installStatus":"1","displayName":"IL01357 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01349","installStatus":"1","displayName":"IL01349 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01351","installStatus":"1","displayName":"IL01351 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01344","installStatus":"1","displayName":"IL01344 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01363","installStatus":"1","displayName":"IL01363 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01354","installStatus":"1","displayName":"IL01354 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01348","installStatus":"1","displayName":"IL01348 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01372","installStatus":"1","displayName":"IL01372 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"},
-  {"assetTag":"IL01366","installStatus":"1","displayName":"IL01366 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01383","installStatus":"1","displayName":"IL01383 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01360","installStatus":"1","displayName":"IL01360 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01337","installStatus":"1","displayName":"IL01337 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01364","installStatus":"1","displayName":"IL01364 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01358","installStatus":"1","displayName":"IL01358 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01384","installStatus":"1","displayName":"IL01384 - Lenovo Group Ltd ThinkPad T14s Gen 5"},
-  {"assetTag":"IL01368","installStatus":"1","displayName":"IL01368 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01343","installStatus":"1","displayName":"IL01343 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01353","installStatus":"1","displayName":"IL01353 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01370","installStatus":"1","displayName":"IL01370 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01345","installStatus":"1","displayName":"IL01345 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01352","installStatus":"1","displayName":"IL01352 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01369","installStatus":"1","displayName":"IL01369 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"},
-  {"assetTag":"IL01347","installStatus":"1","displayName":"IL01347 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01356","installStatus":"1","displayName":"IL01356 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"},
-  {"assetTag":"IL01365","installStatus":"1","displayName":"IL01365 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"}
+  {
+    "assetTag": "A331225",
+    "installStatus": "1",
+    "displayName": "A331225 - Apple Computer Inc MacBook Pro 15\""
+  },
+  {
+    "assetTag": "A331210",
+    "installStatus": "1",
+    "displayName": "A331210 - Lenovo Group Ltd ThinkPad T480s"
+  },
+  {
+    "assetTag": "IL00272",
+    "installStatus": "1",
+    "displayName": "IL00272 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "A331233",
+    "installStatus": "1",
+    "displayName": "A331233 - Lenovo Group Ltd ThinkPad T480s"
+  },
+  {
+    "assetTag": "A372379",
+    "installStatus": "1",
+    "displayName": "A372379 - Apple Computer Inc MacBook Pro 15\""
+  },
+  {
+    "assetTag": "I00049",
+    "installStatus": "1",
+    "displayName": "I00049 - Lenovo Group Ltd ThinkPad P52"
+  },
+  {
+    "assetTag": "IL00294",
+    "installStatus": "1",
+    "displayName": "IL00294 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "A331239",
+    "installStatus": "1",
+    "displayName": "A331239 - Lenovo Group Ltd ThinkPad T480s"
+  },
+  {
+    "assetTag": "IL01114",
+    "installStatus": "1",
+    "displayName": "IL01114 - Lenovo Group Ltd ThinkPad P1 Gen 6"
+  },
+  {
+    "assetTag": "IL00242",
+    "installStatus": "1",
+    "displayName": "IL00242 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL00383",
+    "installStatus": "1",
+    "displayName": "IL00383 - Lenovo Group Ltd ThinkPad P1 Gen 1"
+  },
+  {
+    "assetTag": "M01048",
+    "installStatus": "1",
+    "displayName": "M01048 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "M01064",
+    "installStatus": "1",
+    "displayName": "M01064 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "M01074",
+    "installStatus": "1",
+    "displayName": "M01074 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "A331243",
+    "installStatus": "1",
+    "displayName": "A331243 - Lenovo Group Ltd ThinkPad T480s"
+  },
+  {
+    "assetTag": "A331268",
+    "installStatus": "1",
+    "displayName": "A331268 - Apple Computer Inc MacBook Pro 15\""
+  },
+  {
+    "assetTag": "A330941",
+    "installStatus": "1",
+    "displayName": "A330941 - Lenovo Group Ltd ThinkCentre M900"
+  },
+  {
+    "assetTag": "A331115",
+    "installStatus": "1",
+    "displayName": "A331115 - Lenovo Group Ltd ThinkPad P50"
+  },
+  {
+    "assetTag": "A331124",
+    "installStatus": "1",
+    "displayName": "A331124 - Lenovo Group Ltd ThinkCentre M900"
+  },
+  {
+    "assetTag": "a331044",
+    "installStatus": "1",
+    "displayName": "a331044 - Lenovo Group Ltd ThinkCentre M93 P"
+  },
+  {
+    "assetTag": "A331146",
+    "installStatus": "1",
+    "displayName": "A331146 - Lenovo Group Ltd ThinkCentre M900"
+  },
+  {
+    "assetTag": "A331149",
+    "installStatus": "1",
+    "displayName": "A331149 - Lenovo Group Ltd ThinkCentre M900"
+  },
+  {
+    "assetTag": "I00066",
+    "installStatus": "1",
+    "displayName": "I00066 - Lenovo Group Ltd ThinkCentre M52"
+  },
+  {
+    "assetTag": "IL01261",
+    "installStatus": "1",
+    "displayName": "IL01261 - Lenovo Group Ltd ThinkPad P1 Gen 7"
+  },
+  {
+    "assetTag": "IL01305",
+    "installStatus": "1",
+    "displayName": "IL01305 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01355",
+    "installStatus": "1",
+    "displayName": "IL01355 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01537",
+    "installStatus": "1",
+    "displayName": "IL01537 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "I00093",
+    "installStatus": "1",
+    "displayName": "I00093 - Apple Computer Inc MacBook Pro 16\""
+  },
+  {
+    "assetTag": "IL01436",
+    "installStatus": "1",
+    "displayName": "IL01436 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01013",
+    "installStatus": "1",
+    "displayName": "IL01013 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01397",
+    "installStatus": "1",
+    "displayName": "IL01397 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "M01045",
+    "installStatus": "1",
+    "displayName": "M01045 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "IL00360",
+    "installStatus": "1",
+    "displayName": "IL00360 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01120",
+    "installStatus": "1",
+    "displayName": "IL01120 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01259",
+    "installStatus": "1",
+    "displayName": "IL01259 - Lenovo Group Ltd ThinkPad P1 Gen 7"
+  },
+  {
+    "assetTag": "IL01536",
+    "installStatus": "1",
+    "displayName": "IL01536 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01225",
+    "installStatus": "1",
+    "displayName": "IL01225 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01046",
+    "installStatus": "1",
+    "displayName": "IL01046 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "I00179",
+    "installStatus": "1",
+    "displayName": "I00179 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "IL01215",
+    "installStatus": "1",
+    "displayName": "IL01215 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00492",
+    "installStatus": "1",
+    "displayName": "IL00492 - Apple Computer Inc MacBook M2 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL01275",
+    "installStatus": "1",
+    "displayName": "IL01275 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00162",
+    "installStatus": "1",
+    "displayName": "IL00162 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01338",
+    "installStatus": "14",
+    "displayName": "IL01338 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00182",
+    "installStatus": "1",
+    "displayName": "IL00182 - Apple Computer Inc MacBook Pro 14\""
+  },
+  {
+    "assetTag": "IL00202",
+    "installStatus": "1",
+    "displayName": "IL00202 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "A331271",
+    "installStatus": "1",
+    "displayName": "A331271 - Apple Computer Inc MacBook Pro 15\""
+  },
+  {
+    "assetTag": "A372435",
+    "installStatus": "1",
+    "displayName": "A372435 - Lenovo Group Ltd ThinkStation P330"
+  },
+  {
+    "assetTag": "I00075",
+    "installStatus": "1",
+    "displayName": "I00075 - Apple Computer Inc MacBook Pro 16\""
+  },
+  {
+    "assetTag": "IL01205",
+    "installStatus": "1",
+    "displayName": "IL01205 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01113",
+    "installStatus": "1",
+    "displayName": "IL01113 - Lenovo Group Ltd ThinkPad P1 Gen 6"
+  },
+  {
+    "assetTag": "IL00496",
+    "installStatus": "1",
+    "displayName": "IL00496 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "I00081",
+    "installStatus": "1",
+    "displayName": "I00081 - Apple Computer Inc MacBook Pro 16\""
+  },
+  {
+    "assetTag": "I00127",
+    "installStatus": "1",
+    "displayName": "I00127 - Apple Computer Inc MacBook Pro 13\""
+  },
+  {
+    "assetTag": "IL01485",
+    "installStatus": "1",
+    "displayName": "IL01485 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "I00191",
+    "installStatus": "1",
+    "displayName": "I00191 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "I00195",
+    "installStatus": "1",
+    "displayName": "I00195 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00088",
+    "installStatus": "1",
+    "displayName": "IL00088 - Apple Computer Inc MacBook Pro 13\""
+  },
+  {
+    "assetTag": "IL01188",
+    "installStatus": "1",
+    "displayName": "IL01188 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00122",
+    "installStatus": "1",
+    "displayName": "IL00122 - Apple Computer Inc MacBook Pro 16\""
+  },
+  {
+    "assetTag": "IL00164",
+    "installStatus": "1",
+    "displayName": "IL00164 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "A372437",
+    "installStatus": "1",
+    "displayName": "A372437 - Lenovo Group Ltd ThinkPad T480s"
+  },
+  {
+    "assetTag": "IL00173",
+    "installStatus": "1",
+    "displayName": "IL00173 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00888",
+    "installStatus": "1",
+    "displayName": "IL00888 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "a372408",
+    "installStatus": "1",
+    "displayName": "a372408 - Apple Computer Inc MacBook Pro 15\""
+  },
+  {
+    "assetTag": "I00053",
+    "installStatus": "1",
+    "displayName": "I00053 - Lenovo Group Ltd ThinkPad T490s"
+  },
+  {
+    "assetTag": "I00140",
+    "installStatus": "1",
+    "displayName": "I00140 - Lenovo Group Ltd ThinkPad P1 Gen 1"
+  },
+  {
+    "assetTag": "IL00074",
+    "installStatus": "1",
+    "displayName": "IL00074 - Apple Computer Inc MacBook Pro 16\""
+  },
+  {
+    "assetTag": "IL00165",
+    "installStatus": "12",
+    "displayName": "IL00165 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01289",
+    "installStatus": "1",
+    "displayName": "IL01289 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01400",
+    "installStatus": "1",
+    "displayName": "IL01400 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01498",
+    "installStatus": "1",
+    "displayName": "IL01498 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01386",
+    "installStatus": "14",
+    "displayName": "IL01386 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01277",
+    "installStatus": "1",
+    "displayName": "IL01277 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01671",
+    "installStatus": "1",
+    "displayName": "IL01671 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00268",
+    "installStatus": "1",
+    "displayName": "IL00268 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL00315",
+    "installStatus": "1",
+    "displayName": "IL00315 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00327",
+    "installStatus": "1",
+    "displayName": "IL00327 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00221",
+    "installStatus": "1",
+    "displayName": "IL00221 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00248",
+    "installStatus": "1",
+    "displayName": "IL00248 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00299",
+    "installStatus": "1",
+    "displayName": "IL00299 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL00274",
+    "installStatus": "1",
+    "displayName": "IL00274 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00255",
+    "installStatus": "1",
+    "displayName": "IL00255 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00309",
+    "installStatus": "1",
+    "displayName": "IL00309 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00260",
+    "installStatus": "1",
+    "displayName": "IL00260 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01799",
+    "installStatus": "1",
+    "displayName": "IL01799 - Lenovo Group Ltd ThinkPad T14s Gen 6"
+  },
+  {
+    "assetTag": "IL00293",
+    "installStatus": "1",
+    "displayName": "IL00293 - Apple Computer Inc MacBook M1 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00285",
+    "installStatus": "1",
+    "displayName": "IL00285 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00269",
+    "installStatus": "12",
+    "displayName": "IL00269 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL00308",
+    "installStatus": "1",
+    "displayName": "IL00308 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00334",
+    "installStatus": "1",
+    "displayName": "IL00334 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00313",
+    "installStatus": "1",
+    "displayName": "IL00313 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00236",
+    "installStatus": "1",
+    "displayName": "IL00236 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00219",
+    "installStatus": "1",
+    "displayName": "IL00219 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00214",
+    "installStatus": "1",
+    "displayName": "IL00214 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00300",
+    "installStatus": "1",
+    "displayName": "IL00300 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL00341",
+    "installStatus": "1",
+    "displayName": "IL00341 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00320",
+    "installStatus": "1",
+    "displayName": "IL00320 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00247",
+    "installStatus": "1",
+    "displayName": "IL00247 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01319",
+    "installStatus": "1",
+    "displayName": "IL01319 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00426",
+    "installStatus": "1",
+    "displayName": "IL00426 - Lenovo Group Ltd ThinkPad T14s Gen 2"
+  },
+  {
+    "assetTag": "IL00373",
+    "installStatus": "1",
+    "displayName": "IL00373 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01522",
+    "installStatus": "1",
+    "displayName": "IL01522 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00503",
+    "installStatus": "1",
+    "displayName": "IL00503 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01318",
+    "installStatus": "1",
+    "displayName": "IL01318 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00424",
+    "installStatus": "1",
+    "displayName": "IL00424 - Lenovo Group Ltd ThinkPad T14s Gen 2"
+  },
+  {
+    "assetTag": "IL00423",
+    "installStatus": "1",
+    "displayName": "IL00423 - Lenovo Group Ltd ThinkPad T14s Gen 2"
+  },
+  {
+    "assetTag": "IL00510",
+    "installStatus": "1",
+    "displayName": "IL00510 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00447",
+    "installStatus": "1",
+    "displayName": "IL00447 - Lenovo Group Ltd ThinkPad T14s Gen 2"
+  },
+  {
+    "assetTag": "IL00420",
+    "installStatus": "1",
+    "displayName": "IL00420 - Lenovo Group Ltd ThinkPad P1 Gen 4"
+  },
+  {
+    "assetTag": "IL00416",
+    "installStatus": "1",
+    "displayName": "IL00416 - Lenovo Group Ltd ThinkPad T14s Gen 2"
+  },
+  {
+    "assetTag": "IL00297",
+    "installStatus": "1",
+    "displayName": "IL00297 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL00381",
+    "installStatus": "1",
+    "displayName": "IL00381 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00475",
+    "installStatus": "1",
+    "displayName": "IL00475 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00425",
+    "installStatus": "1",
+    "displayName": "IL00425 - Lenovo Group Ltd ThinkPad T14s Gen 2"
+  },
+  {
+    "assetTag": "IL00369",
+    "installStatus": "1",
+    "displayName": "IL00369 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00258",
+    "installStatus": "1",
+    "displayName": "IL00258 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00359",
+    "installStatus": "1",
+    "displayName": "IL00359 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00362",
+    "installStatus": "1",
+    "displayName": "IL00362 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00346",
+    "installStatus": "1",
+    "displayName": "IL00346 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00365",
+    "installStatus": "1",
+    "displayName": "IL00365 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01512",
+    "installStatus": "1",
+    "displayName": "IL01512 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01404",
+    "installStatus": "1",
+    "displayName": "IL01404 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00347",
+    "installStatus": "1",
+    "displayName": "IL00347 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00535",
+    "installStatus": "1",
+    "displayName": "IL00535 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00516",
+    "installStatus": "1",
+    "displayName": "IL00516 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00533",
+    "installStatus": "1",
+    "displayName": "IL00533 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00527",
+    "installStatus": "1",
+    "displayName": "IL00527 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00488",
+    "installStatus": "1",
+    "displayName": "IL00488 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01525",
+    "installStatus": "1",
+    "displayName": "IL01525 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00502",
+    "installStatus": "1",
+    "displayName": "IL00502 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00440",
+    "installStatus": "1",
+    "displayName": "IL00440 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00505",
+    "installStatus": "1",
+    "displayName": "IL00505 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01520",
+    "installStatus": "1",
+    "displayName": "IL01520 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00536",
+    "installStatus": "1",
+    "displayName": "IL00536 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00498",
+    "installStatus": "1",
+    "displayName": "IL00498 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00382",
+    "installStatus": "1",
+    "displayName": "IL00382 - Lenovo Group Ltd ThinkPad P1 Gen 1"
+  },
+  {
+    "assetTag": "IL00518",
+    "installStatus": "1",
+    "displayName": "IL00518 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00512",
+    "installStatus": "1",
+    "displayName": "IL00512 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00509",
+    "installStatus": "1",
+    "displayName": "IL00509 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00377",
+    "installStatus": "1",
+    "displayName": "IL00377 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00508",
+    "installStatus": "1",
+    "displayName": "IL00508 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01307",
+    "installStatus": "1",
+    "displayName": "IL01307 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00534",
+    "installStatus": "1",
+    "displayName": "IL00534 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00529",
+    "installStatus": "1",
+    "displayName": "IL00529 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00486",
+    "installStatus": "1",
+    "displayName": "IL00486 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01381",
+    "installStatus": "1",
+    "displayName": "IL01381 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL00473",
+    "installStatus": "1",
+    "displayName": "IL00473 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00482",
+    "installStatus": "1",
+    "displayName": "IL00482 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00578",
+    "installStatus": "1",
+    "displayName": "IL00578 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00591",
+    "installStatus": "1",
+    "displayName": "IL00591 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00575",
+    "installStatus": "1",
+    "displayName": "IL00575 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00584",
+    "installStatus": "1",
+    "displayName": "IL00584 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00561",
+    "installStatus": "1",
+    "displayName": "IL00561 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00542",
+    "installStatus": "1",
+    "displayName": "IL00542 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00565",
+    "installStatus": "1",
+    "displayName": "IL00565 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00596",
+    "installStatus": "1",
+    "displayName": "IL00596 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00592",
+    "installStatus": "1",
+    "displayName": "IL00592 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00597",
+    "installStatus": "1",
+    "displayName": "IL00597 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00557",
+    "installStatus": "1",
+    "displayName": "IL00557 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00563",
+    "installStatus": "1",
+    "displayName": "IL00563 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00567",
+    "installStatus": "1",
+    "displayName": "IL00567 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00583",
+    "installStatus": "1",
+    "displayName": "IL00583 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00588",
+    "installStatus": "1",
+    "displayName": "IL00588 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00589",
+    "installStatus": "1",
+    "displayName": "IL00589 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00576",
+    "installStatus": "1",
+    "displayName": "IL00576 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00569",
+    "installStatus": "1",
+    "displayName": "IL00569 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00595",
+    "installStatus": "1",
+    "displayName": "IL00595 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00570",
+    "installStatus": "1",
+    "displayName": "IL00570 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00539",
+    "installStatus": "1",
+    "displayName": "IL00539 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00577",
+    "installStatus": "1",
+    "displayName": "IL00577 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00541",
+    "installStatus": "1",
+    "displayName": "IL00541 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00568",
+    "installStatus": "1",
+    "displayName": "IL00568 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00545",
+    "installStatus": "1",
+    "displayName": "IL00545 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00881",
+    "installStatus": "1",
+    "displayName": "IL00881 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00834",
+    "installStatus": "1",
+    "displayName": "IL00834 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00818",
+    "installStatus": "1",
+    "displayName": "IL00818 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00601",
+    "installStatus": "1",
+    "displayName": "IL00601 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00833",
+    "installStatus": "1",
+    "displayName": "IL00833 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00610",
+    "installStatus": "1",
+    "displayName": "IL00610 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00839",
+    "installStatus": "1",
+    "displayName": "IL00839 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00837",
+    "installStatus": "1",
+    "displayName": "IL00837 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00810",
+    "installStatus": "1",
+    "displayName": "IL00810 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00847",
+    "installStatus": "1",
+    "displayName": "IL00847 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00602",
+    "installStatus": "1",
+    "displayName": "IL00602 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00849",
+    "installStatus": "1",
+    "displayName": "IL00849 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00850",
+    "installStatus": "1",
+    "displayName": "IL00850 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01497",
+    "installStatus": "1",
+    "displayName": "IL01497 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL00819",
+    "installStatus": "1",
+    "displayName": "IL00819 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00809",
+    "installStatus": "1",
+    "displayName": "IL00809 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00817",
+    "installStatus": "1",
+    "displayName": "IL00817 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00525",
+    "installStatus": "1",
+    "displayName": "IL00525 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00609",
+    "installStatus": "1",
+    "displayName": "IL00609 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00585",
+    "installStatus": "1",
+    "displayName": "IL00585 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00608",
+    "installStatus": "1",
+    "displayName": "IL00608 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00603",
+    "installStatus": "1",
+    "displayName": "IL00603 - Apple Computer Inc MacBook M2 Pro (16\" 32GB)"
+  },
+  {
+    "assetTag": "IL00835",
+    "installStatus": "1",
+    "displayName": "IL00835 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00848",
+    "installStatus": "1",
+    "displayName": "IL00848 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00838",
+    "installStatus": "1",
+    "displayName": "IL00838 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00891",
+    "installStatus": "1",
+    "displayName": "IL00891 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00913",
+    "installStatus": "1",
+    "displayName": "IL00913 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00914",
+    "installStatus": "1",
+    "displayName": "IL00914 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00909",
+    "installStatus": "14",
+    "displayName": "IL00909 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00902",
+    "installStatus": "1",
+    "displayName": "IL00902 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL00897",
+    "installStatus": "1",
+    "displayName": "IL00897 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00901",
+    "installStatus": "1",
+    "displayName": "IL00901 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL00894",
+    "installStatus": "1",
+    "displayName": "IL00894 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00883",
+    "installStatus": "1",
+    "displayName": "IL00883 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00893",
+    "installStatus": "1",
+    "displayName": "IL00893 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00898",
+    "installStatus": "1",
+    "displayName": "IL00898 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00896",
+    "installStatus": "1",
+    "displayName": "IL00896 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00892",
+    "installStatus": "1",
+    "displayName": "IL00892 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00911",
+    "installStatus": "1",
+    "displayName": "IL00911 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00900",
+    "installStatus": "1",
+    "displayName": "IL00900 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00912",
+    "installStatus": "1",
+    "displayName": "IL00912 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00890",
+    "installStatus": "1",
+    "displayName": "IL00890 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00886",
+    "installStatus": "1",
+    "displayName": "IL00886 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00916",
+    "installStatus": "1",
+    "displayName": "IL00916 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00884",
+    "installStatus": "1",
+    "displayName": "IL00884 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00917",
+    "installStatus": "1",
+    "displayName": "IL00917 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00885",
+    "installStatus": "1",
+    "displayName": "IL00885 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00889",
+    "installStatus": "1",
+    "displayName": "IL00889 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00904",
+    "installStatus": "1",
+    "displayName": "IL00904 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL00910",
+    "installStatus": "1",
+    "displayName": "IL00910 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01056",
+    "installStatus": "1",
+    "displayName": "IL01056 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01042",
+    "installStatus": "1",
+    "displayName": "IL01042 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01017",
+    "installStatus": "1",
+    "displayName": "IL01017 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01027",
+    "installStatus": "1",
+    "displayName": "IL01027 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01026",
+    "installStatus": "1",
+    "displayName": "IL01026 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01048",
+    "installStatus": "1",
+    "displayName": "IL01048 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01049",
+    "installStatus": "1",
+    "displayName": "IL01049 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01032",
+    "installStatus": "1",
+    "displayName": "IL01032 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL00919",
+    "installStatus": "1",
+    "displayName": "IL00919 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01039",
+    "installStatus": "1",
+    "displayName": "IL01039 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01021",
+    "installStatus": "1",
+    "displayName": "IL01021 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01018",
+    "installStatus": "1",
+    "displayName": "IL01018 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01051",
+    "installStatus": "1",
+    "displayName": "IL01051 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01055",
+    "installStatus": "1",
+    "displayName": "IL01055 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01038",
+    "installStatus": "1",
+    "displayName": "IL01038 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01015",
+    "installStatus": "1",
+    "displayName": "IL01015 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01053",
+    "installStatus": "1",
+    "displayName": "IL01053 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01024",
+    "installStatus": "1",
+    "displayName": "IL01024 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01030",
+    "installStatus": "1",
+    "displayName": "IL01030 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01011",
+    "installStatus": "1",
+    "displayName": "IL01011 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01035",
+    "installStatus": "1",
+    "displayName": "IL01035 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01020",
+    "installStatus": "1",
+    "displayName": "IL01020 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01012",
+    "installStatus": "1",
+    "displayName": "IL01012 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01060",
+    "installStatus": "1",
+    "displayName": "IL01060 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01022",
+    "installStatus": "1",
+    "displayName": "IL01022 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01092",
+    "installStatus": "1",
+    "displayName": "IL01092 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01084",
+    "installStatus": "1",
+    "displayName": "IL01084 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01106",
+    "installStatus": "1",
+    "displayName": "IL01106 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01109",
+    "installStatus": "1",
+    "displayName": "IL01109 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01089",
+    "installStatus": "1",
+    "displayName": "IL01089 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01117",
+    "installStatus": "1",
+    "displayName": "IL01117 - Lenovo Group Ltd ThinkPad P1 Gen 6"
+  },
+  {
+    "assetTag": "IL01126",
+    "installStatus": "1",
+    "displayName": "IL01126 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01122",
+    "installStatus": "1",
+    "displayName": "IL01122 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01079",
+    "installStatus": "1",
+    "displayName": "IL01079 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01080",
+    "installStatus": "1",
+    "displayName": "IL01080 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01081",
+    "installStatus": "1",
+    "displayName": "IL01081 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01112",
+    "installStatus": "1",
+    "displayName": "IL01112 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01090",
+    "installStatus": "1",
+    "displayName": "IL01090 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01249",
+    "installStatus": "1",
+    "displayName": "IL01249 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01125",
+    "installStatus": "1",
+    "displayName": "IL01125 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01104",
+    "installStatus": "1",
+    "displayName": "IL01104 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01101",
+    "installStatus": "1",
+    "displayName": "IL01101 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01094",
+    "installStatus": "1",
+    "displayName": "IL01094 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01516",
+    "installStatus": "12",
+    "displayName": "IL01516 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01086",
+    "installStatus": "1",
+    "displayName": "IL01086 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01110",
+    "installStatus": "1",
+    "displayName": "IL01110 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01093",
+    "installStatus": "1",
+    "displayName": "IL01093 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01085",
+    "installStatus": "1",
+    "displayName": "IL01085 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01096",
+    "installStatus": "1",
+    "displayName": "IL01096 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01044",
+    "installStatus": "1",
+    "displayName": "IL01044 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "IL01202",
+    "installStatus": "1",
+    "displayName": "IL01202 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01179",
+    "installStatus": "1",
+    "displayName": "IL01179 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01173",
+    "installStatus": "1",
+    "displayName": "IL01173 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01176",
+    "installStatus": "1",
+    "displayName": "IL01176 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01185",
+    "installStatus": "1",
+    "displayName": "IL01185 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01198",
+    "installStatus": "1",
+    "displayName": "IL01198 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01175",
+    "installStatus": "1",
+    "displayName": "IL01175 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01183",
+    "installStatus": "1",
+    "displayName": "IL01183 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01197",
+    "installStatus": "1",
+    "displayName": "IL01197 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01207",
+    "installStatus": "1",
+    "displayName": "IL01207 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01199",
+    "installStatus": "1",
+    "displayName": "IL01199 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01171",
+    "installStatus": "1",
+    "displayName": "IL01171 - Apple Computer Inc MacBook M3 Pro (14\" 36GB)"
+  },
+  {
+    "assetTag": "IL01123",
+    "installStatus": "1",
+    "displayName": "IL01123 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01201",
+    "installStatus": "1",
+    "displayName": "IL01201 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01129",
+    "installStatus": "1",
+    "displayName": "IL01129 - Apple Computer Inc MacBook M3 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01193",
+    "installStatus": "1",
+    "displayName": "IL01193 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01194",
+    "installStatus": "1",
+    "displayName": "IL01194 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01180",
+    "installStatus": "1",
+    "displayName": "IL01180 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01196",
+    "installStatus": "1",
+    "displayName": "IL01196 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01209",
+    "installStatus": "1",
+    "displayName": "IL01209 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01208",
+    "installStatus": "1",
+    "displayName": "IL01208 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01103",
+    "installStatus": "1",
+    "displayName": "IL01103 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01210",
+    "installStatus": "1",
+    "displayName": "IL01210 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01127",
+    "installStatus": "1",
+    "displayName": "IL01127 - Apple Computer Inc MacBook M3 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01203",
+    "installStatus": "1",
+    "displayName": "IL01203 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01216",
+    "installStatus": "1",
+    "displayName": "IL01216 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01228",
+    "installStatus": "1",
+    "displayName": "IL01228 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01217",
+    "installStatus": "1",
+    "displayName": "IL01217 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01221",
+    "installStatus": "1",
+    "displayName": "IL01221 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01230",
+    "installStatus": "1",
+    "displayName": "IL01230 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01220",
+    "installStatus": "1",
+    "displayName": "IL01220 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01237",
+    "installStatus": "1",
+    "displayName": "IL01237 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01218",
+    "installStatus": "1",
+    "displayName": "IL01218 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01252",
+    "installStatus": "1",
+    "displayName": "IL01252 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01234",
+    "installStatus": "1",
+    "displayName": "IL01234 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01229",
+    "installStatus": "1",
+    "displayName": "IL01229 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01233",
+    "installStatus": "1",
+    "displayName": "IL01233 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01243",
+    "installStatus": "1",
+    "displayName": "IL01243 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01242",
+    "installStatus": "1",
+    "displayName": "IL01242 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01238",
+    "installStatus": "1",
+    "displayName": "IL01238 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01223",
+    "installStatus": "1",
+    "displayName": "IL01223 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01212",
+    "installStatus": "1",
+    "displayName": "IL01212 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01248",
+    "installStatus": "1",
+    "displayName": "IL01248 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01244",
+    "installStatus": "1",
+    "displayName": "IL01244 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01236",
+    "installStatus": "1",
+    "displayName": "IL01236 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01235",
+    "installStatus": "1",
+    "displayName": "IL01235 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01232",
+    "installStatus": "1",
+    "displayName": "IL01232 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01247",
+    "installStatus": "1",
+    "displayName": "IL01247 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01222",
+    "installStatus": "1",
+    "displayName": "IL01222 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01245",
+    "installStatus": "1",
+    "displayName": "IL01245 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01282",
+    "installStatus": "1",
+    "displayName": "IL01282 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01273",
+    "installStatus": "1",
+    "displayName": "IL01273 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01296",
+    "installStatus": "1",
+    "displayName": "IL01296 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01254",
+    "installStatus": "1",
+    "displayName": "IL01254 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01284",
+    "installStatus": "1",
+    "displayName": "IL01284 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01283",
+    "installStatus": "1",
+    "displayName": "IL01283 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01294",
+    "installStatus": "1",
+    "displayName": "IL01294 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01226",
+    "installStatus": "1",
+    "displayName": "IL01226 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01286",
+    "installStatus": "1",
+    "displayName": "IL01286 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01269",
+    "installStatus": "1",
+    "displayName": "IL01269 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01288",
+    "installStatus": "1",
+    "displayName": "IL01288 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01287",
+    "installStatus": "1",
+    "displayName": "IL01287 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01263",
+    "installStatus": "1",
+    "displayName": "IL01263 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01266",
+    "installStatus": "1",
+    "displayName": "IL01266 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01285",
+    "installStatus": "1",
+    "displayName": "IL01285 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01253",
+    "installStatus": "1",
+    "displayName": "IL01253 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01292",
+    "installStatus": "1",
+    "displayName": "IL01292 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01290",
+    "installStatus": "1",
+    "displayName": "IL01290 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01270",
+    "installStatus": "1",
+    "displayName": "IL01270 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01274",
+    "installStatus": "1",
+    "displayName": "IL01274 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01276",
+    "installStatus": "1",
+    "displayName": "IL01276 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01291",
+    "installStatus": "1",
+    "displayName": "IL01291 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01278",
+    "installStatus": "1",
+    "displayName": "IL01278 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01250",
+    "installStatus": "1",
+    "displayName": "IL01250 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01272",
+    "installStatus": "1",
+    "displayName": "IL01272 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01320",
+    "installStatus": "1",
+    "displayName": "IL01320 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01327",
+    "installStatus": "1",
+    "displayName": "IL01327 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01308",
+    "installStatus": "1",
+    "displayName": "IL01308 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01314",
+    "installStatus": "1",
+    "displayName": "IL01314 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01311",
+    "installStatus": "1",
+    "displayName": "IL01311 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01299",
+    "installStatus": "1",
+    "displayName": "IL01299 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01331",
+    "installStatus": "1",
+    "displayName": "IL01331 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01298",
+    "installStatus": "1",
+    "displayName": "IL01298 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01323",
+    "installStatus": "1",
+    "displayName": "IL01323 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01321",
+    "installStatus": "1",
+    "displayName": "IL01321 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01329",
+    "installStatus": "1",
+    "displayName": "IL01329 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01328",
+    "installStatus": "1",
+    "displayName": "IL01328 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01310",
+    "installStatus": "1",
+    "displayName": "IL01310 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01316",
+    "installStatus": "1",
+    "displayName": "IL01316 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01325",
+    "installStatus": "1",
+    "displayName": "IL01325 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01335",
+    "installStatus": "1",
+    "displayName": "IL01335 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01309",
+    "installStatus": "1",
+    "displayName": "IL01309 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01322",
+    "installStatus": "1",
+    "displayName": "IL01322 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01324",
+    "installStatus": "1",
+    "displayName": "IL01324 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01332",
+    "installStatus": "1",
+    "displayName": "IL01332 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01336",
+    "installStatus": "1",
+    "displayName": "IL01336 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01312",
+    "installStatus": "1",
+    "displayName": "IL01312 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01300",
+    "installStatus": "1",
+    "displayName": "IL01300 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01315",
+    "installStatus": "1",
+    "displayName": "IL01315 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01330",
+    "installStatus": "1",
+    "displayName": "IL01330 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01357",
+    "installStatus": "1",
+    "displayName": "IL01357 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01349",
+    "installStatus": "1",
+    "displayName": "IL01349 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01351",
+    "installStatus": "1",
+    "displayName": "IL01351 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01344",
+    "installStatus": "1",
+    "displayName": "IL01344 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01363",
+    "installStatus": "1",
+    "displayName": "IL01363 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01354",
+    "installStatus": "1",
+    "displayName": "IL01354 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01348",
+    "installStatus": "1",
+    "displayName": "IL01348 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01372",
+    "installStatus": "1",
+    "displayName": "IL01372 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01366",
+    "installStatus": "1",
+    "displayName": "IL01366 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01383",
+    "installStatus": "1",
+    "displayName": "IL01383 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01360",
+    "installStatus": "1",
+    "displayName": "IL01360 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01337",
+    "installStatus": "1",
+    "displayName": "IL01337 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01364",
+    "installStatus": "1",
+    "displayName": "IL01364 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01358",
+    "installStatus": "1",
+    "displayName": "IL01358 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01384",
+    "installStatus": "1",
+    "displayName": "IL01384 - Lenovo Group Ltd ThinkPad T14s Gen 5"
+  },
+  {
+    "assetTag": "IL01368",
+    "installStatus": "1",
+    "displayName": "IL01368 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01343",
+    "installStatus": "1",
+    "displayName": "IL01343 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01353",
+    "installStatus": "1",
+    "displayName": "IL01353 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01370",
+    "installStatus": "1",
+    "displayName": "IL01370 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01345",
+    "installStatus": "1",
+    "displayName": "IL01345 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01352",
+    "installStatus": "1",
+    "displayName": "IL01352 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01369",
+    "installStatus": "1",
+    "displayName": "IL01369 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01347",
+    "installStatus": "1",
+    "displayName": "IL01347 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01356",
+    "installStatus": "1",
+    "displayName": "IL01356 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01365",
+    "installStatus": "1",
+    "displayName": "IL01365 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01389",
+    "installStatus": "1",
+    "displayName": "IL01389 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01418",
+    "installStatus": "1",
+    "displayName": "IL01418 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01394",
+    "installStatus": "1",
+    "displayName": "IL01394 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01388",
+    "installStatus": "1",
+    "displayName": "IL01388 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01391",
+    "installStatus": "1",
+    "displayName": "IL01391 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01526",
+    "installStatus": "1",
+    "displayName": "IL01526 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01399",
+    "installStatus": "1",
+    "displayName": "IL01399 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01408",
+    "installStatus": "1",
+    "displayName": "IL01408 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01422",
+    "installStatus": "1",
+    "displayName": "IL01422 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01415",
+    "installStatus": "1",
+    "displayName": "IL01415 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01416",
+    "installStatus": "1",
+    "displayName": "IL01416 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01395",
+    "installStatus": "1",
+    "displayName": "IL01395 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01412",
+    "installStatus": "1",
+    "displayName": "IL01412 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01350",
+    "installStatus": "1",
+    "displayName": "IL01350 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01424",
+    "installStatus": "1",
+    "displayName": "IL01424 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01402",
+    "installStatus": "1",
+    "displayName": "IL01402 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01398",
+    "installStatus": "1",
+    "displayName": "IL01398 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01427",
+    "installStatus": "1",
+    "displayName": "IL01427 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01405",
+    "installStatus": "1",
+    "displayName": "IL01405 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01401",
+    "installStatus": "1",
+    "displayName": "IL01401 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01420",
+    "installStatus": "1",
+    "displayName": "IL01420 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01413",
+    "installStatus": "1",
+    "displayName": "IL01413 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01387",
+    "installStatus": "1",
+    "displayName": "IL01387 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01403",
+    "installStatus": "1",
+    "displayName": "IL01403 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01410",
+    "installStatus": "1",
+    "displayName": "IL01410 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01407",
+    "installStatus": "1",
+    "displayName": "IL01407 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01511",
+    "installStatus": "1",
+    "displayName": "IL01511 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01502",
+    "installStatus": "1",
+    "displayName": "IL01502 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01439",
+    "installStatus": "1",
+    "displayName": "IL01439 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01487",
+    "installStatus": "1",
+    "displayName": "IL01487 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01440",
+    "installStatus": "1",
+    "displayName": "IL01440 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01499",
+    "installStatus": "1",
+    "displayName": "IL01499 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01486",
+    "installStatus": "1",
+    "displayName": "IL01486 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01429",
+    "installStatus": "1",
+    "displayName": "IL01429 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01514",
+    "installStatus": "1",
+    "displayName": "IL01514 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01437",
+    "installStatus": "1",
+    "displayName": "IL01437 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01483",
+    "installStatus": "1",
+    "displayName": "IL01483 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01434",
+    "installStatus": "1",
+    "displayName": "IL01434 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01490",
+    "installStatus": "1",
+    "displayName": "IL01490 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01428",
+    "installStatus": "1",
+    "displayName": "IL01428 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01493",
+    "installStatus": "1",
+    "displayName": "IL01493 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01430",
+    "installStatus": "1",
+    "displayName": "IL01430 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01438",
+    "installStatus": "1",
+    "displayName": "IL01438 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01495",
+    "installStatus": "1",
+    "displayName": "IL01495 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01488",
+    "installStatus": "1",
+    "displayName": "IL01488 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01513",
+    "installStatus": "1",
+    "displayName": "IL01513 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01491",
+    "installStatus": "1",
+    "displayName": "IL01491 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01501",
+    "installStatus": "1",
+    "displayName": "IL01501 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01432",
+    "installStatus": "1",
+    "displayName": "IL01432 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01433",
+    "installStatus": "1",
+    "displayName": "IL01433 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL00321",
+    "installStatus": "1",
+    "displayName": "IL00321 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01521",
+    "installStatus": "1",
+    "displayName": "IL01521 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00490",
+    "installStatus": "1",
+    "displayName": "IL00490 - Apple Computer Inc MacBook M2 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01523",
+    "installStatus": "1",
+    "displayName": "IL01523 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01517",
+    "installStatus": "1",
+    "displayName": "IL01517 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01675",
+    "installStatus": "1",
+    "displayName": "IL01675 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01496",
+    "installStatus": "1",
+    "displayName": "IL01496 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "M01040",
+    "installStatus": "1",
+    "displayName": "M01040 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "IL01674",
+    "installStatus": "1",
+    "displayName": "IL01674 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL01515",
+    "installStatus": "1",
+    "displayName": "IL01515 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01492",
+    "installStatus": "1",
+    "displayName": "IL01492 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "IL01676",
+    "installStatus": "1",
+    "displayName": "IL01676 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL00223",
+    "installStatus": "1",
+    "displayName": "IL00223 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01529",
+    "installStatus": "1",
+    "displayName": "IL01529 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00345",
+    "installStatus": "1",
+    "displayName": "IL00345 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01519",
+    "installStatus": "1",
+    "displayName": "IL01519 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01677",
+    "installStatus": "1",
+    "displayName": "IL01677 - Apple Computer Inc MacBook M4 Pro (14\" 48GB)"
+  },
+  {
+    "assetTag": "IL00324",
+    "installStatus": "1",
+    "displayName": "IL00324 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01527",
+    "installStatus": "1",
+    "displayName": "IL01527 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01538",
+    "installStatus": "1",
+    "displayName": "IL01538 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00206",
+    "installStatus": "1",
+    "displayName": "IL00206 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00250",
+    "installStatus": "1",
+    "displayName": "IL00250 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "M01071",
+    "installStatus": "1",
+    "displayName": "M01071 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "IL01518",
+    "installStatus": "1",
+    "displayName": "IL01518 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01798",
+    "installStatus": "1",
+    "displayName": "IL01798 - Lenovo Group Ltd ThinkPad T14s Gen 6"
+  },
+  {
+    "assetTag": "IL00163",
+    "installStatus": "1",
+    "displayName": "IL00163 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01406",
+    "installStatus": "1",
+    "displayName": "IL01406 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "IL01533",
+    "installStatus": "1",
+    "displayName": "IL01533 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01239",
+    "installStatus": "1",
+    "displayName": "IL01239 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "M01072",
+    "installStatus": "1",
+    "displayName": "M01072 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "A331199",
+    "installStatus": "1",
+    "displayName": "A331199 - Lenovo Group Ltd ThinkPad T480s"
+  },
+  {
+    "assetTag": "W050719",
+    "installStatus": "1",
+    "displayName": "W050719 - Lenovo Group Ltd ThinkPad X1 C3"
+  },
+  {
+    "assetTag": "A330963",
+    "installStatus": "1",
+    "displayName": "A330963 - Lenovo Group Ltd ThinkPad T460s"
+  },
+  {
+    "assetTag": "IL01326",
+    "installStatus": "1",
+    "displayName": "IL01326 - Apple Computer Inc MacBook M4 Pro (16\" 48GB)"
+  },
+  {
+    "assetTag": "US23046",
+    "installStatus": "1",
+    "displayName": "US23046 - Apple Computer Inc MacBook M1 Pro (14\" 32GB)"
+  },
+  {
+    "assetTag": "IL00511",
+    "installStatus": "1",
+    "displayName": "IL00511 - Apple Computer Inc MacBook M2 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL01116",
+    "installStatus": "1",
+    "displayName": "IL01116 - Lenovo Group Ltd ThinkPad P1 Gen 6"
+  },
+  {
+    "assetTag": "M01079",
+    "installStatus": "1",
+    "displayName": "M01079 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "M01049",
+    "installStatus": "1",
+    "displayName": "M01049 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "IL00096",
+    "installStatus": "1",
+    "displayName": "IL00096 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "IL01528",
+    "installStatus": "1",
+    "displayName": "IL01528 - Apple Computer Inc MacBook M4 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "IL00840",
+    "installStatus": "1",
+    "displayName": "IL00840 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "M01078",
+    "installStatus": "1",
+    "displayName": "M01078 - Apple Computer Inc MacBook M1 Max (14\" 64GB)"
+  },
+  {
+    "assetTag": "M01070",
+    "installStatus": "1",
+    "displayName": "M01070 - Lenovo Group Ltd ThinkPad T14s"
+  },
+  {
+    "assetTag": "IL01271",
+    "installStatus": "1",
+    "displayName": "IL01271 - Apple Computer Inc MacBook M4 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "352857873324872",
+    "installStatus": "1",
+    "displayName": "352857873324872 - Samsung Samsung Galaxy S25 Ultra"
+  },
+  {
+    "assetTag": "IL00354",
+    "installStatus": "1",
+    "displayName": "IL00354 - Apple Computer Inc MacBook M1 Max (16\" 64GB)"
+  },
+  {
+    "assetTag": "354653145464697",
+    "installStatus": "1",
+    "displayName": "354653145464697 - Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB"
+  },
+  {
+    "assetTag": "IL01043",
+    "installStatus": "1",
+    "displayName": "IL01043 - Apple Computer Inc MacBook M3 Pro (16\" 36GB)"
+  },
+  {
+    "assetTag": "352246821327064",
+    "installStatus": "1",
+    "displayName": "352246821327064 - Samsung Samsung Galaxy S25 Ultra"
+  }
 ]
