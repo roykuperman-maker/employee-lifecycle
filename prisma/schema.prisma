@@ -177,3 +177,32 @@ model Ticket {
 
   importedAt DateTime @default(now())
 }
+
+// Snapshot of the "Exit Process" table in the FTE Terminations QuickBase app
+// (intuitcorp.quickbase.com, app bthkztm8b, table bthkztm8f). Unlike the
+// ServiceNow-backed Ticket model, QuickBase IS reachable from the deployed
+// app (a plain REST API + user token, no interactive-session requirement),
+// so this syncs automatically via cron — see src/lib/quickbase.ts and
+// src/app/api/jobs/sync-exit-processes/route.ts.
+model ExitProcess {
+  id                  String    @id @default(cuid())
+  quickbaseRecordId   Int       @unique // QuickBase's own Record ID# (field 3) — upsert key
+  employeeName        String
+  employeeEmail       String?
+  jobTitle            String?
+  managerName         String?
+  managerEmail        String?
+  terminationDate     DateTime?
+  exitType            String? // Resignation | Termination | ...
+  exitProcessStatus   String? // Initiated | Completed | ...
+  managerTabStatus    String?
+  itTabStatus         String?
+  financeTabStatus    String?
+  payrollTabStatus    String?
+  relocationTabStatus String?
+  benefitsTabStatus   String?
+  securityTabStatus   String?
+  hrTabStatus         String?
+
+  syncedAt DateTime @updatedAt
+}
