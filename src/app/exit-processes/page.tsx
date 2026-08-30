@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { prisma } from "@/lib/db";
 import { Badge } from "@/components/Badge";
 import { RunDailyButton } from "@/components/RunDailyButton";
@@ -15,9 +16,32 @@ const DEPT_COLUMNS = [
   { key: "hrTabStatus", label: "HR" },
 ] as const;
 
-export default async function ExitProcessesPage() {
+const SORTABLE_COLUMNS = {
+  employeeName: "Employee",
+  source: "Source",
+  jobTitle: "Job Title",
+  managerName: "Manager",
+  terminationDate: "Termination Date",
+  exitType: "Exit Type",
+  exitProcessStatus: "Status",
+} as const;
+
+type SortKey = keyof typeof SORTABLE_COLUMNS;
+
+function isSortKey(value: string | undefined): value is SortKey {
+  return !!value && value in SORTABLE_COLUMNS;
+}
+
+export default async function ExitProcessesPage({
+  searchParams,
+}: {
+  searchParams: { sort?: string; dir?: string };
+}) {
+  const sortKey: SortKey = isSortKey(searchParams.sort) ? searchParams.sort : "terminationDate";
+  const sortDir: "asc" | "desc" = searchParams.dir === "asc" ? "asc" : "desc";
+
   const exitProcesses = await prisma.exitProcess.findMany({
-    orderBy: { terminationDate: "desc" },
+    orderBy: { [sortKey]: sortDir },
   });
 
   return (
@@ -41,13 +65,21 @@ export default async function ExitProcessesPage() {
         <table className="w-full text-left text-sm">
           <thead className="bg-slate-50 text-slate-500">
             <tr>
-              <th className="px-4 py-3">Employee</th>
-              <th className="px-4 py-3">Source</th>
-              <th className="px-4 py-3">Job Title</th>
-              <th className="px-4 py-3">Manager</th>
-              <th className="px-4 py-3">Termination Date</th>
-              <th className="px-4 py-3">Exit Type</th>
-              <th className="px-4 py-3">Status</th>
+              {Object.entries(SORTABLE_COLUMNS).map(([key, label]) => {
+                const isActive = sortKey === key;
+                const nextDir = isActive && sortDir === "asc" ? "desc" : "asc";
+                return (
+                  <th key={key} className="px-4 py-3">
+                    <Link
+                      href={`/exit-processes?sort=${key}&dir=${nextDir}`}
+                      className={`flex items-center gap-1 hover:text-slate-900 ${isActive ? "text-slate-900" : ""}`}
+                    >
+                      {label}
+                      {isActive && <span>{sortDir === "asc" ? "▲" : "▼"}</span>}
+                    </Link>
+                  </th>
+                );
+              })}
               {DEPT_COLUMNS.map((c) => (
                 <th key={c.key} className="px-4 py-3">
                   {c.label}
