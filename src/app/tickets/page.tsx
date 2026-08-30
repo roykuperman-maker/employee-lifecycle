@@ -41,6 +41,10 @@ export default async function TicketsPage({
         "Mobile Buyback - Invoice Processing",
       ],
     },
+    assignmentGroup: {
+      not: null,
+      notIn: ["Site Services - Coordinators - TLV"],
+    },
   };
   if (searchParams.category) where.category = searchParams.category;
   if (searchParams.state === "OPEN") {
