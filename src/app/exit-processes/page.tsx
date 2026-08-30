@@ -26,7 +26,8 @@ export default async function ExitProcessesPage() {
         <h1 className="text-2xl font-semibold">Exit Processes</h1>
         <div className="flex items-center gap-3">
           <p className="text-sm text-slate-400">
-            Synced from QuickBase (FTE Terminations) — refreshes daily, or on demand.
+            FTEs synced from QuickBase (refreshes daily, or on demand) — CWs from Reut Arieli's periodic
+            report emails (imported during /sync).
           </p>
           <RunDailyButton endpoint="/api/jobs/sync-exit-processes" label="Sync now" />
         </div>
@@ -41,6 +42,7 @@ export default async function ExitProcessesPage() {
           <thead className="bg-slate-50 text-slate-500">
             <tr>
               <th className="px-4 py-3">Employee</th>
+              <th className="px-4 py-3">Source</th>
               <th className="px-4 py-3">Job Title</th>
               <th className="px-4 py-3">Manager</th>
               <th className="px-4 py-3">Termination Date</th>
@@ -59,6 +61,9 @@ export default async function ExitProcessesPage() {
                 <td className="px-4 py-3 font-medium text-slate-900">
                   <div>{e.employeeName}</div>
                   {e.employeeEmail && <div className="text-xs font-normal text-slate-400">{e.employeeEmail}</div>}
+                </td>
+                <td className="px-4 py-3">
+                  <Badge value={e.source === "CW_REPORT" ? "CW" : "FTE"} />
                 </td>
                 <td className="px-4 py-3 text-slate-500">{e.jobTitle || "—"}</td>
                 <td className="px-4 py-3 text-slate-500">{e.managerName || "—"}</td>
@@ -79,7 +84,7 @@ export default async function ExitProcessesPage() {
             ))}
             {exitProcesses.length === 0 && (
               <tr>
-                <td colSpan={6 + DEPT_COLUMNS.length} className="px-4 py-8 text-center text-slate-400">
+                <td colSpan={7 + DEPT_COLUMNS.length} className="px-4 py-8 text-center text-slate-400">
                   No exit processes synced yet — click "Sync now" above.
                 </td>
               </tr>

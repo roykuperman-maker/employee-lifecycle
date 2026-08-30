@@ -1,0 +1,20 @@
+[
+  { "employeeName": "Eitan Alon", "terminationDate": "2026-07-31" },
+  { "employeeName": "Ayelet Steinberg", "terminationDate": "2026-07-31" },
+  { "employeeName": "Sergey Vinickiy", "terminationDate": "2026-07-31" },
+  { "employeeName": "Miyu Levin", "terminationDate": "2026-07-31" },
+  { "employeeName": "Andrei Khomich", "terminationDate": "2026-07-31" },
+  { "employeeName": "Arkadii Malygin", "terminationDate": "2026-07-31" },
+  { "employeeName": "Adam Nizri", "terminationDate": "2026-07-31" },
+  { "employeeName": "Katia Slobodnik", "terminationDate": "2026-08-16" },
+  { "employeeName": "Ahmad Abu Katish", "terminationDate": "2026-09-22" },
+  { "employeeName": "Rachel Mantzer", "terminationDate": "2026-10-18" },
+  { "employeeName": "Guy Blumenfeld", "terminationDate": "2026-10-19" },
+  { "employeeName": "Lilach Cohen Hadad", "terminationDate": "2026-11-03" },
+  { "employeeName": "Lior Yosef", "terminationDate": "2026-11-03" },
+  { "employeeName": "Victoria Avrahamchik", "terminationDate": "2026-11-10" },
+  { "employeeName": "Or Shemesh", "terminationDate": "2026-12-22" },
+  { "employeeName": "Ziv Kadari", "terminationDate": "2027-02-22" },
+  { "employeeName": "Ofir Spector", "terminationDate": "2027-04-12" },
+  { "employeeName": "Shay Trablus", "terminationDate": "2027-07-31" }
+]

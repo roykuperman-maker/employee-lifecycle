@@ -1,16 +1,21 @@
 ---
 name: sync
-description: Manually refresh the Employee Lifecycle app's data from ServiceNow — tickets AND hardware/mobile asset status, in one pass. Roy runs this by hand (via /sync) whenever the data looks stale — the deployed app has no live connection to ServiceNow, so this is the only way it updates. Covers both; don't split into separate ticket/asset invocations.
+description: Manually refresh the Employee Lifecycle app's data from ServiceNow (tickets + hardware/mobile asset status) AND from Reut Arieli's CW report emails (contingent-worker end dates), in one pass. Roy runs this by hand (via /sync) whenever the data looks stale — none of these sources are reachable from the deployed app, so this is the only way they update. Covers all three; don't split into separate invocations.
 ---
 
-# Sync ServiceNow Data (Tickets + Assets)
+# Sync ServiceNow + CW Report Data
 
-The Employee Lifecycle app has no live connection to ServiceNow — the
-deployed Vercel app cannot call MCP connectors itself, only an interactive
-Claude session can. This skill is the single manual routine that refreshes
-everything ServiceNow-sourced: the `Ticket` snapshot table AND the
-status/model of assets this app already tracks (`Asset`, `MobileDevice`).
-Run both parts every time this skill is invoked — don't do just one.
+The Employee Lifecycle app has no live connection to ServiceNow or Gmail —
+the deployed Vercel app cannot call MCP connectors itself, only an
+interactive Claude session can. This skill is the single manual routine
+that refreshes everything sourced that way: the `Ticket` snapshot table,
+the status/model of assets this app already tracks (`Asset`,
+`MobileDevice`), and CW (contingent worker) end dates parsed from Reut
+Arieli's periodic report emails into the `ExitProcess` list (see Part C).
+Run all parts every time this skill is invoked — don't do just one.
+(QuickBase, the other source feeding `ExitProcess`, is NOT part of this
+skill — it's reachable directly from the deployed app and syncs itself on
+a daily cron, plus a "Sync now" button on /exit-processes.)
 
 Project directory: `/Users/rkuperman/Emplyee lifecycle`
 
@@ -251,3 +256,59 @@ unchanged counts). No deploy needed — same shared-DB reasoning as Part A.
 `known-assets.json` and `asset-sync-results.json` are working files, fine to
 leave in place (next run overwrites them) — they're not read by the deployed
 app.
+
+---
+
+## Part C — CW report emails (Gmail)
+
+Reut Arieli (reut_arieli@intuit.com, an external Magnit recruiter) sends a
+periodic report of active contingent workers and their contract end dates.
+Roy only needs the end date per worker, added to the same Exit Processes
+list as the QuickBase-sourced FTE terminations (see the `ExitProcess` model
+— `source: "CW_REPORT"` rows, keyed by `employeeName` since this source has
+no email address, only a name).
+
+**Subject wording is inconsistent** — seen so far: "IL CWs January 2026
+Report", "CWs updated report, March 2026", "CW updated Engagement Data
+Report". Don't match on an exact subject; search broadly instead.
+
+### C1. Find the latest report
+
+```
+search_threads: from:reut_arieli@intuit.com "CW" report
+```
+
+Take the **most recent thread's original report message** (not follow-up
+replies) — later reports supersede earlier ones; the same workers reappear
+with updated end dates each time, so only the newest full table matters.
+Skip this part of the sync entirely if the latest thread found is one
+you've already imported (compare its date against `syncedAt` on existing
+`CW_REPORT` rows, or just re-run — it's a harmless no-op if nothing's new).
+
+### C2. Parse the table
+
+Fetch the message with `get_message` (`messageFormat: PLAIN_TEXT`). The
+table linearizes into repeating groups of 4–5 lines after the header row —
+either `Manager / Worker / Start Date / Est. End Date` or the same with a
+trailing `Job Title`. Only `Worker` (name) and `Est. End Date` matter.
+Convert each worker name from "Last, First" to "First Last" (e.g. "Alon,
+Eitan" → "Eitan Alon") and the date from `MM/DD/YYYY` to ISO
+(`YYYY-MM-DD`).
+
+### C3. Write the data and import
+
+Overwrite `scripts/cw-report-data.json` with the full fresh array (every
+worker row from the latest report, not just new ones — the importer
+upserts by name so it safely overwrites stale end dates too):
+
+```json
+[{ "employeeName": "Eitan Alon", "terminationDate": "2026-07-31" }]
+```
+
+Then run:
+
+```bash
+cd "/Users/rkuperman/Emplyee lifecycle" && npx tsc --noEmit && npx tsx scripts/import-cw-reports.ts
+```
+
+No deploy needed — same shared-DB reasoning as Parts A/B.
