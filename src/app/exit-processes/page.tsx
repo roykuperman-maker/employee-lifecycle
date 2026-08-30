@@ -41,6 +41,12 @@ export default async function ExitProcessesPage({
   const sortDir: "asc" | "desc" = searchParams.dir === "asc" ? "asc" : "desc";
 
   const exitProcesses = await prisma.exitProcess.findMany({
+    // FTEs (source QUICKBASE) whose IT offboarding is already done are
+    // noise for Roy's day-to-day view — hide them. CW rows have no IT
+    // tab status at all, so they're always shown.
+    where: {
+      OR: [{ source: { not: "QUICKBASE" } }, { itTabStatus: { not: "Completed" } }],
+    },
     orderBy: { [sortKey]: sortDir },
   });
 
