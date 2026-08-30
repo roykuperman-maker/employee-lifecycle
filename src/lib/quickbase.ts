@@ -1,6 +1,10 @@
 const REALM = "intuitcorp.quickbase.com";
 const EXIT_PROCESS_TABLE_ID = "bthkztm8f";
 
+export function exitProcessRecordUrl(quickbaseRecordId: number): string {
+  return `https://${REALM}/db/${EXIT_PROCESS_TABLE_ID}?a=dr&rid=${quickbaseRecordId}`;
+}
+
 // Field IDs in the "Exit Process" table (intuitcorp.quickbase.com, app
 // bthkztm8b). "Manager" (50) is the populated manager user field in
 // practice — "Manager Name" (13) / "Manager Email" (42) are legacy/unused

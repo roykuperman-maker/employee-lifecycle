@@ -2,6 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/db";
 import { Badge } from "@/components/Badge";
 import { RunDailyButton } from "@/components/RunDailyButton";
+import { exitProcessRecordUrl } from "@/lib/quickbase";
 
 export const dynamic = "force-dynamic";
 
@@ -97,7 +98,20 @@ export default async function ExitProcessesPage({
             {exitProcesses.map((e) => (
               <tr key={e.id} className="border-t border-slate-100 hover:bg-slate-50">
                 <td className="px-4 py-3 font-medium text-slate-900">
-                  <div>{e.employeeName}</div>
+                  <div>
+                    {e.quickbaseRecordId ? (
+                      <a
+                        href={exitProcessRecordUrl(e.quickbaseRecordId)}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hover:underline"
+                      >
+                        {e.employeeName}
+                      </a>
+                    ) : (
+                      e.employeeName
+                    )}
+                  </div>
                   {e.employeeEmail && <div className="text-xs font-normal text-slate-400">{e.employeeEmail}</div>}
                 </td>
                 <td className="px-4 py-3">
