@@ -33,7 +33,15 @@ export default async function TicketsPage({
 }: {
   searchParams: { category?: string; state?: string; sort?: string; dir?: string };
 }) {
-  const where: Record<string, unknown> = {};
+  const where: Record<string, unknown> = {
+    shortDescription: {
+      notIn: [
+        "Mobile BuyBack - Payroll Confirmation",
+        "Mobile Device Management Removal - Buyback",
+        "Mobile Buyback - Invoice Processing",
+      ],
+    },
+  };
   if (searchParams.category) where.category = searchParams.category;
   if (searchParams.state === "OPEN") {
     where.state = { in: TICKET_OPEN_STATES };
