@@ -6,6 +6,7 @@ import { LaptopPanel } from "@/components/LaptopPanel";
 import { MobilePanel } from "@/components/MobilePanel";
 import { LineFormsPanel } from "@/components/LineFormsPanel";
 import { OffboardPanel } from "@/components/OffboardPanel";
+import { TICKET_OPEN_STATES } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
 
@@ -20,6 +21,21 @@ export default async function EmployeeDetailPage({ params }: { params: { id: str
   });
 
   if (!employee) notFound();
+
+  const deviceTags = employee.mobileDevices.map((d) => d.assetTag).filter((t): t is string => !!t);
+  const openBuybackTags =
+    deviceTags.length === 0
+      ? []
+      : (
+          await prisma.ticket.findMany({
+            where: {
+              category: "MOBILE_BUYBACK",
+              state: { in: TICKET_OPEN_STATES },
+              assetTag: { in: deviceTags },
+            },
+            select: { assetTag: true },
+          })
+        ).map((t) => t.assetTag as string);
 
   return (
     <div className="max-w-4xl space-y-6">
@@ -69,6 +85,7 @@ export default async function EmployeeDetailPage({ params }: { params: { id: str
         employeeType={employee.employeeType}
         businessUnitDirectorApproved={employee.businessUnitDirectorApproved}
         mobileDevices={employee.mobileDevices}
+        openBuybackTags={openBuybackTags}
       />
 
       <LineFormsPanel employeeId={employee.id} lineForms={employee.lineForms} />

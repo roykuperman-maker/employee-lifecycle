@@ -27,6 +27,7 @@ type RawTicket = {
   callerName: string;
   assignmentGroup: string | null;
   state: string;
+  assetTag?: string | null; // MOBILE_BUYBACK only — parsed from the RITM's "Select the mobile you want to buyback" field
   startDate?: string | null; // NEW_HIRE only — ISO date, parsed from the RITM's "Start Date" field
   newHireName?: string | null; // NEW_HIRE only — parsed from the RITM's "New Hire: <Name>" field
   requesterName?: string | null; // MOBILE_DEVICE_REQUEST only
@@ -58,6 +59,7 @@ async function main() {
       callerName: t.callerName,
       assignmentGroup: t.assignmentGroup,
       state: t.state,
+      assetTag: t.assetTag ?? null,
       startDate: t.startDate ? new Date(t.startDate) : null,
       newHireName: t.newHireName ?? null,
       requesterName: t.requesterName ?? null,

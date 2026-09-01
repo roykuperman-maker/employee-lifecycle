@@ -51,6 +51,13 @@ RITM (invoice processing, payroll confirmation, MDM removal steps are all
 separate tasks under one buyback request) — that's expected, import them all
 as distinct ticket rows.
 
+Before condensing the description into the short human-readable summary (see
+A2), check the RITM's raw description for a line like `Select the mobile you
+want to buyback : <asset tag> - <model>` and pull the asset tag out into the
+`assetTag` field — this is what lets `/employees/[id]` show "Buyback in
+process" on the matching `MobileDevice` and suppresses its weekly return
+reminder. Don't lose this line when trimming the description down.
+
 **MOBILE_DEVICE_REQUEST** (queue: "EE Tech - TechKnow Bar - TLV", sys_id
 `f1ccd63e6f287100afdb33d9ea3ee4a5`):
 ```
@@ -102,6 +109,7 @@ For each task, build an object matching this shape (see
   "callerName": "<request_item.requested_for.name, or the name in the description if that's blank>",
   "assignmentGroup": "<resolved group name, or null if unknown/not TLV-specific>",
   "state": "<raw state code as a string, e.g. \"1\">",
+  "assetTag": "<MOBILE_BUYBACK only — parsed from the RITM description's \"Select the mobile you want to buyback : <tag> - <model>\" line; omit/null for other categories or if that line isn't present>",
   "startDate": "<NEW_HIRE only — ISO date (YYYY-MM-DD), parsed from the RITM description's \"Start Date: : MM-DD-YYYY\" field; omit/null for MOBILE_BUYBACK and MOBILE_DEVICE_REQUEST>",
   "newHireName": "<NEW_HIRE only — the new hire's name, parsed from the RITM description's \"New Hire: : <Name>\" field; omit/null for the other 2 categories>",
   "requesterName": "<MOBILE_DEVICE_REQUEST only — RITM's \"Who is this request for?\" field>",

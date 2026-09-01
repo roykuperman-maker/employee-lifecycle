@@ -1,7 +1,7 @@
 import { prisma } from "@/lib/db";
 import { sendEmail, sendSlackDM } from "@/lib/notifications";
 import { thursdayBefore, isToday, dayOfWeekUTC, daysBetweenUTC } from "@/lib/dates";
-import { ADMIN_EMAIL } from "@/lib/constants";
+import { ADMIN_EMAIL, TICKET_OPEN_STATES } from "@/lib/constants";
 import {
   mobileRefreshRequestAlert,
   mobileReturnOldDeviceAlert,
@@ -157,7 +157,10 @@ async function checkMobileRefreshAlert(today: Date) {
 
 // Sunday + Wednesday: employees with >1 non-returned/bought-back mobile
 // device get nagged about the oldest one. Not FTE-restricted (matches Roy's
-// literal wording, which offers buyback to anyone in this state).
+// literal wording, which offers buyback to anyone in this state). Skips a
+// device that already has an open MOBILE_BUYBACK ticket against its asset
+// tag — no point nagging someone to return/buyback a device they've already
+// started a buyback on.
 async function checkMobileReturnReminders(today: Date) {
   const day = dayOfWeekUTC(today);
   if (day !== SUNDAY && day !== WEDNESDAY) return;
@@ -175,9 +178,16 @@ async function checkMobileReturnReminders(today: Date) {
     },
   });
 
+  const openBuybackTickets = await prisma.ticket.findMany({
+    where: { category: "MOBILE_BUYBACK", state: { in: TICKET_OPEN_STATES }, assetTag: { not: null } },
+    select: { assetTag: true },
+  });
+  const openBuybackTags = new Set(openBuybackTickets.map((t) => t.assetTag as string));
+
   for (const employee of employees) {
     if (employee.mobileDevices.length <= 1) continue;
     const oldest = employee.mobileDevices[0];
+    if (oldest.assetTag && openBuybackTags.has(oldest.assetTag)) continue;
     if (oldest.lastReminderSentAt && isToday(oldest.lastReminderSentAt, today)) continue;
 
     await sendSlackDM({

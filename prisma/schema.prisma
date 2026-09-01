@@ -125,6 +125,7 @@ model Ticket {
   assignmentGroup  String?
   priority         String?
   state            String // raw ServiceNow state code, e.g. "2", "-5", "7" — see TICKET_STATE_LABELS
+  assetTag         String? // MOBILE_BUYBACK only — parsed from the RITM description's "Select the mobile you want to buyback : <tag> - <model>" line. Used to flag the matching MobileDevice as "Buyback in process".
   startDate        DateTime? // NEW_HIRE only — the new hire's start date, parsed from the RITM's "Start Date" field
   newHireName      String? // NEW_HIRE only — the new hire's name, parsed from the RITM description's "New Hire: <Name>" field; used to auto-create an Employee record
   snowSysId        String?

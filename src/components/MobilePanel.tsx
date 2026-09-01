@@ -19,10 +19,12 @@ function MobileDeviceCard({
   device,
   employeeType,
   businessUnitDirectorApproved,
+  buybackInProcess,
 }: {
   device: MobileDeviceData;
   employeeType: string | null;
   businessUnitDirectorApproved: boolean;
+  buybackInProcess: boolean;
 }) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -151,7 +153,7 @@ function MobileDeviceCard({
         </div>
         <div>
           <div className="text-slate-400">Status</div>
-          <Badge value={device.status} />
+          <Badge value={buybackInProcess ? "Buyback in process" : device.status} />
         </div>
         <div>
           <div className="text-slate-400">Refresh</div>
@@ -225,11 +227,14 @@ export function MobilePanel({
   employeeType,
   businessUnitDirectorApproved,
   mobileDevices,
+  openBuybackTags = [],
 }: {
   employeeType: string | null;
   businessUnitDirectorApproved: boolean;
   mobileDevices: MobileDeviceData[];
+  openBuybackTags?: string[];
 }) {
+  const buybackTagSet = new Set(openBuybackTags);
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <h2 className="mb-3 text-lg font-medium">
@@ -245,6 +250,7 @@ export function MobilePanel({
             device={d}
             employeeType={employeeType}
             businessUnitDirectorApproved={businessUnitDirectorApproved}
+            buybackInProcess={!!d.assetTag && buybackTagSet.has(d.assetTag)}
           />
         ))}
         {mobileDevices.length === 0 && <p className="text-sm text-slate-400">No mobile devices on record.</p>}
