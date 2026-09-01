@@ -10,7 +10,7 @@ const prisma = new PrismaClient();
 // batches (OR-chained asset_tag matches — that tool has no "IN" operator).
 // Also writes known-assets.json, which apply-asset-sync.ts diffs against.
 
-const BATCH_SIZE = 25;
+const BATCH_SIZE = 100;
 
 async function main() {
   const assets = await prisma.asset.findMany({

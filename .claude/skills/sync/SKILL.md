@@ -182,39 +182,43 @@ cd "/Users/rkuperman/Emplyee lifecycle" && npx tsx scripts/export-known-assets.t
 ```
 
 This writes `scripts/known-assets.json` (current DB state: id, kind,
-employeeId, assetTag, model, status) and prints ~40 batches of 25
+employeeId, assetTag, model, status) and prints ~10 batches of 100
 OR-chained `asset_tag=` queries (`ServiceNow_Hardware_Assets_Lookup` has no
 `IN` operator). Placeholder tags (`UNKNOWN`) are already excluded. Batch
-size is 25, not larger — each asset record is verbose (org hierarchy fields,
-warranty dates, etc.), and a 40-tag batch's raw result has been observed to
-exceed the tool-result size limit and get diverted to a file instead of
-returned inline.
+size is 100 specifically because a 100-tag result is *always* over the
+inline tool-result size limit — ServiceNow_Hardware_Assets_Lookup writes it
+to a file instead of returning it in the conversation. That's the point:
+it means you never hand-transcribe a batch's JSON, so there's no AI
+involvement in Part B beyond firing the tool calls (unavoidable — this
+connector is only reachable from an interactive session, not a standalone
+script) — everything else is deterministic.
 
-### B2. Run each batch through the connector
+### B2. Run each batch through the connector, then extract with a script
 
 For each printed query, call `ServiceNow_Hardware_Assets_Lookup` with
-`sysparm_limit` at least the batch size (25). Collect, per asset returned:
-`asset_tag`, `install_status`, `display_name`.
+`sysparm_limit=100`. The result will be written to a file (the tool's error
+message gives you the path) — do NOT read it into the conversation or
+hand-copy fields out of it. Instead run:
 
-If a batch's result still comes back too large to view inline (diverted to a
-file, as noted above), don't try to read it directly — extract just the 3
-needed fields with a quick script instead, e.g.:
 ```bash
-python3 -c "
-import json
-data = json.load(open('<path from the error message>'))
-compact = [{'assetTag': a['asset_tag'], 'installStatus': a['install_status'], 'displayName': a['display_name']} for a in data['result']['assets']]
-print(json.dumps(compact))
-"
+cd "/Users/rkuperman/Emplyee lifecycle" && npx tsx scripts/collect-asset-batch.ts "<path from the tool's error message>"
 ```
+
+This appends that batch's `{assetTag, installStatus, displayName}` records
+into `scripts/asset-sync-results.json` itself (creating the file on the
+first batch, merging/overwriting by tag on later ones) — no manual JSON
+authoring at any point. Multiple batches can be fired in parallel in one
+turn (the tool calls are independent), then run `collect-asset-batch.ts`
+once per resulting file.
 
 Install status codes: `1`=Deployed, `9`=In Transit, `11`=Received,
 `12`=In Inventory, `13`=Pending Disposal, `14`=Disposed, `16`=Lost.
 
-### B3. Shape and apply
+### B3. Apply
 
-Write everything collected across all batches into
-`scripts/asset-sync-results.json`:
+Once every batch has been run through `collect-asset-batch.ts`,
+`scripts/asset-sync-results.json` already has the shape `apply-asset-sync.ts`
+expects:
 
 ```json
 [
