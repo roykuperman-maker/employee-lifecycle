@@ -17,11 +17,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zgcar000t6lo4lq2imj13",
+    "id": "cmt6zgcas000v6lo4nduidrjk",
     "employeeId": "cmt6zgcaq000p6lo4vby2e5cz",
-    "assetTag": "IL00272",
-    "model": "Apple Computer Inc MacBook M1 Max (16\" 64GB)",
-    "status": "ASSIGNED"
+    "assetTag": "IL01436",
+    "model": "Apple Computer Inc MacBook M4 Max (16\" 64GB)",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",
@@ -225,14 +225,6 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zgcas000v6lo4nduidrjk",
-    "employeeId": "cmt6zgcaq000p6lo4vby2e5cz",
-    "assetTag": "IL01436",
-    "model": "Apple Computer Inc MacBook M4 Max (16\" 64GB)",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "ASSET",
     "id": "cmt6zgcb9001m6lo44wmfn3ij",
     "employeeId": "cmt6zgcb8001i6lo4cf5uqx32",
     "assetTag": "IL01013",
@@ -262,6 +254,14 @@
     "assetTag": "IL00360",
     "model": "Apple Computer Inc MacBook M1 Max (14\" 64GB)",
     "status": "ASSIGNED"
+  },
+  {
+    "kind": "ASSET",
+    "id": "cmt6zgcar000t6lo4lq2imj13",
+    "employeeId": "cmt6zgcaq000p6lo4vby2e5cz",
+    "assetTag": "IL00272",
+    "model": "Apple Computer Inc MacBook M1 Max (16\" 64GB)",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",
@@ -849,11 +849,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zgcfj00cr6lo40679is8l",
-    "employeeId": "cmt6zgcfi00cn6lo4sjzkdwp1",
-    "assetTag": "IL00451",
-    "model": "ThinkPad P1 Gen 4",
-    "status": "ASSIGNED"
+    "id": "cmt6zgcgg00fb6lo4uhs244xy",
+    "employeeId": "cmt6zgcgf00f96lo427rnok0a",
+    "assetTag": "IL00488",
+    "model": "Apple Computer Inc MacBook M2 Max (16\" 64GB)",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",
@@ -884,14 +884,6 @@
     "id": "cmt6zgcge00f46lo42autkhaj",
     "employeeId": "cmt6zgcgd00f26lo4uvxvkzrz",
     "assetTag": "IL00486",
-    "model": "Apple Computer Inc MacBook M2 Max (16\" 64GB)",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "ASSET",
-    "id": "cmt6zgcgg00fb6lo4uhs244xy",
-    "employeeId": "cmt6zgcgf00f96lo427rnok0a",
-    "assetTag": "IL00488",
     "model": "Apple Computer Inc MacBook M2 Max (16\" 64GB)",
     "status": "ASSIGNED"
   },
@@ -957,6 +949,14 @@
     "employeeId": "cmt6zgcg500eg6lo4rni7wh6o",
     "assetTag": "IL01381",
     "model": "Lenovo Group Ltd ThinkPad T14s Gen 5",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "ASSET",
+    "id": "cmt6zgcfj00cr6lo40679is8l",
+    "employeeId": "cmt6zgcfi00cn6lo4sjzkdwp1",
+    "assetTag": "IL00451",
+    "model": "Lenovo Group Ltd ThinkPad P1 Gen 4",
     "status": "ASSIGNED"
   },
   {
@@ -3049,6 +3049,14 @@
   },
   {
     "kind": "ASSET",
+    "id": "cmt6zgczm01mm6lo4ivazh6f9",
+    "employeeId": "cmt6zgczm01mk6lo4r2a107kn",
+    "assetTag": "IL01501",
+    "model": "Apple Computer Inc MacBook M4 Pro (14\" 48GB)",
+    "status": "RETURNED"
+  },
+  {
+    "kind": "ASSET",
     "id": "cmt6zgcxk01hy6lo4wop1zkww",
     "employeeId": "cmt6zgcxh01hu6lo4j39x2r8l",
     "assetTag": "IL01526",
@@ -3268,14 +3276,6 @@
     "id": "cmt6zgczl01mh6lo4zfc236lz",
     "employeeId": "cmt6zgczk01mf6lo449jg92lj",
     "assetTag": "IL01499",
-    "model": "Apple Computer Inc MacBook M4 Pro (14\" 48GB)",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "ASSET",
-    "id": "cmt6zgczm01mm6lo4ivazh6f9",
-    "employeeId": "cmt6zgczm01mk6lo4r2a107kn",
-    "assetTag": "IL01501",
     "model": "Apple Computer Inc MacBook M4 Pro (14\" 48GB)",
     "status": "ASSIGNED"
   },
@@ -3601,11 +3601,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zgcar000r6lo4q3jiywm6",
-    "employeeId": "cmt6zgcaq000p6lo4vby2e5cz",
-    "assetTag": "A331199",
-    "model": "Lenovo Group Ltd ThinkPad T480s",
-    "status": "ASSIGNED"
+    "id": "cmt6zgcjo00na6lo40vobjltw",
+    "employeeId": "cmt6zgcjn00n86lo4jfxjhblr",
+    "assetTag": "IL00835",
+    "model": "Apple Computer Inc MacBook M3 Pro (16\" 36GB)",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",
@@ -3705,14 +3705,6 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zgcjo00na6lo40vobjltw",
-    "employeeId": "cmt6zgcjn00n86lo4jfxjhblr",
-    "assetTag": "IL00835",
-    "model": "Apple Computer Inc MacBook M3 Pro (16\" 36GB)",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "ASSET",
     "id": "cmt6zgckb00ox6lo4hvroymz6",
     "employeeId": "cmt6zgckb00ov6lo4x0meizv7",
     "assetTag": "IL00884",
@@ -3806,6 +3798,14 @@
     "assetTag": "IL01326",
     "model": "Apple Computer Inc MacBook M4 Pro (16\" 48GB)",
     "status": "ASSIGNED"
+  },
+  {
+    "kind": "ASSET",
+    "id": "cmt6zgcar000r6lo4q3jiywm6",
+    "employeeId": "cmt6zgcaq000p6lo4vby2e5cz",
+    "assetTag": "A331199",
+    "model": "Lenovo Group Ltd ThinkPad T480s",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",
@@ -3977,10 +3977,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcch004q6lo4689lpwjk",
-    "employeeId": "cmt6zgccf004i6lo4iqfqznwx",
-    "assetTag": "354132414184468",
-    "model": "Apple Computer Inc iPhone 14 Pro Max",
+    "id": "cmt6zgcb7001h6lo4lzkhuibt",
+    "employeeId": "cmt6zgcax00196lo4yeyriuvi",
+    "assetTag": "357850273418837",
+    "model": "Apple Computer Inc iPhone 12 Pro",
     "status": "ASSIGNED"
   },
   {
@@ -4001,18 +4001,18 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcb7001h6lo4lzkhuibt",
-    "employeeId": "cmt6zgcax00196lo4yeyriuvi",
-    "assetTag": "357850273418837",
-    "model": "Apple Computer Inc iPhone 12 Pro",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcaw00166lo4qslg2mb2",
     "employeeId": "cmt6zgcat000y6lo4jca6oh5g",
     "assetTag": "350283162506768",
     "model": "Apple Computer Inc iPhone 13 Pro",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zf8ts000m12eh33navejb",
+    "employeeId": "cmt6zf8te000012ehvr2bblmu",
+    "assetTag": "353437174521770",
+    "model": "Samsung Galaxy S24 Ultra 256GB",
     "status": "ASSIGNED"
   },
   {
@@ -4033,10 +4033,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zf8ts000m12eh33navejb",
-    "employeeId": "cmt6zf8te000012ehvr2bblmu",
-    "assetTag": "353437174521770",
-    "model": "Samsung Galaxy S24 Ultra 256GB",
+    "id": "cmt6zgcc3003k6lo4czduk1er",
+    "employeeId": "cmt6zgcbv00366lo4crgw3gti",
+    "assetTag": "352246821422055",
+    "model": "Samsung Samsung Galaxy S25 Ultra",
     "status": "ASSIGNED"
   },
   {
@@ -4065,10 +4065,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcc3003k6lo4czduk1er",
-    "employeeId": "cmt6zgcbv00366lo4crgw3gti",
-    "assetTag": "352246821422055",
-    "model": "Samsung Samsung Galaxy S25 Ultra",
+    "id": "cmt6zgccb00476lo4a2r1ojrp",
+    "employeeId": "cmt6zgcc9003z6lo43oj2d1if",
+    "assetTag": "354839120182558",
+    "model": "Samsung Galaxy S22 Ultra",
     "status": "ASSIGNED"
   },
   {
@@ -4077,14 +4077,6 @@
     "employeeId": "cmt6zgcaq000p6lo4vby2e5cz",
     "assetTag": "352496801724737",
     "model": "Samsung Galaxy S23 Plus 256 GB",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
-    "id": "cmt6zgccb00476lo4a2r1ojrp",
-    "employeeId": "cmt6zgcc9003z6lo43oj2d1if",
-    "assetTag": "354839120182558",
-    "model": "Samsung Galaxy S22 Ultra",
     "status": "ASSIGNED"
   },
   {
@@ -4257,10 +4249,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcec009l6lo47012t9dw",
-    "employeeId": "cmt6zgcea009h6lo4i1zaji5q",
-    "assetTag": "351080476718330",
-    "model": "Apple Computer Inc iPhone 15 Pro",
+    "id": "cmt6zgcdr00856lo401alfchv",
+    "employeeId": "cmt6zgcdq00816lo402bxf42r",
+    "assetTag": "350060002899573",
+    "model": "Apple Computer Inc iPhone 14 Pro",
     "status": "ASSIGNED"
   },
   {
@@ -4273,10 +4265,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcdr00856lo401alfchv",
-    "employeeId": "cmt6zgcdq00816lo402bxf42r",
-    "assetTag": "350060002899573",
-    "model": "Apple Computer Inc iPhone 14 Pro",
+    "id": "cmt6zgcey00bb6lo4czsxwle5",
+    "employeeId": "cmt6zgcex00b56lo44a524ctv",
+    "assetTag": "355196754626585",
+    "model": "Apple Computer Inc iPhone 13 Pro",
     "status": "ASSIGNED"
   },
   {
@@ -4318,6 +4310,14 @@
     "assetTag": "359473645315694",
     "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
     "status": "RETURNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcec009l6lo47012t9dw",
+    "employeeId": "cmt6zgcea009h6lo4i1zaji5q",
+    "assetTag": "351080476718330",
+    "model": "Apple Computer Inc iPhone 15 Pro",
+    "status": "ASSIGNED"
   },
   {
     "kind": "MOBILE",
@@ -4537,14 +4537,6 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcey00bb6lo4czsxwle5",
-    "employeeId": "cmt6zgcex00b56lo44a524ctv",
-    "assetTag": "355196754626585",
-    "model": "Apple Computer Inc iPhone 13 Pro",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcg900er6lo4llko1d8q",
     "employeeId": "cmt6zgcg700en6lo47js0ulvq",
     "assetTag": "350110542189439",
@@ -4577,9 +4569,9 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcge00f66lo48ih81hf3",
-    "employeeId": "cmt6zgcgd00f26lo4uvxvkzrz",
-    "assetTag": "351135563464600",
+    "id": "cmt6zgchr00iy6lo4g4enunfl",
+    "employeeId": "cmt6zgchq00is6lo49m7jqd5d",
+    "assetTag": "351253393900477",
     "model": "Apple Computer Inc Apple iPhone 15 Pro - 128 GB",
     "status": "ASSIGNED"
   },
@@ -4625,9 +4617,9 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgchr00iy6lo4g4enunfl",
-    "employeeId": "cmt6zgchq00is6lo49m7jqd5d",
-    "assetTag": "351253393900477",
+    "id": "cmt6zgcge00f66lo48ih81hf3",
+    "employeeId": "cmt6zgcgd00f26lo4uvxvkzrz",
+    "assetTag": "351135563464600",
     "model": "Apple Computer Inc Apple iPhone 15 Pro - 128 GB",
     "status": "ASSIGNED"
   },
@@ -4817,10 +4809,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcja00mf6lo4z098ngh5",
-    "employeeId": "cmt6zgcj900m96lo4dqxh4z8k",
-    "assetTag": "351253393638614",
-    "model": "Apple Computer Inc Apple iPhone 15 Pro - 128 GB",
+    "id": "cmt6zgck300o86lo4eugudgxl",
+    "employeeId": "cmt6zgck100o46lo468ffd6pr",
+    "assetTag": "352798295118908",
+    "model": "Apple Computer Inc iPhone 12 Pro",
     "status": "ASSIGNED"
   },
   {
@@ -4897,14 +4889,6 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgck300o86lo4eugudgxl",
-    "employeeId": "cmt6zgck100o46lo468ffd6pr",
-    "assetTag": "352798295118908",
-    "model": "Apple Computer Inc iPhone 12 Pro",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcii00ko6lo49a2jwz9s",
     "employeeId": "cmt6zgcih00kk6lo4fi1y7se7",
     "assetTag": "351479728445157",
@@ -4949,6 +4933,14 @@
     "employeeId": "cmt6zgcjh00mv6lo425y9doj3",
     "assetTag": "356876521083256",
     "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcja00mf6lo4z098ngh5",
+    "employeeId": "cmt6zgcj900m96lo4dqxh4z8k",
+    "assetTag": "351253393638614",
+    "model": "Apple Computer Inc Apple iPhone 15 Pro - 128 GB",
     "status": "ASSIGNED"
   },
   {
@@ -5449,18 +5441,18 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcok00zp6lo4kve672z5",
-    "employeeId": "cmt6zgcoi00zj6lo479qm5lyy",
-    "assetTag": "350572412227849",
-    "model": "Apple Computer Inc iPhone 16 Pro Max",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgco100ye6lo4dlxs7j44",
     "employeeId": "cmt6zgco000y86lo4islziey8",
     "assetTag": "354839121139367",
     "model": "Samsung Galaxy S22 Ultra",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcmf00uj6lo4r0yssstx",
+    "employeeId": "cmt6zgcmc00ud6lo4n4n1840f",
+    "assetTag": "351619852181165",
+    "model": "Apple Computer Inc iPhone 13 Pro",
     "status": "ASSIGNED"
   },
   {
@@ -5473,10 +5465,18 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcmf00uj6lo4r0yssstx",
-    "employeeId": "cmt6zgcmc00ud6lo4n4n1840f",
-    "assetTag": "351619852181165",
-    "model": "Apple Computer Inc iPhone 13 Pro",
+    "id": "cmt6zgcos01096lo4ga892dqz",
+    "employeeId": "cmt6zgcor01056lo49kbu2232",
+    "assetTag": "352872332611462",
+    "model": "Apple Computer Inc iPhone 14 Pro Max",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcok00zp6lo4kve672z5",
+    "employeeId": "cmt6zgcoi00zj6lo479qm5lyy",
+    "assetTag": "350572412227849",
+    "model": "Apple Computer Inc iPhone 16 Pro Max",
     "status": "ASSIGNED"
   },
   {
@@ -5649,26 +5649,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcos01096lo4ga892dqz",
-    "employeeId": "cmt6zgcor01056lo49kbu2232",
-    "assetTag": "352872332611462",
-    "model": "Apple Computer Inc iPhone 14 Pro Max",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcpe011o6lo4re62q605",
     "employeeId": "cmt6zgcpb011i6lo4qtipf9et",
     "assetTag": "355705443989574",
     "model": "Samsung Samsung Galaxy S22 Ultra",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
-    "id": "cmt6zgcpd011m6lo40h4ol71a",
-    "employeeId": "cmt6zgcpb011i6lo4qtipf9et",
-    "assetTag": "352802099868799",
-    "model": "Samsung Galaxy S21",
     "status": "ASSIGNED"
   },
   {
@@ -5685,6 +5669,14 @@
     "employeeId": "cmt6zgcot010c6lo4ngguxwc6",
     "assetTag": "351366066234527",
     "model": "Apple Computer Inc iPhone 16 Pro Max",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcpd011m6lo40h4ol71a",
+    "employeeId": "cmt6zgcpb011i6lo4qtipf9et",
+    "assetTag": "352802099868799",
+    "model": "Samsung Galaxy S21",
     "status": "ASSIGNED"
   },
   {
@@ -5985,14 +5977,6 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgct501av6lo4bqbv3lz0",
-    "employeeId": "cmt6zgct201ap6lo49zgshrgp",
-    "assetTag": "359583823972163",
-    "model": "Apple Computer Inc iPhone 13 Pro",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcse019j6lo4zjtgr9ew",
     "employeeId": "cmt6zgcsc019d6lo46biut0pd",
     "assetTag": "351020628992797",
@@ -6013,6 +5997,14 @@
     "employeeId": "cmt6zgcr601646lo4bqr1yjd9",
     "assetTag": "355159677241031",
     "model": "Apple Computer Inc iPhone 17 Pro",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgct501av6lo4bqbv3lz0",
+    "employeeId": "cmt6zgct201ap6lo49zgshrgp",
+    "assetTag": "359583823972163",
+    "model": "Apple Computer Inc iPhone 13 Pro",
     "status": "ASSIGNED"
   },
   {
@@ -6257,14 +6249,6 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcw101ek6lo44aq1ikds",
-    "employeeId": "cmt6zgcvz01ee6lo47hvqz0vf",
-    "assetTag": "356876520798540",
-    "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcwc01f46lo4foqrrryy",
     "employeeId": "cmt6zgcw801f06lo4173kj02q",
     "assetTag": "350518492253155",
@@ -6285,6 +6269,14 @@
     "employeeId": "cmt6zgcvo01dm6lo4wnnkfa4b",
     "assetTag": "356663763443285",
     "model": "Samsung Galaxy S23 Ultra 256 GB",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcw101ek6lo44aq1ikds",
+    "employeeId": "cmt6zgcvz01ee6lo47hvqz0vf",
+    "assetTag": "356876520798540",
+    "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
     "status": "ASSIGNED"
   },
   {
@@ -6585,6 +6577,14 @@
   },
   {
     "kind": "MOBILE",
+    "id": "cmt6zgcyj01je6lo4fxw8pt2y",
+    "employeeId": "cmt6zgcyh01j86lo4ku0i0j6m",
+    "assetTag": "352496801001151",
+    "model": "Samsung Galaxy S23 Plus",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
     "id": "cmt6zgcy301i86lo4h9x0ycac",
     "employeeId": "cmt6zgcxz01i46lo49ho93f87",
     "assetTag": "350579293214234",
@@ -6781,14 +6781,6 @@
     "employeeId": "cmt6zgczy01nl6lo4sbs4ya9t",
     "assetTag": "353437171548636",
     "model": "Samsung Galaxy S24 Ultra 256GB",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
-    "id": "cmt6zgcyj01je6lo4fxw8pt2y",
-    "employeeId": "cmt6zgcyh01j86lo4ku0i0j6m",
-    "assetTag": "352496801001151",
-    "model": "Samsung Galaxy S23 Plus",
     "status": "ASSIGNED"
   },
   {
@@ -7489,26 +7481,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcp501176lo4qgqw4c2k",
-    "employeeId": "cmt6zgcp301116lo4jqs6uhtn",
-    "assetTag": "356876520780712",
-    "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcrd016p6lo4b71pzj1o",
     "employeeId": "cmt6zgcrc016l6lo4t5gutgwz",
     "assetTag": "351479729718727",
     "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
-    "id": "cmt6zgcap000o6lo4fq66ckyk",
-    "employeeId": "cmt6zgcak000g6lo4vbty8etu",
-    "assetTag": "355705443034116",
-    "model": "Samsung Galaxy S22 Ultra",
     "status": "ASSIGNED"
   },
   {
@@ -7521,10 +7497,26 @@
   },
   {
     "kind": "MOBILE",
+    "id": "cmt6zgcp501176lo4qgqw4c2k",
+    "employeeId": "cmt6zgcp301116lo4jqs6uhtn",
+    "assetTag": "356876520780712",
+    "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
     "id": "cmt6zgcb4001f6lo4q2rnelnm",
     "employeeId": "cmt6zgcax00196lo4yeyriuvi",
     "assetTag": "355319542055939",
     "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcap000o6lo4fq66ckyk",
+    "employeeId": "cmt6zgcak000g6lo4vbty8etu",
+    "assetTag": "355705443034116",
+    "model": "Samsung Galaxy S22 Ultra",
     "status": "ASSIGNED"
   },
   {
@@ -7561,10 +7553,10 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgd0n01po6lo44f3vb8gz",
-    "employeeId": "cmt6zgd0l01pi6lo4ncpjyv57",
-    "assetTag": "356703858412843",
-    "model": "Apple Computer Inc iPhone 14 Pro Max",
+    "id": "cmt6zgccq005e6lo4ag5c3tq9",
+    "employeeId": "cmt6zgcco00586lo41ar6bp7z",
+    "assetTag": "356389954244262",
+    "model": "Apple Computer Inc iPhone 13 Pro Max",
     "status": "ASSIGNED"
   },
   {
@@ -7581,14 +7573,6 @@
     "employeeId": "cmt6zgcch004r6lo4fus5xgjg",
     "assetTag": "357017915683570",
     "model": "Apple Computer Inc Apple iPhone 17 Pro - 256 GB",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
-    "id": "cmt6zgccq005e6lo4ag5c3tq9",
-    "employeeId": "cmt6zgcco00586lo41ar6bp7z",
-    "assetTag": "356389954244262",
-    "model": "Apple Computer Inc iPhone 13 Pro Max",
     "status": "ASSIGNED"
   },
   {
@@ -7645,14 +7629,6 @@
     "employeeId": "cmt6zgciv00lf6lo4mg1jmlcf",
     "assetTag": "357121281167562",
     "model": "Apple Computer Inc iPhone 16 Pro Max",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
-    "id": "cmt6zgcif00ke6lo4fd35fvsu",
-    "employeeId": "cmt6zgcid00ka6lo4dspmouh4",
-    "assetTag": "352362882847377",
-    "model": "Apple Computer Inc iPhone 13 Pro Max",
     "status": "ASSIGNED"
   },
   {
@@ -7773,6 +7749,22 @@
     "employeeId": "cmt6zgcyv01k76lo48je9rc6q",
     "assetTag": "359473645488442",
     "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgd0n01po6lo44f3vb8gz",
+    "employeeId": "cmt6zgd0l01pi6lo4ncpjyv57",
+    "assetTag": "356703858412843",
+    "model": "Apple Computer Inc iPhone 14 Pro Max",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcif00ke6lo4fd35fvsu",
+    "employeeId": "cmt6zgcid00ka6lo4dspmouh4",
+    "assetTag": "352362882847377",
+    "model": "Apple Computer Inc iPhone 13 Pro Max",
     "status": "ASSIGNED"
   },
   {
@@ -7925,6 +7917,14 @@
     "employeeId": "cmt6zgctu01ce6lo4se5st1xf",
     "assetTag": "351135563994945",
     "model": "Apple Computer Inc Apple iPhone 15 Pro - 128 GB",
+    "status": "ASSIGNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcch004q6lo4689lpwjk",
+    "employeeId": "cmt6zgccf004i6lo4iqfqznwx",
+    "assetTag": "354132414184468",
+    "model": "Apple Computer Inc iPhone 14 Pro Max",
     "status": "ASSIGNED"
   }
 ]
