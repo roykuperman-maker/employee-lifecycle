@@ -56,15 +56,15 @@ export const TICKET_CATEGORY_LABELS: Record<string, string> = {
   NEW_HIRE: "New Hire",
 };
 
-// ServiceNow incident state codes.
+// ServiceNow sc_task (Catalog Task) state codes — these tickets are all
+// sc_task records, not incidents.
 export const TICKET_STATE_LABELS: Record<string, string> = {
   "1": "Open",
   "2": "In Progress",
   "-1": "Assigned",
   "-5": "Pending",
-  "6": "Resolved",
-  "7": "Closed",
-  "8": "Cancelled",
+  "3": "Closed Complete",
+  "4": "Cancelled",
 };
 
 export const TICKET_OPEN_STATES = ["1", "2", "-1", "-5"];

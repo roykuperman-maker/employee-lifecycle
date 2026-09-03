@@ -30,6 +30,11 @@ const COLORS: Record<string, string> = {
   Pending: "bg-amber-100 text-amber-800",
   Initiated: "bg-sky-100 text-sky-800",
   "Buyback in process": "bg-orange-100 text-orange-800",
+  Open: "bg-sky-100 text-sky-800",
+  "In Progress": "bg-blue-100 text-blue-800",
+  Assigned: "bg-blue-100 text-blue-800",
+  "Closed Complete": "bg-slate-200 text-slate-700",
+  Cancelled: "bg-slate-200 text-slate-700",
 };
 
 export function Badge({ value }: { value: string }) {
