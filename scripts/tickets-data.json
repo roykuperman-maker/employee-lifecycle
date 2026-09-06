@@ -330,18 +330,6 @@
     "snowCreatedAt": "2025-12-31T09:29:59Z"
   },
   {
-    "number": "TASK3604300",
-    "category": "NEW_HIRE",
-    "shortDescription": "New Hire Site Tech Task: Shaul Tolkowsky Location: TEL AVIV-OFER-9th Floor",
-    "description": "New hire Shaul Tolkowsky — Mac Developer/Professional Class laptop 16\" — prepared by Sigalit Bechler",
-    "callerName": "Sigalit Bechler",
-    "assignmentGroup": "EE Tech - OnSite Tech - TLV",
-    "state": "1",
-    "startDate": "2026-09-07",
-    "newHireName": "Shaul Tolkowsky",
-    "snowCreatedAt": "2026-08-20T10:11:41Z"
-  },
-  {
     "number": "TASK3604302",
     "category": "NEW_HIRE",
     "shortDescription": "New Hire Site Services Task: Shaul Tolkowsky Location: TEL AVIV-OFER-9th Floor Location Type: mobile",
@@ -352,5 +340,31 @@
     "startDate": "2026-09-07",
     "newHireName": "Shaul Tolkowsky",
     "snowCreatedAt": "2026-08-20T10:11:43Z"
+  },
+  {
+    "number": "TASK3622151",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback Request",
+    "description": "Denis Kosovich — buyback on refresh — iPhone 15 Pro Max - 256 GB",
+    "callerName": "Denis Kosovich",
+    "assignmentGroup": "EE Tech – Mobile - TLV",
+    "state": "1",
+    "assetTag": "353650694304978",
+    "snowCreatedAt": "2026-09-06T10:44:48Z"
+  },
+  {
+    "number": "TASK3622141",
+    "category": "MOBILE_DEVICE_REQUEST",
+    "shortDescription": "Mobile Device Request for Ofer Haim",
+    "description": "Ofer Haim — Refresh Request — Apple iPhone 17 Pro - 256 GB",
+    "callerName": "Ofer Haim",
+    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
+    "state": "1",
+    "requesterName": "Ofer Haim",
+    "requesterEmail": "ofer_haim@intuit.com",
+    "requesterPhone": "0508316220",
+    "deviceType": "Apple iPhone 17 Pro - 256 GB",
+    "requestType": "Refresh Request",
+    "snowCreatedAt": "2026-09-06T08:14:11Z"
   }
 ]
