@@ -45,6 +45,7 @@ export default async function TicketsPage({
       not: null,
       notIn: ["Site Services - Coordinators - TLV"],
     },
+    state: { not: "3" },
   };
   if (searchParams.category) where.category = searchParams.category;
   if (searchParams.state === "OPEN") {
