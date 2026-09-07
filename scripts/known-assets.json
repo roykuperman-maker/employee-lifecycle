@@ -953,14 +953,6 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zgcfa00c36lo42yaxffnh",
-    "employeeId": "cmt6zgcfa00c16lo4s4qq2vsb",
-    "assetTag": "IL00359",
-    "model": "Apple Computer Inc MacBook M1 Max (16\" 64GB)",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "ASSET",
     "id": "cmt6zgcfm00cy6lo4eeh2e40q",
     "employeeId": "cmt6zgcfl00cw6lo4ut2j1hn2",
     "assetTag": "IL00377",
@@ -990,6 +982,14 @@
     "assetTag": "IL00346",
     "model": "Apple Computer Inc MacBook M1 Max (16\" 64GB)",
     "status": "ASSIGNED"
+  },
+  {
+    "kind": "ASSET",
+    "id": "cmt6zgcfa00c36lo42yaxffnh",
+    "employeeId": "cmt6zgcfa00c16lo4s4qq2vsb",
+    "assetTag": "IL00359",
+    "model": "Apple Computer Inc MacBook M1 Max (16\" 64GB)",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",

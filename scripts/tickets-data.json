@@ -342,29 +342,54 @@
     "snowCreatedAt": "2026-08-20T10:11:43Z"
   },
   {
-    "number": "TASK3622151",
+    "number": "TASK3622153",
     "category": "MOBILE_BUYBACK",
-    "shortDescription": "Mobile Buyback Request",
+    "shortDescription": "Mobile Device Management Removal - Buyback",
     "description": "Denis Kosovich — buyback on refresh — iPhone 15 Pro Max - 256 GB",
     "callerName": "Denis Kosovich",
-    "assignmentGroup": "EE Tech – Mobile - TLV",
+    "assignmentGroup": null,
     "state": "1",
     "assetTag": "353650694304978",
-    "snowCreatedAt": "2026-09-06T10:44:48Z"
+    "snowCreatedAt": "2026-09-06T11:08:54Z"
   },
   {
-    "number": "TASK3622141",
+    "number": "TASK3622154",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback - Invoice Processing",
+    "description": "Denis Kosovich — buyback on refresh — iPhone 15 Pro Max - 256 GB",
+    "callerName": "Denis Kosovich",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "353650694304978",
+    "snowCreatedAt": "2026-09-06T11:08:55Z"
+  },
+  {
+    "number": "TASK3622164",
     "category": "MOBILE_DEVICE_REQUEST",
-    "shortDescription": "Mobile Device Request for Ofer Haim",
-    "description": "Ofer Haim — Refresh Request — Apple iPhone 17 Pro - 256 GB",
-    "callerName": "Ofer Haim",
+    "shortDescription": "Mobile Device Request for Omer Sadeh",
+    "description": "Omer Sadeh — Refresh Request — Apple iPhone 17 Pro - 256 GB",
+    "callerName": "Omer Sadeh",
     "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
     "state": "1",
-    "requesterName": "Ofer Haim",
-    "requesterEmail": "ofer_haim@intuit.com",
-    "requesterPhone": "0508316220",
+    "requesterName": "Omer Sadeh",
+    "requesterEmail": "omer_sadeh@intuit.com",
     "deviceType": "Apple iPhone 17 Pro - 256 GB",
     "requestType": "Refresh Request",
-    "snowCreatedAt": "2026-09-06T08:14:11Z"
+    "snowCreatedAt": "2026-09-06T14:42:31Z"
+  },
+  {
+    "number": "TASK3622155",
+    "category": "MOBILE_DEVICE_REQUEST",
+    "shortDescription": "Mobile Device Request for Michael Loukin",
+    "description": "Michael Loukin — New Request (Port In) — Apple iPhone 17 Pro Max - 256 GB",
+    "callerName": "Michael Loukin",
+    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
+    "state": "1",
+    "requesterName": "Michael Loukin",
+    "requesterEmail": "michael_loukin@intuit.com",
+    "requesterPhone": "0544701583",
+    "deviceType": "Apple iPhone 17 Pro Max - 256 GB",
+    "requestType": "New Request",
+    "snowCreatedAt": "2026-09-06T11:11:27Z"
   }
 ]
