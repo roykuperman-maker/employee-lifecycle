@@ -51,6 +51,22 @@ export default async function ExitProcessesPage({
     orderBy: { [sortKey]: sortDir },
   });
 
+  // ExitProcess itself carries no phone number — look it up on the matching
+  // Employee record. QUICKBASE rows have an email to match on; CW_REPORT
+  // rows don't (the source report has no email column), so fall back to
+  // matching by name for those.
+  const employees = await prisma.employee.findMany({
+    where: { phoneNumber: { not: null } },
+    select: { fullName: true, intuitEmail: true, phoneNumber: true },
+  });
+  const phoneByEmail = new Map(
+    employees.filter((e) => e.intuitEmail).map((e) => [e.intuitEmail!.toLowerCase(), e.phoneNumber])
+  );
+  const phoneByName = new Map(employees.map((e) => [e.fullName.toLowerCase(), e.phoneNumber]));
+  function phoneFor(e: { employeeEmail: string | null; employeeName: string }) {
+    return (e.employeeEmail && phoneByEmail.get(e.employeeEmail.toLowerCase())) || phoneByName.get(e.employeeName.toLowerCase()) || null;
+  }
+
   return (
     <div>
       <div className="mb-6 flex items-center justify-between">
@@ -87,6 +103,7 @@ export default async function ExitProcessesPage({
                   </th>
                 );
               })}
+              <th className="px-4 py-3">Phone</th>
               {DEPT_COLUMNS.map((c) => (
                 <th key={c.key} className="px-4 py-3">
                   {c.label}
@@ -117,6 +134,7 @@ export default async function ExitProcessesPage({
                 <td className="px-4 py-3">
                   <Badge value={e.source === "CW_REPORT" ? "CW" : "FTE"} />
                 </td>
+                <td className="px-4 py-3 text-slate-500">{phoneFor(e) || "—"}</td>
                 <td className="px-4 py-3 text-slate-500">{e.jobTitle || "—"}</td>
                 <td className="px-4 py-3 text-slate-500">{e.managerName || "—"}</td>
                 <td className="px-4 py-3 text-slate-500">
@@ -136,7 +154,7 @@ export default async function ExitProcessesPage({
             ))}
             {exitProcesses.length === 0 && (
               <tr>
-                <td colSpan={7 + DEPT_COLUMNS.length} className="px-4 py-8 text-center text-slate-400">
+                <td colSpan={8 + DEPT_COLUMNS.length} className="px-4 py-8 text-center text-slate-400">
                   No exit processes synced yet — click "Sync now" above.
                 </td>
               </tr>
