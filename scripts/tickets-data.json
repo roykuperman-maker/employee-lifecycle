@@ -1,5 +1,42 @@
 [
   {
+    "number": "TASK3622633",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback Request",
+    "description": "Meghan Mergui — buyback on refresh — iPhone 15 Pro Max - 256 GB",
+    "callerName": "Meghan Mergui",
+    "assignmentGroup": "EE Tech – Mobile - TLV",
+    "state": "1",
+    "assetTag": "354653145400014",
+    "snowCreatedAt": "2026-09-08T04:48:29Z"
+  },
+  {
+    "number": "TASK3622331",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback Request",
+    "description": "Osnat Haj Yahia — buyback on resignation — iPhone 16 Pro Max",
+    "callerName": "Osnat Haj Yahia",
+    "assignmentGroup": "EE Tech – Mobile - TLV",
+    "state": "1",
+    "assetTag": "353397166446768",
+    "snowCreatedAt": "2026-09-07T08:42:25Z"
+  },
+  {
+    "number": "TASK3622519",
+    "category": "MOBILE_DEVICE_REQUEST",
+    "shortDescription": "Mobile Device Request for Ofer Levi",
+    "description": "Ofer Levi — Refresh Request — Apple iPhone 17 Pro Max - 256 GB",
+    "callerName": "Ofer Levi",
+    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
+    "state": "1",
+    "requesterName": "Ofer Levi",
+    "requesterEmail": "ofer_levi@intuit.com",
+    "requesterPhone": "0528852193",
+    "deviceType": "Apple iPhone 17 Pro Max - 256 GB",
+    "requestType": "Refresh Request",
+    "snowCreatedAt": "2026-09-07T18:41:27Z"
+  },
+  {
     "number": "TASK3606958",
     "category": "MOBILE_BUYBACK",
     "shortDescription": "Mobile Buyback - Invoice Processing",

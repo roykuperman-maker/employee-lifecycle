@@ -65,11 +65,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zf8ti000212ehzdno2ihp",
+    "id": "cmt6zf8tl000612eh3lmi05ge",
     "employeeId": "cmt6zf8te000012ehvr2bblmu",
-    "assetTag": "A330941",
+    "assetTag": "A331146",
     "model": "Lenovo Group Ltd ThinkCentre M900",
-    "status": "ASSIGNED"
+    "status": "RETURN_REQUESTED"
   },
   {
     "kind": "ASSET",
@@ -145,11 +145,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zf8tl000612eh3lmi05ge",
+    "id": "cmt6zf8tm000812eh889q6odi",
     "employeeId": "cmt6zf8te000012ehvr2bblmu",
-    "assetTag": "A331146",
+    "assetTag": "A331149",
     "model": "Lenovo Group Ltd ThinkCentre M900",
-    "status": "ASSIGNED"
+    "status": "RETURN_REQUESTED"
   },
   {
     "kind": "ASSET",
@@ -161,11 +161,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zf8tm000812eh889q6odi",
+    "id": "cmt6zf8tn000a12ehkor2945d",
     "employeeId": "cmt6zf8te000012ehvr2bblmu",
-    "assetTag": "A331149",
-    "model": "Lenovo Group Ltd ThinkCentre M900",
-    "status": "ASSIGNED"
+    "assetTag": "I00066",
+    "model": "Lenovo Group Ltd ThinkCentre M52",
+    "status": "RETURN_REQUESTED"
   },
   {
     "kind": "ASSET",
@@ -177,11 +177,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zf8tn000a12ehkor2945d",
+    "id": "cmt6zf8tl000412ehp5omyrth",
     "employeeId": "cmt6zf8te000012ehvr2bblmu",
-    "assetTag": "I00066",
-    "model": "Lenovo Group Ltd ThinkCentre M52",
-    "status": "ASSIGNED"
+    "assetTag": "A331124",
+    "model": "Lenovo Group Ltd ThinkCentre M900",
+    "status": "RETURN_REQUESTED"
   },
   {
     "kind": "ASSET",
@@ -249,11 +249,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zf8tl000412ehp5omyrth",
+    "id": "cmt6zf8ti000212ehzdno2ihp",
     "employeeId": "cmt6zf8te000012ehvr2bblmu",
-    "assetTag": "A331124",
+    "assetTag": "A330941",
     "model": "Lenovo Group Ltd ThinkCentre M900",
-    "status": "ASSIGNED"
+    "status": "RETURN_REQUESTED"
   },
   {
     "kind": "ASSET",
@@ -353,11 +353,11 @@
   },
   {
     "kind": "ASSET",
-    "id": "cmt6zgcbr002u6lo4wqi36tck",
-    "employeeId": "cmt6zgcbq002s6lo4exx2tem9",
-    "assetTag": "A331271",
-    "model": "Apple Computer Inc MacBook Pro 15\"",
-    "status": "ASSIGNED"
+    "id": "cmt6zgccc004a6lo4qhomgnpi",
+    "employeeId": "cmt6zgccb00486lo4mxfcw8mm",
+    "assetTag": "I00081",
+    "model": "Apple Computer Inc MacBook Pro 16\"",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",
@@ -405,14 +405,6 @@
     "employeeId": "cmt6zgccf004i6lo4iqfqznwx",
     "assetTag": "I00140",
     "model": "Lenovo Group Ltd ThinkPad P1 Gen 1",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "ASSET",
-    "id": "cmt6zgccc004a6lo4qhomgnpi",
-    "employeeId": "cmt6zgccb00486lo4mxfcw8mm",
-    "assetTag": "I00081",
-    "model": "Apple Computer Inc MacBook Pro 16\"",
     "status": "ASSIGNED"
   },
   {
@@ -494,6 +486,14 @@
     "assetTag": "IL01046",
     "model": "Apple Computer Inc MacBook M3 Pro (16\" 36GB)",
     "status": "ASSIGNED"
+  },
+  {
+    "kind": "ASSET",
+    "id": "cmt6zgcbr002u6lo4wqi36tck",
+    "employeeId": "cmt6zgcbq002s6lo4exx2tem9",
+    "assetTag": "A331271",
+    "model": "Apple Computer Inc MacBook Pro 15\"",
+    "status": "RETURNED"
   },
   {
     "kind": "ASSET",
@@ -953,6 +953,14 @@
   },
   {
     "kind": "ASSET",
+    "id": "cmt6zgcfs00df6lo4euo1kke9",
+    "employeeId": "cmt6zgcfr00dd6lo4gcikxnbu",
+    "assetTag": "IL00416",
+    "model": "Lenovo Group Ltd ThinkPad T14s Gen 2",
+    "status": "RETURNED"
+  },
+  {
+    "kind": "ASSET",
     "id": "cmt6zgcfm00cy6lo4eeh2e40q",
     "employeeId": "cmt6zgcfl00cw6lo4ut2j1hn2",
     "assetTag": "IL00377",
@@ -997,14 +1005,6 @@
     "employeeId": "cmt6zgcfn00d36lo4iqz3itrm",
     "assetTag": "IL01512",
     "model": "Apple Computer Inc MacBook M4 Max (14\" 64GB)",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "ASSET",
-    "id": "cmt6zgcfs00df6lo4euo1kke9",
-    "employeeId": "cmt6zgcfr00dd6lo4gcikxnbu",
-    "assetTag": "IL00416",
-    "model": "Lenovo Group Ltd ThinkPad T14s Gen 2",
     "status": "ASSIGNED"
   },
   {
@@ -4249,14 +4249,6 @@
   },
   {
     "kind": "MOBILE",
-    "id": "cmt6zgcey00bb6lo4czsxwle5",
-    "employeeId": "cmt6zgcex00b56lo44a524ctv",
-    "assetTag": "355196754626585",
-    "model": "Apple Computer Inc iPhone 13 Pro",
-    "status": "ASSIGNED"
-  },
-  {
-    "kind": "MOBILE",
     "id": "cmt6zgcdc00766lo4c0vckpmd",
     "employeeId": "cmt6zgcdb00726lo43egxq25z",
     "assetTag": "350579293006812",
@@ -4309,6 +4301,14 @@
     "employeeId": "cmt6zgce1008w6lo41pk7hgta",
     "assetTag": "359473645315694",
     "model": "Apple Computer Inc Apple iPhone 15 Pro Max - 256 GB",
+    "status": "RETURNED"
+  },
+  {
+    "kind": "MOBILE",
+    "id": "cmt6zgcey00bb6lo4czsxwle5",
+    "employeeId": "cmt6zgcex00b56lo44a524ctv",
+    "assetTag": "355196754626585",
+    "model": "Apple Computer Inc iPhone 13 Pro",
     "status": "RETURNED"
   },
   {
