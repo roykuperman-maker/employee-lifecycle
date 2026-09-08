@@ -73,6 +73,10 @@ export async function POST(req: NextRequest, { params }: { params: { id: string 
       triggerType: "LINE_FORM_SENT_TO_PARTNER",
     });
 
+    if (finalPhone !== "N/A" && finalPhone !== employee.phoneNumber) {
+      await prisma.employee.update({ where: { id: employee.id }, data: { phoneNumber: finalPhone } });
+    }
+
     const updated = await prisma.lineForm.update({
       where: { id: lineForm.id },
       data: {
