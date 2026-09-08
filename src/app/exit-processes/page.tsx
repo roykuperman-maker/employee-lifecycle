@@ -134,7 +134,6 @@ export default async function ExitProcessesPage({
                 <td className="px-4 py-3">
                   <Badge value={e.source === "CW_REPORT" ? "CW" : "FTE"} />
                 </td>
-                <td className="px-4 py-3 text-slate-500">{phoneFor(e) || "—"}</td>
                 <td className="px-4 py-3 text-slate-500">{e.jobTitle || "—"}</td>
                 <td className="px-4 py-3 text-slate-500">{e.managerName || "—"}</td>
                 <td className="px-4 py-3 text-slate-500">
@@ -142,6 +141,7 @@ export default async function ExitProcessesPage({
                 </td>
                 <td className="px-4 py-3 text-slate-500">{e.exitType || "—"}</td>
                 <td className="px-4 py-3">{e.exitProcessStatus ? <Badge value={e.exitProcessStatus} /> : "—"}</td>
+                <td className="px-4 py-3 text-slate-500">{phoneFor(e) || "—"}</td>
                 {DEPT_COLUMNS.map((c) => {
                   const value = e[c.key as keyof typeof e] as string | null;
                   return (
