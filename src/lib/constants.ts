@@ -50,6 +50,12 @@ export function snowTaskUrl(number: string): string {
   return `https://intuit.service-now.com/nav_to.do?uri=sc_task.do?sysparm_query=number=${encodeURIComponent(number)}`;
 }
 
+// Hardware assets (computers + mobiles) are alm_hardware records — this app
+// doesn't store their sys_id, only the asset tag, so link by tag lookup.
+export function snowAssetUrl(assetTag: string): string {
+  return `https://intuit.service-now.com/nav_to.do?uri=alm_hardware.do?sysparm_query=asset_tag=${encodeURIComponent(assetTag)}`;
+}
+
 export const TICKET_CATEGORY_LABELS: Record<string, string> = {
   MOBILE_BUYBACK: "Mobile Buyback Requests",
   MOBILE_DEVICE_REQUEST: "Mobile Device Request",

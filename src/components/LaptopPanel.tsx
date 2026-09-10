@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Badge } from "@/components/Badge";
-import { COMPUTER_TYPE_LABELS } from "@/lib/constants";
+import { COMPUTER_TYPE_LABELS, snowAssetUrl } from "@/lib/constants";
 
 type AssetData = {
   id: string;
@@ -47,7 +47,14 @@ function AssetCard({ asset }: { asset: AssetData }) {
         </div>
         <div>
           <div className="text-slate-400">Asset Tag</div>
-          <div>{asset.assetTag}</div>
+          <a
+            href={snowAssetUrl(asset.assetTag)}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            {asset.assetTag}
+          </a>
         </div>
         <div>
           <div className="text-slate-400">Status</div>

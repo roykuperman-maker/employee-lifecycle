@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Badge } from "@/components/Badge";
+import { snowAssetUrl } from "@/lib/constants";
 
 type MobileDeviceData = {
   id: string;
@@ -108,7 +109,18 @@ function MobileDeviceCard({
             </div>
           ) : (
             <div className="flex items-center gap-2">
-              <span>{device.assetTag || "—"}</span>
+              {device.assetTag ? (
+                <a
+                  href={snowAssetUrl(device.assetTag)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  {device.assetTag}
+                </a>
+              ) : (
+                <span>—</span>
+              )}
               <button
                 onClick={() => setEditingTag(true)}
                 className="text-xs text-slate-400 underline hover:text-slate-600"
