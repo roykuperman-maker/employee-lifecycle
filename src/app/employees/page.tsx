@@ -58,12 +58,14 @@ export default async function EmployeesPage({
   const sortDir: "asc" | "desc" = searchParams.dir === "desc" ? "desc" : "asc";
   const mobileCount = (e: (typeof employees)[number]) =>
     e.mobileDevices.filter((m) => m.status !== "NOT_APPLICABLE").length;
+  const computerCount = (e: (typeof employees)[number]) =>
+    e.assets.filter((a) => a.status !== "RETURNED").length;
 
   const sorted = [...employees].sort((a, b) => {
     let cmp = 0;
     switch (sortKey) {
       case "computerCount":
-        cmp = a.assets.length - b.assets.length;
+        cmp = computerCount(a) - computerCount(b);
         break;
       case "mobileCount":
         cmp = mobileCount(a) - mobileCount(b);
@@ -182,8 +184,8 @@ export default async function EmployeesPage({
                   {e.employmentStartDate ? new Date(e.employmentStartDate).toLocaleDateString() : "—"}
                 </td>
                 <td className="px-4 py-3">
-                  {e.assets.length > 0
-                    ? `${e.assets.length} computer${e.assets.length > 1 ? "s" : ""}`
+                  {computerCount(e) > 0
+                    ? `${computerCount(e)} computer${computerCount(e) > 1 ? "s" : ""}`
                     : "—"}
                 </td>
                 <td className="px-4 py-3">
