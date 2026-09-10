@@ -1,40 +1,62 @@
 [
   {
-    "number": "TASK3622633",
+    "number": "TASK3622817",
     "category": "MOBILE_BUYBACK",
-    "shortDescription": "Mobile Buyback Request",
+    "shortDescription": "Mobile Device Management Removal - Buyback",
     "description": "Meghan Mergui — buyback on refresh — iPhone 15 Pro Max - 256 GB",
     "callerName": "Meghan Mergui",
-    "assignmentGroup": "EE Tech – Mobile - TLV",
+    "assignmentGroup": null,
     "state": "1",
     "assetTag": "354653145400014",
-    "snowCreatedAt": "2026-09-08T04:48:29Z"
+    "snowCreatedAt": "2026-09-08T09:54:28Z"
   },
   {
-    "number": "TASK3622331",
+    "number": "TASK3622818",
     "category": "MOBILE_BUYBACK",
-    "shortDescription": "Mobile Buyback Request",
+    "shortDescription": "Mobile Buyback - Invoice Processing",
+    "description": "Meghan Mergui — buyback on refresh — iPhone 15 Pro Max - 256 GB",
+    "callerName": "Meghan Mergui",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "354653145400014",
+    "snowCreatedAt": "2026-09-08T09:54:28Z"
+  },
+  {
+    "number": "TASK3622819",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Device Management Removal - Buyback",
     "description": "Osnat Haj Yahia — buyback on resignation — iPhone 16 Pro Max",
     "callerName": "Osnat Haj Yahia",
-    "assignmentGroup": "EE Tech – Mobile - TLV",
+    "assignmentGroup": null,
     "state": "1",
     "assetTag": "353397166446768",
-    "snowCreatedAt": "2026-09-07T08:42:25Z"
+    "snowCreatedAt": "2026-09-08T09:55:05Z"
   },
   {
-    "number": "TASK3622519",
+    "number": "TASK3622820",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback - Invoice Processing",
+    "description": "Osnat Haj Yahia — buyback on resignation — iPhone 16 Pro Max",
+    "callerName": "Osnat Haj Yahia",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "353397166446768",
+    "snowCreatedAt": "2026-09-08T09:55:05Z"
+  },
+  {
+    "number": "TASK3625773",
     "category": "MOBILE_DEVICE_REQUEST",
-    "shortDescription": "Mobile Device Request for Ofer Levi",
-    "description": "Ofer Levi — Refresh Request — Apple iPhone 17 Pro Max - 256 GB",
-    "callerName": "Ofer Levi",
+    "shortDescription": "Mobile Device Request for Shaul Tolkowsky",
+    "description": "Shaul Tolkowsky — New Request (new line, mobilize personal number) — Apple iPhone 17 Pro Max - 256 GB",
+    "callerName": "Shaul Tolkowsky",
     "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
     "state": "1",
-    "requesterName": "Ofer Levi",
-    "requesterEmail": "ofer_levi@intuit.com",
-    "requesterPhone": "0528852193",
+    "requesterName": "Shaul Tolkowsky",
+    "requesterEmail": "shaul_tolkowsky@intuit.com",
+    "requesterPhone": "0526334997",
     "deviceType": "Apple iPhone 17 Pro Max - 256 GB",
-    "requestType": "Refresh Request",
-    "snowCreatedAt": "2026-09-07T18:41:27Z"
+    "requestType": "New Request",
+    "snowCreatedAt": "2026-09-10T06:34:25Z"
   },
   {
     "number": "TASK3606958",
@@ -399,20 +421,6 @@
     "state": "1",
     "assetTag": "353650694304978",
     "snowCreatedAt": "2026-09-06T11:08:55Z"
-  },
-  {
-    "number": "TASK3622164",
-    "category": "MOBILE_DEVICE_REQUEST",
-    "shortDescription": "Mobile Device Request for Omer Sadeh",
-    "description": "Omer Sadeh — Refresh Request — Apple iPhone 17 Pro - 256 GB",
-    "callerName": "Omer Sadeh",
-    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
-    "state": "1",
-    "requesterName": "Omer Sadeh",
-    "requesterEmail": "omer_sadeh@intuit.com",
-    "deviceType": "Apple iPhone 17 Pro - 256 GB",
-    "requestType": "Refresh Request",
-    "snowCreatedAt": "2026-09-06T14:42:31Z"
   },
   {
     "number": "TASK3622155",
