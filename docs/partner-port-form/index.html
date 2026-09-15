@@ -720,10 +720,16 @@ async function buildPdfBase64() {
 
 async function sendToPartner() {
   const btn = document.getElementById('btnSendPartner');
+  const simInput = document.getElementById('sim_number_for_email');
+  const sim = (simInput?.value || '').trim();
+  if (!sim) {
+    alert('נא למלא מספר סים לפני השליחה.');
+    simInput?.focus();
+    return;
+  }
   const name = (document.querySelector('[name="cust_name"]')?.value || '').trim() || '(שם לא צוין)';
   const phoneDigits = normalizeLocalPhone(document.querySelector('[name="ph1"]')?.value || '');
   const phone = phoneDigits ? '05' + phoneDigits : '(מספר לא צוין)';
-  const sim = (document.getElementById('sim_number_for_email')?.value || '').trim() || '(מספר סים לא צוין)';
 
   btn.disabled = true; btn.textContent = 'שולח…';
   try {
