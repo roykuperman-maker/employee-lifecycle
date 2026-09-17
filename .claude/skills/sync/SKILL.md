@@ -5,7 +5,7 @@ description: Manually refresh the Employee Lifecycle app's data from ServiceNow 
 
 # Sync ServiceNow + CW Report Data
 
-The Employee Lifecycle app has no live connection to ServiceNow or Gmail —
+The Employee Lifecycle app has no live connection to ServiceNow or email —
 the deployed Vercel app cannot call MCP connectors itself, only an
 interactive Claude session can. This skill is the single manual routine
 that refreshes everything sourced that way: the `Ticket` snapshot table,
@@ -271,7 +271,7 @@ app.
 
 ---
 
-## Part C — CW report emails (Gmail)
+## Part C — CW report emails (Outlook Mail)
 
 Reut Arieli (reut_arieli@intuit.com, an external Magnit recruiter) sends a
 periodic report of active contingent workers and their contract end dates.
@@ -280,14 +280,27 @@ list as the QuickBase-sourced FTE terminations (see the `ExitProcess` model
 — `source: "CW_REPORT"` rows, keyed by `employeeName` since this source has
 no email address, only a name).
 
+**The work Gmail connector this part used to run on is gone from the
+account entirely** (confirmed absent from both the session's connector list
+and the account-wide connector catalog — not just a transient outage). Use
+the **"Outlook Mail - Intuit" connector** instead (server id
+`deacadd2-8796-4bdf-a14b-4ab87ad1c17e` as of this writing, but resolve it by
+name via `ToolSearch`/`session_connectors_status` rather than hardcoding the
+id, since it can change). It reaches the same mailbox and has been confirmed
+to surface the identical CW report threads.
+
 **Subject wording is inconsistent** — seen so far: "IL CWs January 2026
 Report", "CWs updated report, March 2026", "CW updated Engagement Data
 Report". Don't match on an exact subject; search broadly instead.
 
 ### C1. Find the latest report
 
+Use the Outlook Mail connector's `search_messages` tool:
+
 ```
-search_threads: from:reut_arieli@intuit.com "CW" report
+from: reut_arieli@intuit.com
+keywords: CW report
+limit: 10
 ```
 
 Take the **most recent thread's original report message** (not follow-up
@@ -299,12 +312,29 @@ you've already imported (compare its date against `syncedAt` on existing
 
 ### C2. Parse the table
 
-Fetch the message with `get_message` (`messageFormat: PLAIN_TEXT`). The
-table linearizes into repeating groups of 4–5 lines after the header row —
-either `Manager / Worker / Start Date / Est. End Date` or the same with a
-trailing `Job Title`. Only `Worker` (name) and `Est. End Date` matter.
-Convert each worker name from "Last, First" to "First Last" (e.g. "Alon,
-Eitan" → "Eitan Alon") and the date from `MM/DD/YYYY` to ISO
+Fetch the message with `get_message` or `get_conversation` using
+**`bodyFormat: "html"`** — **not `"plain_text"`**, which silently truncates
+the body at roughly 250 characters (confirmed on multiple messages via both
+tools; way too short for this table). The `html` body comes back complete
+but can be large enough (tens of thousands of characters) to exceed the
+inline tool-result size limit, in which case the tool writes it to a file
+and gives you that path instead — don't try to read it directly, use the
+strip step below on the file.
+
+Strip HTML tags and unescape entities to recover plain text, e.g. with a
+small Python script:
+
+```python
+import re, html
+text = re.sub(r'<[^>]+>', '\n', raw_html)
+text = html.unescape(text)
+```
+
+The resulting text linearizes into repeating groups of 4–5 lines after the
+header row — either `Manager / Worker / Start Date / Est. End Date` or the
+same with a trailing `Job Title`. Only `Worker` (name) and `Est. End Date`
+matter. Convert each worker name from "Last, First" to "First Last" (e.g.
+"Alon, Eitan" → "Eitan Alon") and the date from `MM/DD/YYYY` to ISO
 (`YYYY-MM-DD`).
 
 ### C3. Write the data and import
