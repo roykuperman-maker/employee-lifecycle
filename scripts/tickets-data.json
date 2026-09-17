@@ -15,17 +15,6 @@
     "snowCreatedAt": "2026-09-10T06:34:25Z"
   },
   {
-    "number": "TASK3520892",
-    "category": "MOBILE_BUYBACK",
-    "shortDescription": "Mobile Buyback Request",
-    "description": "Bhanu Pratap Singh \u2014 buyback on refresh \u2014 iPhone 14 Pro Max",
-    "callerName": "Bhanu Pratap Singh",
-    "assignmentGroup": null,
-    "state": "1",
-    "assetTag": "357173342665670",
-    "snowCreatedAt": "2026-06-13T18:51:46Z"
-  },
-  {
     "number": "TASK3184494",
     "category": "MOBILE_BUYBACK",
     "shortDescription": "Mobile BuyBack - Payroll Confirmation",
@@ -101,17 +90,6 @@
     "state": "1",
     "assetTag": "358066146701403",
     "snowCreatedAt": "2026-08-25T04:23:11Z"
-  },
-  {
-    "number": "TASK3520891",
-    "category": "MOBILE_BUYBACK",
-    "shortDescription": "Mobile Buyback Request",
-    "description": "Bhanu Pratap Singh \u2014 buyback on refresh \u2014 iPhone 14 Pro Max",
-    "callerName": "Bhanu Pratap Singh",
-    "assignmentGroup": null,
-    "state": "1",
-    "assetTag": "357173342665670",
-    "snowCreatedAt": "2026-06-13T18:49:16Z"
   },
   {
     "number": "TASK3233319",
@@ -450,5 +428,119 @@
     "startDate": "2026-09-14",
     "newHireName": "Eyal Hagag",
     "snowCreatedAt": "2026-09-10T10:14:49Z"
+  },
+  {
+    "number": "TASK3630018",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback Request",
+    "description": "Martin Friedmann \u2014 buyback on resignation \u2014 Samsung Galaxy S26 Ultra",
+    "callerName": "Martin Friedmann",
+    "assignmentGroup": "EE Tech \u2013 Mobile - TLV",
+    "state": "1",
+    "assetTag": "350145974294265",
+    "snowCreatedAt": "2026-09-15T08:59:52Z"
+  },
+  {
+    "number": "TASK3632466",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback - Invoice Processing",
+    "description": "Bhanu Pratap Singh \u2014 buyback on refresh \u2014 iPhone 14 Pro Max",
+    "callerName": "Bhanu Pratap Singh",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "357173342665670",
+    "snowCreatedAt": "2026-09-17T04:20:35Z"
+  },
+  {
+    "number": "TASK3632462",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback - Invoice Processing",
+    "description": "Bhanu Pratap Singh \u2014 buyback on refresh \u2014 iPhone 14 Pro Max",
+    "callerName": "Bhanu Pratap Singh",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "357173342665670",
+    "snowCreatedAt": "2026-09-17T04:20:03Z"
+  },
+  {
+    "number": "TASK3632461",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Device Management Removal - Buyback",
+    "description": "Bhanu Pratap Singh \u2014 buyback on refresh \u2014 iPhone 14 Pro Max",
+    "callerName": "Bhanu Pratap Singh",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "357173342665670",
+    "snowCreatedAt": "2026-09-17T04:20:03Z"
+  },
+  {
+    "number": "TASK3632465",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Device Management Removal - Buyback",
+    "description": "Bhanu Pratap Singh \u2014 buyback on refresh \u2014 iPhone 14 Pro Max",
+    "callerName": "Bhanu Pratap Singh",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "357173342665670",
+    "snowCreatedAt": "2026-09-17T04:20:35Z"
+  },
+  {
+    "number": "TASK3630132",
+    "category": "MOBILE_DEVICE_REQUEST",
+    "shortDescription": "Mobile Device Request for Lilach Naor",
+    "description": "Lilach Naor \u2014 Refresh Request \u2014 Samsung Galaxy S26 Ultra",
+    "callerName": "Lilach Naor",
+    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
+    "state": "1",
+    "requesterName": "Lilach Naor",
+    "requesterEmail": "lilach_naor@intuit.com",
+    "deviceType": "Samsung Galaxy S26 Ultra",
+    "requestType": "Refresh Request",
+    "snowCreatedAt": "2026-09-15T13:23:14Z"
+  },
+  {
+    "number": "TASK3630070",
+    "category": "MOBILE_DEVICE_REQUEST",
+    "shortDescription": "Mobile Device Request for Luda Garces",
+    "description": "Luda Garces \u2014 Refresh Request \u2014 Apple iPhone 17 Pro Max - 256 GB",
+    "callerName": "Luda Garces",
+    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
+    "state": "1",
+    "requesterName": "Luda Garces",
+    "requesterEmail": "luda_garces@intuit.com",
+    "requesterPhone": "0545215360",
+    "deviceType": "Apple iPhone 17 Pro Max - 256 GB",
+    "requestType": "Refresh Request",
+    "snowCreatedAt": "2026-09-15T11:40:54Z"
+  },
+  {
+    "number": "TASK3630673",
+    "category": "MOBILE_DEVICE_REQUEST",
+    "shortDescription": "Mobile Device Request for Hadas Baumer",
+    "description": "Hadas Baumer \u2014 Refresh Request \u2014 Samsung Galaxy S26 Ultra",
+    "callerName": "Hadas Baumer",
+    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
+    "state": "1",
+    "requesterName": "Hadas Baumer",
+    "requesterEmail": "hadas_baumer@intuit.com",
+    "requesterPhone": "0545903240",
+    "deviceType": "Samsung Galaxy S26 Ultra",
+    "requestType": "Refresh Request",
+    "snowCreatedAt": "2026-09-15T17:38:13Z"
+  },
+  {
+    "number": "TASK3630071",
+    "category": "MOBILE_DEVICE_REQUEST",
+    "shortDescription": "Mobile Device Request for Elad Gvirtz",
+    "description": "Elad Gvirtz \u2014 Refresh Request \u2014 Samsung Galaxy S26 Ultra",
+    "callerName": "Elad Gvirtz",
+    "assignmentGroup": "EE Tech - TechKnow Bar - TLV",
+    "state": "1",
+    "requesterName": "Elad Gvirtz",
+    "requesterEmail": "elad_gvirtz@intuit.com",
+    "requesterPhone": "0544896581",
+    "deviceType": "Samsung Galaxy S26 Ultra",
+    "requestType": "Refresh Request",
+    "snowCreatedAt": "2026-09-15T11:40:57Z"
   }
 ]
