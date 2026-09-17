@@ -121,6 +121,7 @@ export default async function TicketsPage({
                 );
               })}
               <th className="px-4 py-3">Request Type</th>
+              <th className="px-4 py-3">Device Type</th>
               <th className="px-4 py-3">SIM Number</th>
               <th className="px-4 py-3">Delivered</th>
               <th className="px-4 py-3">Home Address</th>
@@ -157,6 +158,9 @@ export default async function TicketsPage({
                 <td className="px-4 py-3 text-slate-500">
                   {t.category === "MOBILE_DEVICE_REQUEST" ? t.requestType || "—" : "—"}
                 </td>
+                <td className="px-4 py-3 text-slate-500">
+                  {t.category === "MOBILE_DEVICE_REQUEST" ? t.deviceType || "—" : "—"}
+                </td>
                 <td className="px-4 py-3">
                   {t.category === "MOBILE_DEVICE_REQUEST" ? (
                     <TicketSimNumberEditor ticketId={t.id} simNumber={t.simNumber} />
@@ -184,7 +188,7 @@ export default async function TicketsPage({
             ))}
             {tickets.length === 0 && (
               <tr>
-                <td colSpan={14} className="px-4 py-8 text-center text-slate-400">
+                <td colSpan={15} className="px-4 py-8 text-center text-slate-400">
                   No tickets match this filter.
                 </td>
               </tr>
