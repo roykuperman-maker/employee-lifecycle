@@ -46,6 +46,7 @@ async function checkHardwarePrepReminders(today: Date) {
   }
 }
 
+// Silent state flip only — no immediate ping (matches checkMobileRefreshEligibility).
 async function checkLaptopRefreshEligibility(today: Date) {
   const assets = await prisma.asset.findMany({
     where: {
@@ -57,13 +58,6 @@ async function checkLaptopRefreshEligibility(today: Date) {
 
   for (const asset of assets) {
     if (asset.employee.employeeType !== "FTE") continue;
-
-    await sendSlackDM({
-      to: asset.employee.intuitEmail ?? "(no email on file)",
-      body: `You're eligible for a laptop refresh! Your current laptop has passed its refresh window. Please coordinate returning your old laptop once your replacement arrives.`,
-      employeeId: asset.employeeId,
-      triggerType: "LAPTOP_REFRESH_ELIGIBLE",
-    });
 
     await prisma.asset.update({
       where: { id: asset.id },
