@@ -258,10 +258,11 @@ async function checkMobileOrderReceivedAlerts() {
 
 export async function runDailyChecks(today: Date = new Date()) {
   await checkHardwarePrepReminders(today);
-  await checkLaptopRefreshEligibility(today);
+  // ON HOLD (Roy, 2026-09-27): no refresh eligibility alerts to users until further notice.
+  // await checkLaptopRefreshEligibility(today);
   await checkLaptopReturnReminders(today);
-  await checkMobileRefreshEligibility(today);
-  await checkMobileRefreshAlert(today);
+  // await checkMobileRefreshEligibility(today);
+  // await checkMobileRefreshAlert(today);
   await checkMobileReturnReminders(today);
   await checkOffboardMilestones(today);
   await checkMobileOrderReceivedAlerts();
