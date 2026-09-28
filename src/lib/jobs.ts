@@ -120,6 +120,10 @@ async function checkMobileRefreshEligibility(today: Date) {
 
 // Every Sunday: FTEs with exactly one (not-yet-refreshed) eligible device get
 // asked to request a refresh. Stops once a 2nd device shows up (they ordered).
+// Skips a device that already has an open MOBILE_BUYBACK ticket against its
+// asset tag — same reasoning as checkMobileReturnReminders: no point asking
+// someone to request a refresh they've already started (e.g. Reem Diab kept
+// getting nagged despite having an open buyback ticket on her old device).
 async function checkMobileRefreshAlert(today: Date) {
   if (dayOfWeekUTC(today) !== SUNDAY) return;
 
@@ -134,10 +138,17 @@ async function checkMobileRefreshAlert(today: Date) {
     },
   });
 
+  const openBuybackTickets = await prisma.ticket.findMany({
+    where: { category: "MOBILE_BUYBACK", state: { in: TICKET_OPEN_STATES }, assetTag: { not: null } },
+    select: { assetTag: true },
+  });
+  const openBuybackTags = new Set(openBuybackTickets.map((t) => t.assetTag as string));
+
   for (const employee of employees) {
     if (employee.mobileDevices.length !== 1) continue;
     const device = employee.mobileDevices[0];
     if (device.refreshStatus !== "ELIGIBLE_AWAITING_ACTION") continue;
+    if (device.assetTag && openBuybackTags.has(device.assetTag)) continue;
     if (device.lastReminderSentAt && isToday(device.lastReminderSentAt, today)) continue;
 
     await sendSlackDM({
