@@ -80,6 +80,8 @@ async function checkLaptopReturnReminders(today: Date) {
   });
 
   for (const employee of employees) {
+    // On hold at Roy's request (2026-09-28): no laptop return reminders for this one employee.
+    if (employee.fullName === "Ori Wainshtein") continue;
     if (employee.assets.length <= 1) continue;
     const oldest = employee.assets[0];
     if (oldest.lastReminderSentAt && isToday(oldest.lastReminderSentAt, today)) continue;
