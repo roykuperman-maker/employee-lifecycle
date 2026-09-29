@@ -354,7 +354,8 @@ input[type="radio"], input[type="checkbox"] { accent-color: var(--green); cursor
   <button class="btn btn-print" onclick="window.print()">הדפס</button>
   <button class="btn btn-pdf" id="btn-dl" onclick="downloadPDF()">הורד PDF</button>
   <button class="btn btn-clear" onclick="resetForm()">נקה טופס</button>
-  <input type="text" id="sim_number_for_email" placeholder="מספר סים (למייל לפרטנר)" style="padding:6px 8px;border-radius:5px;border:1px solid #aaa;font-family:inherit;font-size:12px;direction:ltr;">
+  <input type="text" id="sim_number_for_email" placeholder="מספר סים (חובה)" required style="padding:6px 8px;border-radius:5px;border:1px solid #aaa;font-family:inherit;font-size:12px;direction:ltr;">
+  <input type="email" id="submitter_email" placeholder="האימייל שלך (חובה)" required style="padding:6px 8px;border-radius:5px;border:1px solid #aaa;font-family:inherit;font-size:12px;direction:ltr;">
   <button class="btn" id="btnSendPartner" style="background:#0d9488;color:#fff;" onclick="sendToPartner()">שלח לפרטנר</button>
 </div>
 
@@ -727,6 +728,13 @@ async function sendToPartner() {
     simInput?.focus();
     return;
   }
+  const emailInput = document.getElementById('submitter_email');
+  const submitterEmail = (emailInput?.value || '').trim();
+  if (!submitterEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submitterEmail)) {
+    alert('נא למלא כתובת אימייל תקינה לפני השליחה.');
+    emailInput?.focus();
+    return;
+  }
   const name = (document.querySelector('[name="cust_name"]')?.value || '').trim() || '(שם לא צוין)';
   const phoneDigits = normalizeLocalPhone(document.querySelector('[name="ph1"]')?.value || '');
   const phone = phoneDigits ? '05' + phoneDigits : '(מספר לא צוין)';
@@ -747,6 +755,7 @@ async function sendToPartner() {
         formType: 'PORT_IN',
         ticketId: params.get('ticketId'),
         email: params.get('email'),
+        submitterEmail,
       }),
     });
     if (!res.ok) throw new Error('Request failed');

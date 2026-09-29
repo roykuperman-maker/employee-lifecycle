@@ -96,6 +96,7 @@ canvas { display: block; }
   <button class="btn btn-print" onclick="window.print()">הדפס</button>
   <button class="btn btn-pdf" id="btnPdf" onclick="downloadPDF()">הורד PDF</button>
   <button class="btn btn-clear" onclick="resetForm()">נקה טופס</button>
+  <input type="email" id="submitter_email" placeholder="האימייל שלך (חובה)" required style="padding:6px 8px;border-radius:5px;border:1px solid #aaa;font-family:inherit;font-size:12px;direction:ltr;">
   <button class="btn" id="btnSendPartner" style="background:#0d9488;color:#fff;" onclick="sendToPartner()">שלח לפרטנר</button>
 </div>
 
@@ -609,6 +610,13 @@ async function buildPdfBase64() {
 
 async function sendToPartner() {
   const btn = document.getElementById('btnSendPartner');
+  const emailInput = document.getElementById('submitter_email');
+  const submitterEmail = (emailInput?.value || '').trim();
+  if (!submitterEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submitterEmail)) {
+    alert('נא למלא כתובת אימייל תקינה לפני השליחה.');
+    emailInput?.focus();
+    return;
+  }
   const name = (document.getElementById('s_name')?.value || '').trim() || '(שם לא צוין)';
   const phoneDigits = normalizeLocalPhone(document.getElementById('line1_phone')?.value || '');
   const phone = phoneDigits ? '05' + phoneDigits : '(מספר לא צוין)';
@@ -622,7 +630,7 @@ async function sendToPartner() {
     const res = await fetch(PARTNER_FORMS_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subject, body, pdfBase64, filename: 'partner-incoming-ownership.pdf', formType: 'INCOMING_TRANSFER' }),
+      body: JSON.stringify({ subject, body, pdfBase64, filename: 'partner-incoming-ownership.pdf', formType: 'INCOMING_TRANSFER', submitterEmail }),
     });
     if (!res.ok) throw new Error('Request failed');
     alert('הטופס נשלח לפרטנר בהצלחה.');

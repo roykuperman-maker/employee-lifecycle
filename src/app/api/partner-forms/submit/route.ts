@@ -25,7 +25,7 @@ export async function OPTIONS() {
 }
 
 export async function POST(req: NextRequest) {
-  const { subject, body, pdfBase64, filename, formType, ticketId, email } = await req.json();
+  const { subject, body, pdfBase64, filename, formType, ticketId, email, submitterEmail } = await req.json();
 
   if (!subject || !body || !pdfBase64 || !filename) {
     return NextResponse.json(
@@ -34,9 +34,15 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // All 3 partner-*-form pages now require the submitter to enter their own
+  // email (a mandatory field added to each form's control bar) so they're
+  // CC'd on the Partner submission alongside Roy — Resend accepts a
+  // comma-separated string for multiple CC recipients.
+  const cc = submitterEmail ? `${ADMIN_EMAIL},${submitterEmail}` : ADMIN_EMAIL;
+
   const notification = await sendEmail({
     to: PARTNER_EMAIL,
-    cc: ADMIN_EMAIL,
+    cc,
     subject,
     body,
     triggerType: "PARTNER_FORM_SUBMISSION",
