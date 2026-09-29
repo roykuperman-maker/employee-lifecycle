@@ -792,12 +792,12 @@ input[type="radio"], input[type="checkbox"] {
   <div class="pay-method">
     <div class="radio-row">
       <label>
-        <input type="radio" name="pay_method" value="cc" id="pm_cc" onchange="showPaySection()">
+        <input type="radio" name="pay_method" value="cc" id="pm_cc" checked onchange="showPaySection()">
         כרטיס אשראי
       </label>
-      <label>
-        <input type="radio" name="pay_method" value="bank" id="pm_bank" onchange="showPaySection()">
-        הרשאה לחיוב חשבון בנק
+      <label style="color:#999;">
+        <input type="radio" name="pay_method" value="bank" id="pm_bank" disabled onchange="showPaySection()">
+        הרשאה לחיוב חשבון בנק (לא זמין)
       </label>
     </div>
 
@@ -1107,6 +1107,20 @@ async function buildPdfBase64() {
 
 async function sendToPartner() {
   const btn = document.getElementById('btnSendPartner');
+
+  const ccNum = (document.querySelector('[name="cc_num"]')?.value || '').replace(/\D/g, '');
+  const ccType = document.querySelector('[name="cc_type"]')?.value || '';
+  const ccExpM = document.querySelector('[name="cc_exp_m"]')?.value || '';
+  const ccExpY = document.querySelector('[name="cc_exp_y"]')?.value || '';
+  const ccCvv = document.querySelector('[name="cc_cvv"]')?.value || '';
+  if (!ccNum || !ccType || !ccExpM || !ccExpY || !ccCvv) {
+    alert('נא למלא את כל פרטי כרטיס האשראי לפני השליחה.');
+    document.getElementById('pm_cc').checked = true;
+    showPaySection();
+    document.querySelector('[name="cc_num"]')?.focus();
+    return;
+  }
+
   const name = (document.querySelector('[name="b_name"]')?.value || '').trim() || '(שם לא צוין)';
   const phoneDigits = normalizeLocalPhone(document.querySelector('[name="ph1"]')?.value || '');
   const phone = phoneDigits ? '05' + phoneDigits : '(מספר לא צוין)';
