@@ -206,6 +206,12 @@ model ExitProcess {
   securityTabStatus   String?
   hrTabStatus         String?
 
+  // Manually set when a termination is cancelled but QuickBase hasn't been
+  // corrected yet — hides the row here without waiting on QuickBase, and
+  // isn't touched by the sync upsert (see syncExitProcesses), so it survives
+  // repeated syncs until QuickBase itself is fixed (or this is cleared).
+  cancelled Boolean @default(false)
+
   syncedAt DateTime @updatedAt
 
   // CW_REPORT rows only — dedupe key for CW workers, since the source

@@ -44,8 +44,11 @@ export default async function ExitProcessesPage({
   const exitProcesses = await prisma.exitProcess.findMany({
     // FTEs (source QUICKBASE) whose IT offboarding is already done are
     // noise for Roy's day-to-day view — hide them. CW rows have no IT
-    // tab status at all, so they're always shown.
+    // tab status at all, so they're always shown. Rows manually marked
+    // cancelled (termination reversed, QuickBase not yet corrected) are
+    // always hidden too.
     where: {
+      cancelled: false,
       OR: [{ source: { not: "QUICKBASE" } }, { itTabStatus: { not: "Completed" } }],
     },
     orderBy: { [sortKey]: sortDir },
