@@ -57,9 +57,9 @@ export default async function EmployeesPage({
   const sortKey: SortKey = isSortKey(searchParams.sort) ? searchParams.sort : "fullName";
   const sortDir: "asc" | "desc" = searchParams.dir === "desc" ? "desc" : "asc";
   const mobileCount = (e: (typeof employees)[number]) =>
-    e.mobileDevices.filter((m) => m.status !== "NOT_APPLICABLE").length;
+    e.mobileDevices.filter((m) => m.status !== "NOT_APPLICABLE" && m.deviceType !== "SMARTWATCH").length;
   const computerCount = (e: (typeof employees)[number]) =>
-    e.assets.filter((a) => a.status !== "RETURNED").length;
+    e.assets.filter((a) => a.status !== "RETURNED" && a.deploymentType !== "ADDITIONAL_HARDWARE").length;
 
   const sorted = [...employees].sort((a, b) => {
     let cmp = 0;

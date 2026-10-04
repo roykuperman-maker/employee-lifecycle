@@ -74,9 +74,14 @@ async function checkLaptopReturnReminders(today: Date) {
   const employees = await prisma.employee.findMany({
     where: {
       status: "ACTIVE",
-      assets: { some: { status: { not: "RETURNED" } } },
+      assets: { some: { status: { not: "RETURNED" }, deploymentType: "STANDARD" } },
     },
-    include: { assets: { where: { status: { not: "RETURNED" } }, orderBy: { assignedDate: "asc" } } },
+    include: {
+      assets: {
+        where: { status: { not: "RETURNED" }, deploymentType: "STANDARD" },
+        orderBy: { assignedDate: "asc" },
+      },
+    },
   });
 
   for (const employee of employees) {
@@ -134,7 +139,7 @@ async function checkMobileRefreshAlert(today: Date) {
       mobileDevices: { some: { refreshStatus: "ELIGIBLE_AWAITING_ACTION" } },
     },
     include: {
-      mobileDevices: { where: { status: { notIn: ["RETURNED", "BOUGHT_BACK"] } } },
+      mobileDevices: { where: { status: { notIn: ["RETURNED", "BOUGHT_BACK"] }, deviceType: "PHONE" } },
     },
   });
 
@@ -175,11 +180,11 @@ async function checkMobileReturnReminders(today: Date) {
   const employees = await prisma.employee.findMany({
     where: {
       status: "ACTIVE",
-      mobileDevices: { some: { status: { notIn: ["RETURNED", "BOUGHT_BACK"] } } },
+      mobileDevices: { some: { status: { notIn: ["RETURNED", "BOUGHT_BACK"] }, deviceType: "PHONE" } },
     },
     include: {
       mobileDevices: {
-        where: { status: { notIn: ["RETURNED", "BOUGHT_BACK"] } },
+        where: { status: { notIn: ["RETURNED", "BOUGHT_BACK"] }, deviceType: "PHONE" },
         orderBy: { assignedDate: "asc" },
       },
     },

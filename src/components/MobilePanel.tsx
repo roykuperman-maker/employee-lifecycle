@@ -9,6 +9,7 @@ type MobileDeviceData = {
   id: string;
   phoneNumber: string | null;
   model: string | null;
+  deviceType: string;
   assetTag: string | null;
   simNumber: string | null;
   status: string;
@@ -84,7 +85,10 @@ function MobileDeviceCard({
         </div>
         <div>
           <div className="text-slate-400">Model</div>
-          <div>{device.model || "—"}</div>
+          <div className="flex items-center gap-2">
+            {device.model || "—"}
+            {device.deviceType === "SMARTWATCH" && <Badge value="Smartwatch" />}
+          </div>
         </div>
         <div>
           <div className="text-slate-400">Asset Tag</div>
@@ -247,13 +251,12 @@ export function MobilePanel({
   openBuybackTags?: string[];
 }) {
   const buybackTagSet = new Set(openBuybackTags);
+  const phoneCount = mobileDevices.filter((d) => d.deviceType !== "SMARTWATCH").length;
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <h2 className="mb-3 text-lg font-medium">
         Mobile Devices{" "}
-        {mobileDevices.length > 1 && (
-          <span className="text-sm font-normal text-slate-400">({mobileDevices.length})</span>
-        )}
+        {phoneCount > 1 && <span className="text-sm font-normal text-slate-400">({phoneCount})</span>}
       </h2>
       <div className="space-y-3">
         {mobileDevices.map((d) => (

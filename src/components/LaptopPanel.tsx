@@ -9,6 +9,7 @@ type AssetData = {
   id: string;
   computerType: string | null;
   model: string | null;
+  deploymentType: string;
   assetTag: string;
   status: string;
   refreshEligibleDate: Date | null;
@@ -40,7 +41,10 @@ function AssetCard({ asset }: { asset: AssetData }) {
       <div className="grid grid-cols-2 gap-3 text-sm">
         <div>
           <div className="text-slate-400">Type / Model</div>
-          <div>{typeLabel}</div>
+          <div className="flex items-center gap-2">
+            {typeLabel}
+            {asset.deploymentType === "ADDITIONAL_HARDWARE" && <Badge value="Additional Hardware" />}
+          </div>
           {asset.computerType && asset.model && (
             <div className="text-xs text-slate-400">{asset.model}</div>
           )}
@@ -95,10 +99,12 @@ function AssetCard({ asset }: { asset: AssetData }) {
 }
 
 export function LaptopPanel({ assets }: { assets: AssetData[] }) {
+  const standardCount = assets.filter((a) => a.deploymentType !== "ADDITIONAL_HARDWARE").length;
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <h2 className="mb-3 text-lg font-medium">
-        Computers {assets.length > 1 && <span className="text-sm font-normal text-slate-400">({assets.length})</span>}
+        Computers{" "}
+        {standardCount > 1 && <span className="text-sm font-normal text-slate-400">({standardCount})</span>}
       </h2>
       <div className="space-y-3">
         {assets.map((a) => (

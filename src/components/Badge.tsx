@@ -35,6 +35,8 @@ const COLORS: Record<string, string> = {
   Assigned: "bg-blue-100 text-blue-800",
   "Closed Complete": "bg-slate-200 text-slate-700",
   Cancelled: "bg-slate-200 text-slate-700",
+  Smartwatch: "bg-cyan-100 text-cyan-800",
+  "Additional Hardware": "bg-cyan-100 text-cyan-800",
 };
 
 export function Badge({ value }: { value: string }) {
