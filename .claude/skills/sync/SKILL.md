@@ -263,6 +263,42 @@ updates only:
 Check the script's console summary (updated / flagged / not-found /
 unchanged counts). No deploy needed — same shared-DB reasoning as Part A.
 
+### B5. "Additional Hardware" laptops — manual only, not auto-synced
+
+Some employees legitimately hold more than one laptop because a second one
+is flagged in ServiceNow as **Deployment Type: Additional Hardware** (vs.
+the normal "Standard" deployment) — e.g. Oran Barak's `IL00451` and
+`IL00373`. The app tracks this on `Asset.deploymentType`
+(`STANDARD` | `ADDITIONAL_HARDWARE`, default `STANDARD`): any asset marked
+`ADDITIONAL_HARDWARE` is excluded from the "more than 1 laptop" return-
+reminder trigger (`checkLaptopReturnReminders` in `src/lib/jobs.ts`) and
+from the computer-count shown on `/employees` and the employee detail page,
+and gets an "Additional Hardware" badge on its card there instead.
+
+**This cannot be pulled automatically as part of B1–B4.**
+`ServiceNow_Hardware_Assets_Lookup` returns a fixed field set (confirmed by
+testing — querying `asset_tag=IL00373^ORasset_tag=IL00451` does not surface
+Deployment Type under any field name) and has no field-selection parameter,
+so there's no way to batch-detect this from the connector. Skip this step
+by default — only act on it when Roy explicitly names an employee/asset
+pair as additional hardware (as he did for Oran Barak), confirm it in
+ServiceNow's own UI if there's any doubt, then set it directly:
+
+```bash
+cd "/Users/rkuperman/Emplyee lifecycle" && npx tsx -e "
+import { prisma } from './src/lib/db';
+await prisma.asset.updateMany({
+  where: { assetTag: { in: ['IL00451', 'IL00373'] } },
+  data: { deploymentType: 'ADDITIONAL_HARDWARE' },
+});
+"
+```
+
+Known additional-hardware assets so far (update this list whenever a new
+one is confirmed, so it isn't rediscovered from scratch):
+- Oran Barak — `IL00451` (Lenovo ThinkPad P1 Gen 4), `IL00373` (MacBook M1
+  Max 14" 64GB)
+
 ### Cleanup
 
 `known-assets.json` and `asset-sync-results.json` are working files, fine to
