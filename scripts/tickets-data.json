@@ -264,17 +264,6 @@
     "snowCreatedAt": "2026-01-19T11:16:54.000Z"
   },
   {
-    "number": "TASK3648863",
-    "category": "MOBILE_BUYBACK",
-    "shortDescription": "Mobile Buyback / MDM Removal",
-    "description": "Ravit Shitrit opted for buyback on refresh (RITM8678326): iPhone 14 Pro Max, tag 354132414184468.",
-    "callerName": "Ravit Shitrit",
-    "assignmentGroup": "EE Tech \u2013 Mobile - TLV",
-    "state": "1",
-    "assetTag": "354132414184468",
-    "snowCreatedAt": "2026-10-01T11:02:12.000Z"
-  },
-  {
     "number": "TASK3553820",
     "category": "MOBILE_BUYBACK",
     "shortDescription": "Mobile Buyback / MDM Removal",
@@ -688,5 +677,49 @@
     "startDate": "2026-10-12",
     "newHireName": "Eylon Cohen",
     "snowCreatedAt": "2026-09-26T07:36:17.000Z"
+  },
+  {
+    "number": "TASK3652047",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback / MDM Removal",
+    "description": "Ravit Shitrit opted for buyback on refresh (RITM8678326): iPhone 14 Pro Max, tag 354132414184468.",
+    "callerName": "Ravit Shitrit",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "354132414184468",
+    "snowCreatedAt": "2026-10-04T07:49:47.000Z"
+  },
+  {
+    "number": "TASK3652046",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback / MDM Removal",
+    "description": "Ravit Shitrit opted for buyback on refresh (RITM8678326): iPhone 14 Pro Max, tag 354132414184468.",
+    "callerName": "Ravit Shitrit",
+    "assignmentGroup": null,
+    "state": "1",
+    "assetTag": "354132414184468",
+    "snowCreatedAt": "2026-10-04T07:49:47.000Z"
+  },
+  {
+    "number": "TASK3655168",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback / MDM Removal",
+    "description": "Meghan Mergui opted for buyback on resignation (RITM8730416): iPhone 17 Pro Max, tag 355579666359918.",
+    "callerName": "Meghan Mergui",
+    "assignmentGroup": "EE Tech \u2013 Mobile - TLV",
+    "state": "1",
+    "assetTag": "355579666359918",
+    "snowCreatedAt": "2026-10-06T10:24:38.000Z"
+  },
+  {
+    "number": "TASK3652328",
+    "category": "MOBILE_BUYBACK",
+    "shortDescription": "Mobile Buyback / MDM Removal",
+    "description": "Omer Sadeh opted for buyback on refresh (RITM8717698): Galaxy S23 Ultra 256GB, tag 356663763443285.",
+    "callerName": "Omer Sadeh",
+    "assignmentGroup": "EE Tech \u2013 Mobile - TLV",
+    "state": "1",
+    "assetTag": "356663763443285",
+    "snowCreatedAt": "2026-10-05T08:48:39.000Z"
   }
 ]
