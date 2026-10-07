@@ -702,8 +702,8 @@ input[type="radio"], input[type="checkbox"] {
     <tr>
       <td class="lbl">שם בעל כרטיס האשראי</td>
       <td><input type="text" name="b_cc_holder"></td>
-      <td class="lbl">מספר זהות בעל כרטיס האשראי</td>
-      <td><input type="text" name="b_cc_id" dir="ltr" maxlength="9"></td>
+      <td class="lbl">מספר זהות בעל כרטיס האשראי (חובה)</td>
+      <td><input type="text" name="b_cc_id" dir="ltr" maxlength="9" placeholder="ת.ז. (חובה)"></td>
     </tr>
     <tr>
       <td class="lbl">שם איש קשר</td>
@@ -1119,6 +1119,14 @@ async function sendToPartner() {
     document.getElementById('pm_cc').checked = true;
     showPaySection();
     document.querySelector('[name="cc_num"]')?.focus();
+    return;
+  }
+
+  const buyerIdInput = document.querySelector('[name="b_cc_id"]');
+  const buyerId = (buyerIdInput?.value || '').trim();
+  if (!buyerId) {
+    alert('נא למלא מספר ת.ז. של בעל כרטיס האשראי לפני השליחה.');
+    buyerIdInput?.focus();
     return;
   }
 
