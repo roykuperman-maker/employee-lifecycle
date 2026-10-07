@@ -88,6 +88,7 @@ function MobileDeviceCard({
           <div className="flex items-center gap-2">
             {device.model || "—"}
             {device.deviceType === "SMARTWATCH" && <Badge value="Smartwatch" />}
+            {device.deviceType === "OTHER" && <Badge value="Secondary Line" />}
           </div>
         </div>
         <div>
@@ -251,7 +252,7 @@ export function MobilePanel({
   openBuybackTags?: string[];
 }) {
   const buybackTagSet = new Set(openBuybackTags);
-  const phoneCount = mobileDevices.filter((d) => d.deviceType !== "SMARTWATCH").length;
+  const phoneCount = mobileDevices.filter((d) => d.deviceType === "PHONE").length;
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <h2 className="mb-3 text-lg font-medium">
