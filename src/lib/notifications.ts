@@ -36,19 +36,25 @@ async function sendViaResend(opts: {
   subject: string;
   body: string;
   attachments?: { filename: string; content: string }[];
-}): Promise<boolean> {
-  if (!resend || !process.env.RESEND_FROM_EMAIL) return false;
+}): Promise<{ ok: boolean; error?: string }> {
+  if (!resend) return { ok: false, error: "RESEND_API_KEY not set" };
+  if (!process.env.RESEND_FROM_EMAIL) return { ok: false, error: "RESEND_FROM_EMAIL not set" };
   const isPartnerBound = opts.to === PARTNER_EMAIL;
+  // Resend's API validates a string `cc` as a single email address — a
+  // comma-joined "a@x.com,b@y.com" (our storage format for ccAddresses,
+  // readable in the DB/notifications list) fails its format check with a
+  // 422. Split into an array for multiple recipients, which Resend accepts.
+  const ccList = opts.cc?.split(",").map((e) => e.trim()).filter(Boolean);
   const { error } = await resend.emails.send({
     from: process.env.RESEND_FROM_EMAIL,
     to: isPartnerBound && PARTNER_EMAIL_OVERRIDE ? PARTNER_EMAIL_OVERRIDE : opts.to,
-    cc: opts.cc,
+    cc: ccList,
     replyTo: ADMIN_EMAIL,
     subject: opts.subject,
     text: opts.body,
     attachments: opts.attachments,
   });
-  return !error;
+  return error ? { ok: false, error: `${error.name}: ${error.message}` } : { ok: true };
 }
 
 async function resolveSlackUserId(email: string): Promise<string | null> {
@@ -82,15 +88,24 @@ export async function sendEmail(opts: {
   attachments?: { filename: string; content: string }[];
 }) {
   let status: "SIMULATED" | "SENT" = "SIMULATED";
+  let errorMessage: string | undefined;
 
   if (CAN_SEND_REAL_EMAIL && opts.to === PARTNER_EMAIL) {
     try {
-      if (await sendViaResend(opts)) {
+      const result = await sendViaResend(opts);
+      if (result.ok) {
         status = "SENT";
+      } else {
+        errorMessage = result.error;
       }
-    } catch {
-      // Falls back to SIMULATED — still logged below for visibility either way.
+    } catch (e) {
+      // Falls back to SIMULATED — the thrown error is still logged below for visibility.
+      errorMessage = e instanceof Error ? e.message : String(e);
     }
+  } else if (!CAN_SEND_REAL_EMAIL) {
+    errorMessage = !process.env.RESEND_API_KEY
+      ? "RESEND_API_KEY not set"
+      : "VERCEL_ENV is not 'production'";
   }
 
   return prisma.notification.create({
@@ -103,6 +118,7 @@ export async function sendEmail(opts: {
       employeeId: opts.employeeId,
       triggerType: opts.triggerType,
       status,
+      errorMessage,
     },
   });
 }

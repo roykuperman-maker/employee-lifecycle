@@ -66,7 +66,7 @@ model MobileDevice {
   employee            Employee  @relation(fields: [employeeId], references: [id])
   phoneNumber         String?
   model               String? // free-text model, e.g. "iPhone 16 Pro Max"
-  deviceType          String    @default("PHONE") // PHONE | SMARTWATCH — a smartwatch's transparent/paired line doesn't count as a 2nd mobile device for refresh/return reminders
+  deviceType          String    @default("PHONE") // PHONE | SMARTWATCH | OTHER — a smartwatch's transparent/paired line or other secondary line (e.g. a cellular router) doesn't count as a 2nd mobile device for refresh/return reminders
   assetTag            String?
   simNumber           String?
   status              String    @default("NOT_APPLICABLE") // NOT_APPLICABLE | PENDING_APPROVAL | ASSIGNED | RETURN_REQUESTED | BUYBACK_REQUESTED | RETURNED | BOUGHT_BACK | PORTED_OUT | DISCONNECTED
@@ -109,6 +109,7 @@ model Notification {
   employee    Employee? @relation(fields: [employeeId], references: [id])
   triggerType String
   status      String    @default("SIMULATED") // SIMULATED | SENT
+  errorMessage String? // set when a real-send attempt (status stays SIMULATED) failed — the Resend error or thrown exception message, for diagnosing silent send failures
 
   createdAt DateTime @default(now())
 }
