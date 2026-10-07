@@ -78,6 +78,47 @@ async function postSlackMessage(userId: string, text: string, blocks?: unknown[]
   return data.ok === true;
 }
 
+// Operational alert emails to Roy (e.g. Resend/notification-failure
+// monitoring) — unlike sendEmail, real-sending here isn't scoped to
+// PARTNER_EMAIL, since these alerts are meaningless unless they actually
+// reach Roy. Still gated by CAN_SEND_REAL_EMAIL (no real sends outside
+// production) and still logs a Notification row either way.
+export async function sendAdminAlertEmail(opts: {
+  subject: string;
+  body: string;
+  triggerType: string;
+}) {
+  let status: "SIMULATED" | "SENT" = "SIMULATED";
+  let errorMessage: string | undefined;
+
+  if (CAN_SEND_REAL_EMAIL) {
+    try {
+      const result = await sendViaResend({ to: ADMIN_EMAIL, subject: opts.subject, body: opts.body });
+      if (result.ok) {
+        status = "SENT";
+      } else {
+        errorMessage = result.error;
+      }
+    } catch (e) {
+      errorMessage = e instanceof Error ? e.message : String(e);
+    }
+  } else {
+    errorMessage = !process.env.RESEND_API_KEY ? "RESEND_API_KEY not set" : "VERCEL_ENV is not 'production'";
+  }
+
+  return prisma.notification.create({
+    data: {
+      channel: "EMAIL",
+      toAddress: ADMIN_EMAIL,
+      subject: opts.subject,
+      body: opts.body,
+      triggerType: opts.triggerType,
+      status,
+      errorMessage,
+    },
+  });
+}
+
 export async function sendEmail(opts: {
   to: string;
   cc?: string;

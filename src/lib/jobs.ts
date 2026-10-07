@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/db";
-import { sendEmail, sendSlackDM } from "@/lib/notifications";
+import { sendEmail, sendSlackDM, sendAdminAlertEmail } from "@/lib/notifications";
 import { thursdayBefore, isToday, dayOfWeekUTC, daysBetweenUTC } from "@/lib/dates";
 import { ADMIN_EMAIL, TICKET_OPEN_STATES } from "@/lib/constants";
 import {
@@ -274,6 +274,44 @@ async function checkMobileOrderReceivedAlerts() {
   }
 }
 
+// Alerts Roy (Slack DM + email) about any Notification that silently failed
+// to really send since the last time this check ran — e.g. the Resend 422
+// bug (2026-10-07) where every Partner-form email logged status: SIMULATED
+// with no visible trace. Watermarked off this job's own last run (a
+// NOTIFICATION_SEND_FAILURE_ALERT row) rather than a fixed lookback window,
+// so a failure is reported exactly once even if the cron is delayed or the
+// job is re-run by hand.
+async function checkFailedNotifications() {
+  const lastAlert = await prisma.notification.findFirst({
+    where: { triggerType: "NOTIFICATION_SEND_FAILURE_ALERT" },
+    orderBy: { createdAt: "desc" },
+  });
+
+  const failures = await prisma.notification.findMany({
+    where: {
+      status: "SIMULATED",
+      errorMessage: { not: null },
+      triggerType: { not: "NOTIFICATION_SEND_FAILURE_ALERT" },
+      ...(lastAlert ? { createdAt: { gt: lastAlert.createdAt } } : {}),
+    },
+    orderBy: { createdAt: "asc" },
+  });
+
+  if (failures.length === 0) return;
+
+  const lines = failures.map(
+    (f) => `- [${f.channel}] "${f.subject ?? f.triggerType}" to ${f.toAddress}: ${f.errorMessage}`
+  );
+  const body = `${failures.length} notification(s) failed to send for real (logged as SIMULATED):\n\n${lines.join("\n")}`;
+
+  await sendSlackDM({ to: ADMIN_EMAIL, body, triggerType: "NOTIFICATION_SEND_FAILURE_ALERT" });
+  await sendAdminAlertEmail({
+    subject: `Employee Lifecycle: ${failures.length} notification send failure(s)`,
+    body,
+    triggerType: "NOTIFICATION_SEND_FAILURE_ALERT",
+  });
+}
+
 export async function runDailyChecks(today: Date = new Date()) {
   await checkHardwarePrepReminders(today);
   // ON HOLD (Roy, 2026-09-27): no refresh eligibility alerts to users until further notice.
@@ -284,6 +322,7 @@ export async function runDailyChecks(today: Date = new Date()) {
   await checkMobileReturnReminders(today);
   await checkOffboardMilestones(today);
   await checkMobileOrderReceivedAlerts();
+  await checkFailedNotifications();
 }
 
 // 11am-Israel job: new-hire welcome links + simulated orientation invite.
